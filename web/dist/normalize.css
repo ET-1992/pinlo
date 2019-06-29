@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,6 +6,9 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+div {
+  box-sizing: border-box; }
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -303,3 +307,196 @@ template {
    */
 [hidden] {
   display: none; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+label {
+  border: none;
+  text-decoration: none; }
+
+@font-face {
+  font-family: 'iconfont-k';
+  src: url("../fonts/iconfont.eot");
+  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg"); }
+
+.icon {
+  font-family: "iconfont-k" !important;
+  font-style: normal;
+  display: inline-block;
+  /* vertical-align: middle; */
+  background-size: 100% auto;
+  background-position: center;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-2x {
+  font-size: 2em !important; }
+
+.icon-3x {
+  font-size: 3em !important; }
+
+.icon-4x {
+  font-size: 4em !important; }
+
+.icon-5x {
+  font-size: 5em !important; }
+
+.icon-logo:before {
+  content: '\e609'; }
+
+.icon-kefu:before {
+  content: '\e60c'; }
+
+.icon-liuyan:before {
+  content: '\e60d'; }
+
+.icon-zixun:before {
+  content: '\e610'; }
+
+.icon-xuanxiang:before {
+  content: '\e608'; }
+
+.icon-dianhua:before {
+  content: '\e611'; }
+
+.icon-close:before {
+  content: '\e60b'; }
+
+/** 字体设置 **/
+body, button, input, select, textarea {
+  font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif;
+  color: #444444;
+  font-family: "PingFang SC", arial, "Microsoft YaHei", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+address, i {
+  font-style: normal; }
+
+/* 将斜体扶正 */
+/*去除元素轮廓---fbx---*/
+div, table, form, input, button, select, textarea, fieldset, legend {
+  outline: none; }
+
+/* for google / safari*/
+/** 重置列表元素 **/
+ul, ol {
+  list-style: none outside none; }
+
+a, input, button {
+  outline: none; }
+
+::-moz-focus-inner {
+  border: 0px; }
+
+.clear {
+  clear: both;
+  font-size: 0;
+  height: 0;
+  line-height: 0; }
+
+/** 重置链接元素 **/
+a {
+  text-decoration: none;
+  color: #999999; }
+
+a:hover {
+  text-decoration: none; }
+
+/** 重置表单元素 **/
+legend {
+  text-indent: -9999px;
+  height: 0; }
+
+fieldset, img {
+  border: 0; }
+
+/* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea {
+  font-size: 100%; }
+
+/* 使得表单元素在 ie 下能继承字体大小 */
+/** 重置表格元素 **/
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/** 重置元素垂直居中 **/
+img, input, select, textarea, button {
+  vertical-align: middle; }
+
+input[type="text"], input[type="password"], div, ul, li, input, a {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-appearance: none; }
+
+/* 清除浮动 */
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: block;
+  font-size: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+.clearfix {
+  zoom: 1; }
+
+html, p {
+  text-align: justify;
+  text-justify: inter-ideograph; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* for IE6 IE7 */
+/* line 20, ../sass/base.scss */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #999; }
+
+body {
+  min-width: 1200px;
+  background-color: #f5f8fb; }
