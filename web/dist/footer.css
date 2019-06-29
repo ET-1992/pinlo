@@ -6,7 +6,9 @@
   position: absolute;
   bottom: 0;
   font-size: 16px;
-  padding-top: 101px; }
+  box-sizing: border-box;
+  padding-top: 80px;
+  padding-bottom: 38px; }
   .footer .footer-wrap {
     width: 1200px;
     margin: 0 auto;
@@ -40,20 +42,20 @@
               .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content li:last-of-type {
                 margin-bottom: 0; }
             .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content .footer-top-content_section {
-              margin-bottom: 23px; }
+              margin-bottom: 16px; }
               .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content .footer-top-content_section:last-of-type {
                 margin-bottom: 0; }
               .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content .footer-top-content_section span {
                 margin-left: 10px; }
+              .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content .footer-top-content_section img {
+                vertical-align: middle;
+                display: inline-block; }
             .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content .footer-top-content_csa {
-              width: 42pxpx;
-              height: 20px; }
+              width: 42px; }
             .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content .footer-top-content_iso {
-              width: 47px;
-              height: 42px; }
+              width: 47px; }
             .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content .footer-top-content_saas {
-              width: 45px;
-              height: 30px; }
+              width: 45px; }
           .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .textPosition {
             text-indent: 50px; }
           .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-img {
@@ -69,8 +71,7 @@
         font-family: SourceHanSansSC-Light;
         font-weight: 300;
         color: rgba(0, 0, 0, 0.5);
-        line-height: 30px;
-        margin-top: 60px;
+        margin-top: 50px;
         text-align: left; }
         .footer .footer-wrap .footer-wrap-content .footer-link .footer-link-item {
           outline: none;
@@ -85,7 +86,6 @@
         font-family: SourceHanSansSC-Light;
         font-weight: 300;
         color: rgba(0, 0, 0, 0.5);
-        line-height: 30px;
         text-align: left; }
   .footer .clearfloat:after {
     display: block;

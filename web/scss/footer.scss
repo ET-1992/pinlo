@@ -6,7 +6,9 @@
 	position: absolute;
 	bottom: 0;
 	font-size: 16px;
-	padding-top: 101px;
+	box-sizing: border-box;
+	padding-top: 80px;
+	padding-bottom: 38px;
 
 	.footer-wrap {
 		width: 1200px;
@@ -51,7 +53,7 @@
 						}
 	
 						.footer-top-content_section {
-							margin-bottom: 23px;
+							margin-bottom: 16px;
 	
 							&:last-of-type {
 								margin-bottom: 0;
@@ -60,21 +62,23 @@
 							span {
 								margin-left: 10px;
 							}
+
+							img {
+								vertical-align: middle;
+								display: inline-block;
+							}
 						}
 		
 						.footer-top-content_csa {
-							width: 42pxpx;
-							height: 20px;
+							width: 42px;
 						}
 		
 						.footer-top-content_iso {
 							width: 47px;
-							height: 42px;
 						}
 		
 						.footer-top-content_saas {
 							width: 45px;
-							height: 30px;
 						}
 					}
 	
@@ -101,8 +105,8 @@
 				font-family: SourceHanSansSC-Light;
 				font-weight: 300;
 				color: rgba(0, 0, 0, 0.5);
-				line-height: 30px;
-				margin-top: 60px;
+				// line-height: 30px;
+				margin-top: 50px;
 				text-align: left;
 	
 				.footer-link-item {
@@ -123,7 +127,7 @@
 				font-family: SourceHanSansSC-Light;
 				font-weight: 300;
 				color: rgba(0, 0, 0, 0.5);
-				line-height: 30px;
+				// line-height: 30px;
 				text-align: left;
 			}
 		}
