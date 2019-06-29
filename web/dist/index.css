@@ -1,0 +1,6 @@
+html {
+  font-size: 30px; }
+
+.die {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg); }
