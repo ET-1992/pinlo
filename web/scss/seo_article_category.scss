@@ -7,8 +7,8 @@
 .seo_article_category_page {
     background-color: #F5F8FB;
     width: 100%;
-    // height: 100%;
-    height: 1430px;
+    height: 100%;
+    margin-bottom: 50px;
 
     .seo_article_category_content {
         width: 1200px;
@@ -40,6 +40,7 @@
                     width: 560px;
                     height: 320px;
                     position: relative;
+                    cursor: pointer;
                 }
     
                 .right {
@@ -50,6 +51,7 @@
                         width: 100%;
                         height: 155px;
                         position: relative;
+                        cursor: pointer;
                     }
     
                     .bottom {
@@ -57,6 +59,7 @@
                         height: 155px;
                         margin-top: 10px;
                         position: relative;
+                        cursor: pointer;
                     }
                 }
     
@@ -129,6 +132,7 @@
                         display: inline-block;
 
                         .split_page {
+                            cursor: pointer;
                             display: inline-block;
                             width:22px;
                             height:22px;
@@ -191,7 +195,7 @@
         overflow: hidden;
         display: inline-block;
         vertical-align: top;
-        margin-right: 22px;
+        margin-right: 20px;
     }
     
     .article_content_wrap .article-lists .article-img img {
