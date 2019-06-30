@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
   connect = require('gulp-connect'),
   gulpSass = require('gulp-sass'),
-  gulpAutoprefixer = require('gulp-autoprefixer');
+  gulpAutoprefixer = require('gulp-autoprefixer'),
+  extender = require('gulp-html-extend');
  
 gulp.task('connect', function() {
   connect.server({
@@ -12,6 +13,8 @@ gulp.task('connect', function() {
  
 gulp.task('html', function () {
   gulp.src('./web/*.html')
+    .pipe(extender({annotations:true,verbose:false}))
+    .pipe(gulp.dest('./web/dist/html'))
     .pipe(connect.reload());
 });
 
@@ -28,4 +31,4 @@ gulp.task('watch', function () {
   gulp.watch(['./web/scss/*.scss'], ['sass']);
 });
  
-gulp.task('default', ['connect', 'sass', 'watch']);
+gulp.task('default', ['connect', 'html', 'sass', 'watch']);

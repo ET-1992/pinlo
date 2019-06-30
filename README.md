@@ -1,1 +1,1 @@
-d
+npm run start
