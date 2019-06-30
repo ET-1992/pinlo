@@ -901,7 +901,8 @@ body {
           width: 560px;
           height: 320px;
           position: relative;
-          cursor: pointer; }
+          cursor: pointer;
+          display: block; }
         .page .content .content_left .guide_image_wrap .right {
           float: right;
           width: 282px;
@@ -910,13 +911,15 @@ body {
             width: 100%;
             height: 155px;
             position: relative;
-            cursor: pointer; }
+            cursor: pointer;
+            display: block; }
           .page .content .content_left .guide_image_wrap .right .bottom {
             width: 100%;
             height: 155px;
             margin-top: 10px;
             position: relative;
-            cursor: pointer; }
+            cursor: pointer;
+            display: block; }
         .page .content .content_left .guide_image_wrap .image {
           width: 100%;
           height: 100%;
