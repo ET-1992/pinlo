@@ -1,5 +1,6 @@
 @import './normalize.scss';
 @import './footer.scss';
+@import './right_side.scss';
 
 .seo_article_category_page {
     background-color: #F5F8FB;
@@ -25,6 +26,7 @@
 
         .seo_article_category_content_left {
             width: 888px;
+            float: left;
 
             .guide_image_wrap {
                 width: 888px;
@@ -148,6 +150,11 @@
                 }
             }
         }        
+        .seo_article_category_content_right {
+            float: right;
+            width: 282px;
+            position: relative;
+        }
     }
 
     .hot_article_panel, .hit_article_panel {

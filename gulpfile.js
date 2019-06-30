@@ -25,10 +25,18 @@ gulp.task('sass', function () {
       .pipe(gulp.dest('./web/dist'))
       .pipe(connect.reload())
   });
- 
+
+gulp.task('image', function () {
+  gulp.src('./web/image/*')
+    .pipe(gulp.dest('./web/dist/image'))
+    .pipe(connect.reload())
+});
+
+
 gulp.task('watch', function () {
   gulp.watch(['./web/*.html'], ['html']);
   gulp.watch(['./web/scss/*.scss'], ['sass']);
+  gulp.watch(['./web/image/*'], ['image']);
 });
  
-gulp.task('default', ['connect', 'html', 'sass', 'watch']);
+gulp.task('default', ['connect', 'html', 'sass', 'image','watch']);
