@@ -10,6 +10,10 @@
     height: 100%;
     margin-bottom: 50px;
 
+    .mt-30 {
+        margin-top: 30px !important;
+    }
+
     .content {
         width: 1200px;
         margin: 0 auto;
@@ -122,6 +126,19 @@
                     }
                 }
 
+                .result_header {
+                    width: 100%;
+                    height: 71px;
+                    line-height: 71px;
+                    padding-left: 20px;
+                    font-size:18px;
+                    border-bottom: 1px solid #E5E5E5;
+
+                    .text {
+                        color: #E95205
+                    }
+                }
+
                 .article_footer {
                     width: 100%;
                     height: 71px;
@@ -152,6 +169,19 @@
                             color: #ffffff;
                             border: 1px solid #E95205;
                         }
+                    }
+                }
+
+                .ad {
+                    display: inline-block;
+                    width:888px;
+                    height:184px;
+                    cursor: pointer;
+                    margin-top: 20px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
                     }
                 }
             }
