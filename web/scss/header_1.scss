@@ -1,0 +1,136 @@
+.header {
+	width: 100%;
+	margin: 0 auto;
+
+	.header-wrap {
+		width: 1200px;
+	}
+
+	.header-top {
+		width: 100%;
+		height: 90px;
+		background-color: #ccc;
+
+		.header-top_img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.hearder-main {
+		height: 40px;
+		margin: 0 auto;
+		background-color: rgba(0, 0, 0, 0.7);
+		.header-main_wrap {
+			margin: 0 auto;
+			text-align: right;
+			line-height: 40px;
+			.header-main_wrap_item {
+				outline: none;
+				text-decoration: none;
+				font-family: SourceHanSansSC-Light;
+				font-weight: 300;
+				color: rgba(255, 255, 255, 1);
+				margin-right: 30px;
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+
+			.apply-for-trial {
+				display: inline-block;
+				width: 87px;
+				height: 30px;
+				font-size: 14px;
+				line-height: 30px;
+				background: #fe6500;
+				border-radius: 2px;
+				text-align: center;
+			}
+		}
+	}
+
+	.header-bottom	{
+		background-color: #FFFFFF;
+		position: relative;
+		.header-bottom-content {
+			margin: 0 auto;
+			height: 90px;
+			line-height: 90px;
+			.header-warp_left {
+				width: 263px;
+				// height: 48px;
+				display: inline-block;
+				.header-warp_left_img {
+					width: 100%;
+				}
+			}
+			.header-wrap_right {
+				display: inline-block;
+				// margin-left: 250px;
+				float: right;
+				.header-wrap_right_item {
+					outline: none;
+					text-decoration: none;
+					font-family: SourceHanSansSC-Light;
+					font-weight: 300;
+					color: #424242;
+					margin-right: 10px;
+
+					&:hover {
+						color: #E95205;
+					}
+				}
+				.header-wrap_right_input {
+					width: 78px;
+					height: 30px;
+					font-size: 14px;
+					line-height: 30px;
+					color: #ff4c4e;
+					text-align: center;
+					display: inline-block;
+					margin-top: 15px;
+					border: 1px solid #ff4c4e;
+					border-radius: 2px;
+					-webkit-border-radius: 2px;
+					-moz-border-radius: 2px;
+					-ms-border-radius: 2px;
+					margin-right: 5px;
+					margin-left: 10px;
+				}
+				.header-wrap_right_search {
+					width: 21px;
+					cursor: pointer;
+				}
+			}
+		}
+		.second-level-item {
+			position: absolute;
+			right: 750px;
+			top: 90px;
+			width: 148px;
+			// height: 97px;
+			text-align: center;
+			background-color: rgba(248, 248, 248, 1);
+			box-shadow: 0px 5px 5px 0px rgba(145, 145, 145, 0.25);
+			box-sizing: border-box;
+			z-index: 999;
+
+			.second-level_item {
+				width: 100%;
+				display: inline-block;
+				list-style-type: none;
+				padding: 10px 0 ;
+				// a {
+					&:hover {
+						display: inline-block;
+						width: 100%;
+						background-color: #fff;
+						color: #E95205;
+					}
+				// }
+			}
+		}
+	}
+}
