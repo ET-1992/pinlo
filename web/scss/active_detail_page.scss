@@ -1,17 +1,15 @@
 @import './normalize.scss';
 @import './header_1.scss';
+@import './header_2.scss';
 @import './footer.scss';
 @import './right_side.scss';
+@import './related_articles.scss';
 
 .page {
     background-color: #F5F8FB;
     width: 100%;
     height: 100%;
     margin-bottom: 50px;
-
-    .mt-30 {
-        margin-top: 30px;
-    }
 
     .content {
         width: 1200px;
@@ -44,7 +42,6 @@
                     height: 320px;
                     position: relative;
                     cursor: pointer;
-                    display: block;
                 }
     
                 .right {
@@ -56,7 +53,6 @@
                         height: 155px;
                         position: relative;
                         cursor: pointer;
-                        display: block;
                     }
     
                     .bottom {
@@ -65,7 +61,6 @@
                         margin-top: 10px;
                         position: relative;
                         cursor: pointer;
-                        display: block;
                     }
                 }
     

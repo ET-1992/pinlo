@@ -604,6 +604,56 @@ body {
           width: 21px;
           cursor: pointer; }
 
+.header {
+  width: 100%;
+  background-color: #FFFFFF; }
+  .header .header-wrap {
+    width: 1200px; }
+  .header .header-content {
+    margin: 0 auto;
+    height: 90px;
+    line-height: 90px; }
+    .header .header-content .header-warp_left {
+      width: 263px;
+      display: inline-block;
+      float: left; }
+      .header .header-content .header-warp_left .header-warp_left_img {
+        width: 100%; }
+    .header .header-content .header-wrap_right {
+      display: inline-block;
+      float: right; }
+      .header .header-content .header-wrap_right .header-wrap_right_item {
+        font-family: SourceHanSansSC-Light;
+        font-weight: 300;
+        color: #424242;
+        margin-right: 10px; }
+        .header .header-content .header-wrap_right .header-wrap_right_item:hover {
+          color: #E95205; }
+      .header .header-content .header-wrap_right .free-opening {
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        background-color: #E95205;
+        display: inline-block;
+        border-radius: 2px;
+        margin-left: 30px;
+        margin-right: 10px; }
+        .header .header-content .header-wrap_right .free-opening:hover {
+          color: #fff;
+          background-color: rgba(233, 82, 5, 0.9); }
+      .header .header-content .header-wrap_right .management-platform {
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        background: rgba(233, 82, 5, 0);
+        display: inline-block;
+        text-align: center;
+        border: 1px solid #e95205;
+        border-radius: 2px;
+        margin-right: 0; }
+
 .footer {
   width: 100%;
   height: 491px;
@@ -829,7 +879,7 @@ body {
   height: 100%;
   margin-bottom: 50px; }
   .page .mt-30 {
-    margin-top: 30px; }
+    margin-top: 30px !important; }
   .page .content {
     width: 1200px;
     margin: 0 auto;
@@ -853,8 +903,7 @@ body {
           width: 560px;
           height: 320px;
           position: relative;
-          cursor: pointer;
-          display: block; }
+          cursor: pointer; }
         .page .content .content_left .guide_image_wrap .right {
           float: right;
           width: 282px;
@@ -863,15 +912,13 @@ body {
             width: 100%;
             height: 155px;
             position: relative;
-            cursor: pointer;
-            display: block; }
+            cursor: pointer; }
           .page .content .content_left .guide_image_wrap .right .bottom {
             width: 100%;
             height: 155px;
             margin-top: 10px;
             position: relative;
-            cursor: pointer;
-            display: block; }
+            cursor: pointer; }
         .page .content .content_left .guide_image_wrap .image {
           width: 100%;
           height: 100%;
@@ -915,6 +962,15 @@ body {
             border-bottom: 2px solid #E95205;
             color: #E95205;
             padding-bottom: 6px; }
+        .page .content .content_left .article_wrap .result_header {
+          width: 100%;
+          height: 71px;
+          line-height: 71px;
+          padding-left: 20px;
+          font-size: 18px;
+          border-bottom: 1px solid #E5E5E5; }
+          .page .content .content_left .article_wrap .result_header .text {
+            color: #E95205; }
         .page .content .content_left .article_wrap .article_footer {
           width: 100%;
           height: 71px;
@@ -939,6 +995,15 @@ body {
               background-color: #E95205;
               color: #ffffff;
               border: 1px solid #E95205; }
+        .page .content .content_left .article_wrap .ad {
+          display: inline-block;
+          width: 888px;
+          height: 184px;
+          cursor: pointer;
+          margin-top: 20px; }
+          .page .content .content_left .article_wrap .ad img {
+            width: 100%;
+            height: 100%; }
     .page .content .content_right {
       float: right;
       width: 282px;
