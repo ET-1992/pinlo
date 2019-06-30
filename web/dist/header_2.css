@@ -34,6 +34,9 @@
         border-radius: 2px;
         margin-left: 30px;
         margin-right: 10px; }
+        .header .header-content .header-wrap_right .free-opening:hover {
+          color: #fff;
+          background-color: rgba(233, 82, 5, 0.9); }
       .header .header-content .header-wrap_right .management-platform {
         width: 100px;
         height: 30px;

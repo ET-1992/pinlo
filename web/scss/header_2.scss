@@ -49,6 +49,11 @@
 				border-radius: 2px;
 				margin-left: 30px;
 				margin-right: 10px;
+
+				&:hover {
+					color: #fff;
+					background-color: rgba(233, 82, 5, 0.9);
+				}
 			}
 
 			.management-platform {
