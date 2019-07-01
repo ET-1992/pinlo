@@ -1,3 +1,104 @@
+.banner-search-wrap {
+  max-width: 1920px; }
+  .banner-search-wrap .banner-bg {
+    width: 100%; }
+
+.footer {
+  width: 100%;
+  height: 491px;
+  margin: 0 auto;
+  background: #e9eef2;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding-top: 80px;
+  padding-bottom: 38px; }
+  .footer .footer-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center; }
+    .footer .footer-wrap .footer-wrap-content {
+      margin: 0 auto;
+      display: inline-block; }
+      .footer .footer-wrap .footer-wrap-content .footer-top {
+        text-align: left; }
+        .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section {
+          float: left;
+          margin-right: 75px;
+          cursor: pointer; }
+          .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section:last-of-type {
+            margin-right: 0; }
+          .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-title {
+            font-size: 20px;
+            font-family: SourceHanSansSC-Regular;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.8);
+            line-height: 50px; }
+          .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content {
+            font-size: 14px;
+            font-family: SourceHanSansSC-Light;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.5);
+            line-height: 40px; }
+            .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content li {
+              list-style-type: none;
+              margin-left: 7px; }
+              .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content li:last-of-type {
+                margin-bottom: 0; }
+            .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content .footer-top-content_section {
+              margin-bottom: 16px; }
+              .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content .footer-top-content_section:last-of-type {
+                margin-bottom: 0; }
+              .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content .footer-top-content_section span {
+                margin-left: 10px; }
+              .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content .footer-top-content_section img {
+                vertical-align: middle;
+                display: inline-block; }
+            .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content .footer-top-content_csa {
+              width: 42px; }
+            .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content .footer-top-content_iso {
+              width: 47px; }
+            .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-content .footer-top-content_saas {
+              width: 45px; }
+          .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .textPosition {
+            text-indent: 50px; }
+          .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-img {
+            width: 80px;
+            height: 80px;
+            background: #28221f;
+            margin-top: 40px; }
+            .footer .footer-wrap .footer-wrap-content .footer-top .footer-top-section .footer-top-img img {
+              width: 100%;
+              height: 100%; }
+      .footer .footer-wrap .footer-wrap-content .footer-link {
+        font-size: 14px;
+        font-family: SourceHanSansSC-Light;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.5);
+        margin-top: 50px;
+        text-align: left; }
+        .footer .footer-wrap .footer-wrap-content .footer-link .footer-link-item {
+          outline: none;
+          text-decoration: none;
+          margin-right: 20px;
+          color: rgba(0, 0, 0, 0.5); }
+          .footer .footer-wrap .footer-wrap-content .footer-link .footer-link-item:last-of-type {
+            margin-right: 0; }
+      .footer .footer-wrap .footer-wrap-content .footer-bottom {
+        margin-top: 40px;
+        font-size: 14px;
+        font-family: SourceHanSansSC-Light;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.5);
+        text-align: left; }
+  .footer .clearfloat:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0; }
+  .footer .clearfloat {
+    zoom: 1; }
+
 section .container {
   width: 1200px;
   margin: 0 auto;
