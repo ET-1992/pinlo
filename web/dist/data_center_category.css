@@ -880,6 +880,63 @@ body {
       text-align: center;
       line-height: 30px; }
 
+.selectPage {
+  height: 70px;
+  line-height: 70px;
+  padding-left: 20px;
+  border-bottom: 1px solid #eee; }
+  .selectPage .select-session {
+    position: relative;
+    margin-right: 20px;
+    float: left; }
+    .selectPage .select-session .select-input {
+      width: 202px;
+      height: 35px;
+      padding-left: 10px;
+      padding-right: 10px;
+      background: url("./image/triangleDown.png") no-repeat;
+      background-size: 14px 10px;
+      background-position: 95% center;
+      border: 1px solid rgba(149, 149, 149, 0.8);
+      outline: medium;
+      border-radius: 5px; }
+    .selectPage .select-session:hover .select-input {
+      border-color: #E95205; }
+    .selectPage .select-session:hover .select-input-second_level {
+      display: block; }
+    .selectPage .select-session .select-input-second_level {
+      display: none;
+      background-color: #F8F8F8;
+      position: absolute;
+      top: 55px;
+      width: 202px;
+      z-index: 999; }
+      .selectPage .select-session .select-input-second_level li {
+        height: 38px;
+        line-height: 38px;
+        width: 100%;
+        list-style-type: none; }
+        .selectPage .select-session .select-input-second_level li .second-level-item {
+          display: inline-block;
+          width: 100%;
+          text-align: center; }
+          .selectPage .select-session .select-input-second_level li .second-level-item:hover {
+            background-color: #fff;
+            color: #E95205;
+            font-size: 14px; }
+  .selectPage .select-btn {
+    width: 86px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background-color: #E95205;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer; }
+  .selectPage .select-reset-btn {
+    margin-right: 20px; }
+
 .page {
   background-color: #F5F8FB;
   width: 100%;
