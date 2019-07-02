@@ -1,0 +1,197 @@
+.page-detail {
+    background-color: #FFF;
+    border: 1px solid #eee;
+    padding: 28px 0 0;
+    .article-layout {
+        padding: 0 29px;
+        .clearfix {
+            zoom: 1;
+        }
+        .clearfix:after {
+            clear: both;
+            content: "";
+            display: block;
+            font-size: 0;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+        }
+        .article-title {
+            font-size: 24px;
+            color: #333;
+            line-height: 30px;
+        }
+        .article-subtitle {
+            margin-top: 12px;
+            font-size: 14px;
+            height:38px;
+            line-height: 38px;
+            color: #999;
+            position: relative;
+            .article-classify{
+                width:106px;
+                height:38px;
+                line-height: 38px;
+                text-align: center;
+                background: #E8E8E8FF;
+                margin-left: 20px;
+            }
+            .h-right {
+                float: right !important;
+            }
+            span, a{
+                font-size: 14px;
+                color: #959595;
+            }
+        }
+        span {
+            margin-right: 26px;
+        }
+        a {
+            color: #2db7f5;
+        }
+        .advertising-words {
+            margin-top: 34px;
+            height: 42px;
+            line-height: 42px;
+            border: 1px solid #81d4f9;
+            background: #f2fbfe;
+            padding-left: 18px;
+            padding-right: 18px;
+            font-size: 14px;
+            color: #666;
+            .advertising-words-icon {
+                width: 12px;
+                height: 14px;
+                display: inline-block;
+                vertical-align: middle;
+                background: url(../images/ling-icon.png) center no-repeat;
+                margin-right: 8px;
+            }
+            a {
+                color: #2db7f5;
+                text-decoration: underline;
+            }
+        }
+        .article-abstract {
+            background-color: #f6f6f6;
+            color: #999;
+            font-size: 14px;
+            padding: 10px 16px;
+            border: 1px solid #eee;
+            margin-top: 30px;
+            p {
+                text-align: justify;
+                text-justify: inter-ideograph;
+            }
+        }
+        .article-container {
+            padding: 20px 0;
+            font-size: 16px;
+            color: #666;
+            p {
+                margin-bottom: 10px;
+                line-height: 28px;
+            }
+            h2 {
+                font-size: 20px;
+                color: #333;
+                font-weight: bold;
+                padding-bottom: 12px;
+                border-bottom: 1px solid #e5e5e5;
+                margin-bottom: 12px;
+                margin-top: 25px;
+            }
+        }
+        .article-pagination {
+            padding: 23px 0 0;
+            border-bottom: 1px solid #e5e5e5;
+            .pagination-list {
+                margin-bottom: 23px;
+                font-size: 14px;
+                color: #333;
+                a{
+                    color: #505050;
+                }
+                span{
+                    margin: 0;
+                }
+            }
+        }
+        .share-and-label {
+            margin-top: 20px;
+            .article-share-btn {
+                float: right;
+                .bdshare-button-style1-16 {
+                    zoom: 1;
+                    a{
+                        float: left;
+                        font-size: 12px;
+                        padding-left: 17px;
+                        line-height: 16px;
+                        height: 16px;
+                        background-repeat: no-repeat;
+                        cursor: pointer;
+                        margin: 6px 6px 6px 0;
+                    }
+                    a:link, a:visited {
+                        text-decoration: none;
+                        color: #999;
+                    }
+                }
+                .bdshare-button-style1-16:after {
+                    content: ".";
+                    visibility: hidden;
+                    display: block;
+                    height: 0;
+                    clear: both;
+                }
+                .bdsharebuttonbox {
+                    .bds_tsina {
+                        background: url(../image/sina.png) center no-repeat;
+                        margin-right: 0;
+                    }
+                    .bds_weixin {
+                        background: url(../image/wechat.png) center no-repeat;
+                        margin-right: 0;
+                    }
+                    a {
+                        width: 113px;
+                        height: 32px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+        .article-extra {
+            background-color: #f6f6f6;
+            color: #999;
+            font-size: 16px;
+            padding: 17px 11px;
+            border: 1px solid #eee;
+            margin-top: 30px;
+            color: #505050;
+            p {
+                text-align: justify;
+                text-justify: inter-ideograph;
+                display: inline-block;
+            }
+            .contact{
+                display: inline-block;
+                width:107px;
+                height:24px;
+                line-height:24px;
+                border:1px solid rgba(233,82,5,1);
+                border-radius:12px;
+                font-size:14px;
+                font-family:SourceHanSansSC-Light;
+                font-weight:300;
+                color:rgba(233,82,5,1);
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
