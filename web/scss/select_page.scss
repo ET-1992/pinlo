@@ -1,0 +1,76 @@
+.selectPage {
+	height: 70px;
+	line-height: 70px;
+	padding-left: 20px;
+
+	.select-session {
+		position: relative;
+		margin-right: 20px;
+		float: left;
+		.select-input {
+			width: 202px;
+			height: 35px;
+			padding-left: 10px;
+			padding-right: 10px;
+			background: url("./image/triangleDown.png") no-repeat;
+			background-size: 14px 10px;
+			background-position: 95% center;
+			border: 1px solid rgba(149, 149, 149, 0.8);
+			outline: medium;
+			border-radius: 5px;
+
+		}
+
+		&:hover {
+			.select-input {
+				border-color: #E95205;
+			}
+			.select-input-second_level {
+				display: block;
+			}
+		}
+
+		.select-input-second_level {
+			display: none;
+			background-color: #F8F8F8;
+			position: absolute;
+			top: 55px;
+			width: 202px;
+			z-index: 999;
+
+			li {
+				height: 38px;
+				line-height: 38px;
+				width: 100%;
+				list-style-type: none;
+				.second-level-item {
+					display: inline-block;
+					width: 100%;
+					text-align: center;
+					
+					&:hover {
+						background-color: #fff;
+						color: #E95205;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
+	.select-btn {
+		width: 86px;
+		height: 34px;
+		line-height: 34px;
+		text-align: center;
+		background-color: #E95205;
+		color: #fff;
+		display: inline-block;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	.select-reset-btn {
+		margin-right: 20px;
+	}
+}

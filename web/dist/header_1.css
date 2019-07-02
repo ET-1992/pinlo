@@ -60,24 +60,31 @@
           margin-right: 10px; }
           .header .header-bottom .header-bottom-content .header-wrap_right .header-wrap_right_item:hover {
             color: #E95205; }
+        .header .header-bottom .header-bottom-content .header-wrap_right .first-level-item {
+          display: inline-block; }
+          .header .header-bottom .header-bottom-content .header-wrap_right .first-level-item:hover .second-level {
+            display: block; }
         .header .header-bottom .header-bottom-content .header-wrap_right .second-level {
+          display: none;
+          background-color: #f8f8f8;
           position: absolute;
           left: 40px;
           top: 90px;
           width: 148px;
-          text-align: center;
-          background-color: #f8f8f8;
-          box-shadow: 0px 5px 5px 0px rgba(145, 145, 145, 0.25);
-          box-sizing: border-box;
           z-index: 999; }
-          .header .header-bottom .header-bottom-content .header-wrap_right .second-level .second-level_item {
-            height: 50px;
-            line-height: 50px;
-            text-align: center; }
-            .header .header-bottom .header-bottom-content .header-wrap_right .second-level .second-level_item:hover {
-              background-color: #fff; }
-              .header .header-bottom .header-bottom-content .header-wrap_right .second-level .second-level_item:hover a {
-                color: #E95205; }
+          .header .header-bottom .header-bottom-content .header-wrap_right .second-level li {
+            height: 36px;
+            line-height: 36px;
+            width: 100%;
+            list-style-type: none; }
+            .header .header-bottom .header-bottom-content .header-wrap_right .second-level li .second-level-item {
+              display: inline-block;
+              width: 100%;
+              text-align: center; }
+              .header .header-bottom .header-bottom-content .header-wrap_right .second-level li .second-level-item:hover {
+                background-color: #fff;
+                color: #E95205;
+                font-size: 14px; }
         .header .header-bottom .header-bottom-content .header-wrap_right .header-wrap_right_input {
           width: 78px;
           height: 30px;
