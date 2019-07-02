@@ -271,6 +271,6 @@ section .container {
           color: #424242;
           text-decoration: underline; }
   .product-wrap .card-wrap .card-item:nth-child(2) {
-    margin: 0 64px; }
+    margin: 0 50px; }
   .product-wrap .card-wrap .card-item:hover {
     box-shadow: 0 3px 15px 3px rgba(51, 51, 51, 0.5); }
