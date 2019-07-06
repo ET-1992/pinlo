@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <title>帮助文档详情页</title>
     <link rel="stylesheet" href="../normalize.css">
     <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -26,5 +27,22 @@
     </div>
     <!-- @@include ./footer.html -->
 </body>
+
+<script>
+    $(document).ready(function(){
+        $('.NavigationItem').click(function(){
+            var isShowChild = $(this).parent().next().css('display');
+            $('li a.NavigationItem-link').removeClass('NavigationItem-current');
+            $(this).children('.NavigationItem-link').addClass('NavigationItem-current');
+            if(isShowChild === 'none'){
+                $(this).parent().next('.NavigationLevel__children').css('display', 'block');
+                $(this).next().removeClass('NavigationToggle__icon--closed');
+            }else{
+                $(this).parent().next('.NavigationLevel__children').css('display', 'none');
+                $(this).next().addClass('NavigationToggle__icon--closed');
+            }
+        })
+    });
+</script>
 
 </html>
