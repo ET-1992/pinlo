@@ -12,30 +12,29 @@
       height: 100%; }
   .header .hearder-main {
     height: 40px;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.7); }
-    .header .hearder-main .header-main_wrap {
-      margin: 0 auto;
-      text-align: right;
-      line-height: 40px; }
-      .header .hearder-main .header-main_wrap .header-main_wrap_item {
-        outline: none;
-        text-decoration: none;
-        font-family: SourceHanSansSC-Light;
-        font-weight: 300;
-        color: white;
-        margin-right: 30px; }
-        .header .hearder-main .header-main_wrap .header-main_wrap_item:last-of-type {
-          margin-right: 0; }
-      .header .hearder-main .header-main_wrap .apply-for-trial {
-        display: inline-block;
-        width: 87px;
-        height: 30px;
-        font-size: 14px;
-        line-height: 30px;
-        background: #fe6500;
-        border-radius: 2px;
-        text-align: center; }
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: right;
+    margin: 0 auto; }
+    .header .hearder-main .menu-item {
+      outline: none;
+      text-decoration: none;
+      font-family: SourceHanSansSC-Light;
+      font-weight: 300;
+      margin-right: 30px;
+      display: inline-block;
+      color: white; }
+      .header .hearder-main .menu-item a {
+        color: white; }
+    .header .hearder-main .apply-for-trial {
+      display: inline-block;
+      width: 87px;
+      height: 30px;
+      font-size: 14px;
+      line-height: 30px;
+      background: #fe6500;
+      border-radius: 2px;
+      text-align: center; }
   .header .header-bottom {
     background-color: #FFFFFF;
     position: relative; }
@@ -51,37 +50,41 @@
       .header .header-bottom .header-bottom-content .header-wrap_right {
         float: right;
         position: relative; }
-        .header .header-bottom .header-bottom-content .header-wrap_right .header-wrap_right_item {
-          outline: none;
-          text-decoration: none;
-          font-family: SourceHanSansSC-Light;
+        .header .header-bottom .header-bottom-content .header-wrap_right .menu-item {
           font-weight: 300;
           color: #424242;
-          margin-right: 10px; }
-          .header .header-bottom .header-bottom-content .header-wrap_right .header-wrap_right_item:hover {
-            color: #E95205; }
-        .header .header-bottom .header-bottom-content .header-wrap_right .first-level-item {
+          margin-right: 10px;
           display: inline-block; }
-          .header .header-bottom .header-bottom-content .header-wrap_right .first-level-item:hover .second-level {
+          .header .header-bottom .header-bottom-content .header-wrap_right .menu-item a {
+            outline: none;
+            text-decoration: none;
+            font-family: SourceHanSansSC-Light;
+            color: #424242; }
+            .header .header-bottom .header-bottom-content .header-wrap_right .menu-item a:hover {
+              color: #E95205; }
+        .header .header-bottom .header-bottom-content .header-wrap_right .menu-item-has-children {
+          display: inline-block; }
+          .header .header-bottom .header-bottom-content .header-wrap_right .menu-item-has-children:hover .sub-menu {
             display: block; }
-        .header .header-bottom .header-bottom-content .header-wrap_right .second-level {
+        .header .header-bottom .header-bottom-content .header-wrap_right .sub-menu {
           display: none;
           background-color: #f8f8f8;
           position: absolute;
           left: 40px;
           top: 90px;
           width: 148px;
+          height: auto;
           z-index: 999; }
-          .header .header-bottom .header-bottom-content .header-wrap_right .second-level li {
-            height: 36px;
+          .header .header-bottom .header-bottom-content .header-wrap_right .sub-menu .menu-item {
             line-height: 36px;
             width: 100%;
-            list-style-type: none; }
-            .header .header-bottom .header-bottom-content .header-wrap_right .second-level li .second-level-item {
+            list-style-type: none;
+            display: block; }
+            .header .header-bottom .header-bottom-content .header-wrap_right .sub-menu .menu-item a {
               display: inline-block;
               width: 100%;
               text-align: center; }
-              .header .header-bottom .header-bottom-content .header-wrap_right .second-level li .second-level-item:hover {
+              .header .header-bottom .header-bottom-content .header-wrap_right .sub-menu .menu-item a:hover {
                 background-color: #fff;
                 color: #E95205;
                 font-size: 14px; }
