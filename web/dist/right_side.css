@@ -120,3 +120,73 @@
       color: #FFF;
       text-align: center;
       line-height: 30px; }
+
+.right-side-wrap .article-item-lists {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.right-side-wrap .article-item-lists .article-number {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  margin-right: 16px;
+  background-color: #999;
+  border-radius: 2px; }
+
+.right-side-wrap .article-item-lists .article-number.around {
+  border-radius: 50%; }
+
+.right-side-wrap .article-item-lists:first-of-type .article-number, .right-side-wrap .article-item-lists:nth-of-type(2) .article-number, .right-side-wrap .article-item-lists:nth-of-type(3) .article-number {
+  background-color: #333; }
+
+.right-side-wrap .article-item-lists:hover {
+  color: #ff4c4e; }
+
+.right-side-wrap .article-item-lists:hover .article-number {
+  background-color: #ff4c4e; }
+
+.right-side-wrap .article-recommend-list {
+  display: block;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 20px; }
+
+.right-side-wrap .article-recommend-list:last-of-type {
+  border: none;
+  margin-bottom: 0; }
+
+.right-side-wrap .article-recommend-list .article-recommend-img {
+  float: left;
+  width: 100px;
+  height: 75px;
+  overflow: hidden; }
+
+.right-side-wrap .article-recommend-list .article-recommend-content {
+  float: left;
+  width: 130px;
+  margin-left: 12px;
+  height: 64px;
+  overflow: hidden;
+  padding: 8px 0 0;
+  font-size: 12px;
+  color: #666; }
+
+.right-side-wrap .article-recommend-list .article-recommend-content p {
+  overflow: hidden;
+  text-overflow: -o-ellipsis-lastline;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; }
+
+.right-side-wrap .article-recommend-list:hover .article-recommend-content {
+  color: #ff4c4e; }
