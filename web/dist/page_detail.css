@@ -56,7 +56,7 @@
         height: 14px;
         display: inline-block;
         vertical-align: middle;
-        background: url(../images/ling-icon.png) center no-repeat;
+        background: url(./images/ling-icon.png) center no-repeat;
         margin-right: 8px; }
       .page-detail .article-layout .advertising-words a {
         color: #2db7f5;
@@ -122,10 +122,10 @@
           height: 0;
           clear: both; }
         .page-detail .article-layout .share-and-label .article-share-btn .bdsharebuttonbox .bds_tsina {
-          background: url(../image/sina.png) center no-repeat;
+          background: url(./image/sina.png) center no-repeat;
           margin-right: 0; }
         .page-detail .article-layout .share-and-label .article-share-btn .bdsharebuttonbox .bds_weixin {
-          background: url(../image/wechat.png) center no-repeat;
+          background: url(./image/wechat.png) center no-repeat;
           margin-right: 0; }
         .page-detail .article-layout .share-and-label .article-share-btn .bdsharebuttonbox a {
           width: 113px;
