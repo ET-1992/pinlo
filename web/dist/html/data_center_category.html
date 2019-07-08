@@ -126,32 +126,20 @@
 
 <!-- start select_page.html-->
 <div class="selectPage">
-	<div class="select-session">
-		<input class="select-input" placeholder="资料类型" type="text"/>
-		<div class="select-input-second_level">
-			<li>
-				<a class="second-level-item" href="#">产品薄皮书</a>
-			</li>
-			<li>
-				<a class="second-level-item" href="#">行业报告</a>
-			</li>
-			<li>
-				<a class="second-level-item" href="#">资料包</a>
-			</li>
+	<div class="select-session select-session1">
+		<input class="select-input input1" placeholder="资料类型" type="text"/>
+		<div class="select-input-second_level level1">
+			<li class="second-level-item">产品薄皮书</li>
+			<li class="second-level-item">行业报告</li>
+			<li class="second-level-item">资料包</li>
 		</div>
 	</div>
-	<div class="select-session">
-		<input class="select-input" placeholder="资料类型" type="text"/>
-		<div class="select-input-second_level">
-			<li>
-				<a class="second-level-item" href="#">产品薄皮书</a>
-			</li>
-			<li>
-				<a class="second-level-item" href="#">行业报告</a>
-			</li>
-			<li>
-				<a class="second-level-item" href="#">资料包</a>
-			</li>
+	<div class="select-session select-session2">
+		<input class="select-input input2" placeholder="资料类型" type="text"/>
+		<div class="select-input-second_level level2">
+			<li class="second-level-item">产品薄皮书</li>
+			<li class="second-level-item">行业报告</li>
+			<li class="second-level-item">资料包</li>
 		</div>
 	</div>
 	<div class="select-btn select-reset-btn">重置</div>
@@ -675,6 +663,37 @@
                 $('.item-container .item-label').removeClass('active');
                 $(this).addClass('active');
             })
+
+            /* select选择框 */
+            $('.select-session1 .select-input').click(function(){
+                $(this).addClass('active');
+                $('.level1').addClass('show');
+            })
+
+            $('.select-session2 .select-input').click(function(){
+                $(this).addClass('active');
+                $('.level2').addClass('show');
+            })
+
+            $('.select-session1 .level1 .second-level-item').click(function(){
+                var value = $(this).text();
+                console.log(value);
+                $('.input1').val(value);
+                $('.level1').removeClass('show');
+            })
+
+            $('.select-session2 .level2 .second-level-item').click(function(){
+                var value = $(this).text();
+                console.log(value);
+                $('.input2').val(value);
+                $('.level2').removeClass('show');
+            })
+
+            $('.select-reset-btn').click(function(){
+                $('.select-input').val('资料类型');
+                $('.select-input').removeClass('active');
+            })
+            
             /* 分页 */
             $('.split_page_wrap .split_page').click(function(){
                 $('.split_page_wrap .split_page').removeClass('active');

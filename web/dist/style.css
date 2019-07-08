@@ -882,10 +882,6 @@
       border: 1px solid rgba(149, 149, 149, 0.8);
       outline: medium;
       border-radius: 5px; }
-    .selectPage .select-session:hover .select-input {
-      border-color: #E95205; }
-    .selectPage .select-session:hover .select-input-second_level {
-      display: block; }
     .selectPage .select-session .select-input-second_level {
       display: none;
       background-color: #F8F8F8;
@@ -893,19 +889,20 @@
       top: 55px;
       width: 202px;
       z-index: 999; }
-      .selectPage .select-session .select-input-second_level li {
+      .selectPage .select-session .select-input-second_level .second-level-item {
         height: 38px;
         line-height: 38px;
         width: 100%;
-        list-style-type: none; }
-        .selectPage .select-session .select-input-second_level li .second-level-item {
-          display: inline-block;
-          width: 100%;
-          text-align: center; }
-          .selectPage .select-session .select-input-second_level li .second-level-item:hover {
-            background-color: #fff;
-            color: #E95205;
-            font-size: 14px; }
+        list-style-type: none;
+        text-align: center; }
+        .selectPage .select-session .select-input-second_level .second-level-item:hover {
+          background-color: #fff;
+          color: #E95205;
+          font-size: 14px; }
+    .selectPage .select-session .active {
+      border-color: #E95205; }
+    .selectPage .select-session .show {
+      display: block; }
   .selectPage .select-btn {
     width: 86px;
     height: 34px;

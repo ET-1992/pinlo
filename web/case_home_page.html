@@ -19,7 +19,7 @@
 	<!-- @@include ./footer.html -->
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
-	<script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
 
 	<script type="text/javascript">
 		window.onload = function () {
@@ -55,6 +55,26 @@
 				$(this).addClass('active').siblings().removeClass('active');
 				$('.panel-body .panel-body_item').eq(i).show().siblings().hide();
 			});
+
+			/* 分页 */
+            $('.split_page_wrap .split_page').click(function(){
+                $('.split_page_wrap .split_page').removeClass('active');
+                $(this).addClass('active');
+            })
+            /* 上一页*/
+            $('.split_page_wrap .prev_page').click(function(){
+                if($('.active').prevAll('.split_page').length > 0){
+                  $('.active').prev('.split_page').addClass('active');
+                  $('.active').next('.split_page').removeClass('active');
+                }
+            })
+            /* 下一页 */
+            $('.split_page_wrap .next_page').click(function(){
+                if($('.active').nextAll('.split_page').length > 0){
+                  $('.active').next('.split_page').addClass('active');
+                  $('.active').prev('.split_page').removeClass('active');
+                }
+            })
 		}
 	</script>
 </body>

@@ -22,15 +22,6 @@
 
 		}
 
-		&:hover {
-			.select-input {
-				border-color: #E95205;
-			}
-			.select-input-second_level {
-				display: block;
-			}
-		}
-
 		.select-input-second_level {
 			display: none;
 			background-color: #F8F8F8;
@@ -39,23 +30,27 @@
 			width: 202px;
 			z-index: 999;
 
-			li {
+			.second-level-item {
 				height: 38px;
 				line-height: 38px;
 				width: 100%;
 				list-style-type: none;
-				.second-level-item {
-					display: inline-block;
-					width: 100%;
-					text-align: center;
-					
-					&:hover {
-						background-color: #fff;
-						color: #E95205;
-						font-size: 14px;
-					}
+				text-align: center;
+				
+				&:hover {
+					background-color: #fff;
+					color: #E95205;
+					font-size: 14px;
 				}
 			}
+		}
+
+		.active {
+			border-color: #E95205;
+		}
+
+		.show {
+			display: block;
 		}
 	}
 
