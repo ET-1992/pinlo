@@ -1,0 +1,131 @@
+.product-card {
+	padding-bottom: 24px;
+
+	.container {
+		width: 1200px;
+		margin: 0 auto;
+	}
+
+	.card-wrap {
+		.card-item {
+			margin-top: 30px;
+			background: #fff;
+			width: 379px;
+			height: 405px;
+			display: inline-block;
+			position: relative;
+			transition: 0.3s;
+			margin-right: 26px;
+
+			.card-img {
+				width: 379px;
+				height: 210px;
+			}
+
+			.card-content {
+				padding: 22px 21px;
+				text-align: left;
+
+				.card-title {
+					font-size: 18px;
+					color: #424242;
+					font-weight: bold;
+					margin-bottom: 20px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 1;
+				}
+
+				.card-desc {
+					display: inline-block;
+					font-size: 16px;
+					color:rgba(0, 0, 0, 0.5);
+					line-height: 1.5;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+				}
+
+				.card-bottom {
+					position: absolute;
+					width: 313px;
+					bottom: 15px;
+					left: 21px;
+					color:rgba(0, 0, 0, 1);
+					font-size: 14px;
+					font-weight: 300;
+
+					.time {
+						opacity: 0.5;
+					}
+
+					.more {
+						display: inline-block;
+						float: right;
+						width: 57px;
+						height: 22px;
+						color:rgba(0, 0, 0, 0.5);
+						line-height: 27px;
+						text-decoration: underline;
+					}
+				}
+			}
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+		}
+
+
+		.card-item:hover {
+			box-shadow: 0 3px 15px 3px rgba(51, 51, 51, 0.5);
+		}
+	}
+}
+
+.article_footer {
+	width: 100%;
+	height: 71px;
+	text-align: center;
+	line-height: 71px;
+
+	.split_page_wrap {
+		display: inline-block;
+
+		.split_page {
+			cursor: pointer;
+			display: inline-block;
+			width: 22px;
+			height: 22px;
+			background: rgba(255, 255, 255, 1);
+			border: 1px solid rgba(166, 166, 166, 0.64);
+			border-radius: 3px;
+			margin-right: 11px;
+			font-size: 16px;
+			//font-family:SourceHanSansSC-Light;
+			font-weight: 300;
+			color: rgba(199, 199, 199, 1);
+			line-height: 20px;
+		}
+
+		.active {
+			background-color: #E95205;
+			color: #ffffff;
+			border: 1px solid #E95205;
+		}
+	}
+}
+
+
+.img-wrap {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 60px;
+	.contact-us {
+		max-width: 1200px;
+	}
+}

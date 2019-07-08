@@ -18,72 +18,99 @@
 	}
 
 	.header-main {
-		height: 40px;
-		line-height: 40px;
-		background-color: rgba(0, 0, 0, 0.7);
+		height: 47px;
+		line-height: 47px;
+		background-color: #742F11;
 		text-align: right;
 		margin: 0 auto;
+
 		.menu-item {
 			outline: none;
 			text-decoration: none;
-			font-family: SourceHanSansSC-Light;
-			font-weight: 300;
 			margin-right: 30px;
 			display: inline-block;
-			color: rgba(255, 255, 255, 1);
 
 			a {
 				color: rgba(255, 255, 255, 1);
-			}
-		}
 
-		.apply-for-trial {
-			display: inline-block;
-			width: 87px;
-			height: 30px;
-			font-size: 14px;
-			line-height: 30px;
-			background: #fe6500;
-			border-radius: 2px;
-			text-align: center;
+				&:hover {
+					color: #E95205;
+				}
+			}
 		}
 	}
 
-	.header-bottom	{
+	.header-bottom {
 		background-color: #FFFFFF;
 		position: relative;
+
 		.header-bottom-content {
 			margin: 0 auto;
 			height: 90px;
 			line-height: 90px;
+
 			.header-warp_left {
 				width: 263px;
 				display: inline-block;
+
 				.header-warp_left_img {
 					width: 100%;
 				}
 			}
+
 			.header-wrap_right {
 				float: right;
 				position: relative;
+
 				.menu-item {
 					font-weight: 300;
 					color: #424242;
 					margin-right: 10px;
 					display: inline-block;
-					
+
 					a {
 						outline: none;
 						text-decoration: none;
 						font-family: SourceHanSansSC-Light;
 						color: #424242;
-						
+
 						&:hover {
 							color: #E95205;
 						}
 					}
-
 				}
+
+				.menu-item-input {
+					width: 128px;
+					display: inline-block;
+					height: 37px;
+					border-radius: 8px;
+					border: 1px solid #E4E4E4;
+					position: relative;
+					top: 11px;
+
+					.left-search {
+						width: 18px;
+						position: absolute;
+						left: 5px;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+
+					.right-search {
+						position: absolute;
+						right: 0;
+						width: 100px;
+						height: 35px;
+						line-height: 36px;
+						padding-left: 5px;
+						color: #7F7F7F;
+						outline: none;
+						border: none;
+						border-radius: 8px;
+					}
+				}
+
 
 				.menu-item-has-children {
 					display: inline-block;
@@ -110,7 +137,7 @@
 						width: 100%;
 						list-style-type: none;
 						display: block;
-						
+
 						a {
 							display: inline-block;
 							width: 100%;
@@ -124,6 +151,7 @@
 						}
 					}
 				}
+
 				.header-wrap_right_input {
 					width: 78px;
 					height: 30px;
@@ -141,6 +169,7 @@
 					margin-right: 5px;
 					margin-left: 10px;
 				}
+
 				.header-wrap_right_search {
 					width: 21px;
 					cursor: pointer;
