@@ -355,6 +355,9 @@
       .right-side-wrap .block-item .item-container .item-label:hover {
         color: #ff4c4e;
         border-color: #ff4c4e; }
+    .right-side-wrap .block-item .item-container .active {
+      color: #ff4c4e;
+      border-color: #ff4c4e; }
   .right-side-wrap .block-item .hot-article-container {
     padding: 30px 20px 25px; }
     .right-side-wrap .block-item .hot-article-container .hot-article-list {
@@ -1157,7 +1160,7 @@ section .container {
           line-height: 71px; }
           .page .content .content_left .article_wrap .article_footer .split_page_wrap {
             display: inline-block; }
-            .page .content .content_left .article_wrap .article_footer .split_page_wrap .split_page {
+            .page .content .content_left .article_wrap .article_footer .split_page_wrap .prev_page, .page .content .content_left .article_wrap .article_footer .split_page_wrap .next_page, .page .content .content_left .article_wrap .article_footer .split_page_wrap .split_page {
               cursor: pointer;
               display: inline-block;
               width: 22px;

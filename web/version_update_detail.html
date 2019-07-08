@@ -8,6 +8,7 @@
     <title>版本聚合详情页</title>
     <link rel="stylesheet" href="../normalize.css">
     <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -30,5 +31,18 @@
     </div>
     <!-- @@include ./footer.html -->
 </body>
-
+    <script>
+        $(document).ready(function(){
+            /* 热门文章切换 */
+            $('.tab-link').click(function(){
+                $('.article-tab-bar .tab-link').removeClass('active');
+                $(this).addClass('active');
+            });
+            /* 热门标签切换 */
+            $('.item-label').click(function(){
+                $('.item-container .item-label').removeClass('active');
+                $(this).addClass('active');
+            })
+        });
+    </script>
 </html>
