@@ -39,6 +39,9 @@
             $('.tab-link').click(function(){
                 $('.article-tab-bar .tab-link').removeClass('active');
                 $(this).addClass('active');
+                let tab = $(this).attr('data-tab');
+                $('.hot-article-list').removeClass('active');
+                $(`#tab-${tab}`).addClass('active');
             });
         });
     </script>

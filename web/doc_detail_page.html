@@ -36,6 +36,9 @@
             $('.tab-link').click(function(){
                 $('.article-tab-bar .tab-link').removeClass('active');
                 $(this).addClass('active');
+                let tab = $(this).attr('data-tab');
+                $('.hot-article-list').removeClass('active');
+                $(`#tab-${tab}`).addClass('active');
             });
             /* 热门标签切换 */
             $('.item-label').click(function(){
