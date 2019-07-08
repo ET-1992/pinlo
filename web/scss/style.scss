@@ -147,7 +147,7 @@
                     .split_page_wrap {
                         display: inline-block;
 
-                        .split_page {
+                        .prev_page, .next_page, .split_page {
                             cursor: pointer;
                             display: inline-block;
                             width:22px;
