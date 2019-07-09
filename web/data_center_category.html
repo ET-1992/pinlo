@@ -213,7 +213,6 @@
 </body>
     <script>
         $(document).ready(function(){
-            var isClick = false
             /* 热门文章切换 */
             $('.tab-link').click(function(){
                 $('.article-tab-bar .tab-link').removeClass('active');
@@ -229,59 +228,96 @@
             })
 
             /* select选择框 */
-            $('.select-session1').click(function(){
-                $('.input2').removeClass('active');
-                if(!isClick){
-                    console.log('!isclick', isClick);
-                    $('.input1').addClass('active');
-                    $('.level1').toggle();
-                    isClick = !isClick
-                } else {
-                    console.log('isclick', isClick);
-                    $('.level1').toggle();
-                    $('.input1').removeClass('active');
-                    isClick = !isClick
-                }
-            })
-
-            $('.select-session2').click(function(){
-                $('.input1').removeClass('active');
-                if(!isClick){
-                    $('.input2').addClass('active');
-                    $('.level2').toggle();
-                    isClick = !isClick
-                } else {
-                    $('.level2').toggle();
+            // 点击第一个input框
+            var inputClick1 = false
+            $('.select-session1').click(function(e){
+                if ($('.input2').hasClass('active')) {
                     $('.input2').removeClass('active');
-                    isClick = !isClick
                 }
+                if ($('.level2').hasClass('show')) {
+                    $('.level2').removeClass('show');
+                }
+                if(!inputClick1){
+                    console.log('!isclick1', inputClick1);
+                    $('.input1').addClass('active');
+                    $('.level1').addClass('show');
+                    inputClick1 = !inputClick1
+                } else {
+                    console.log('isclick1', inputClick1);
+                    $('.level1').removeClass('show');
+                    $('.input1').removeClass('active');
+                    inputClick1 = !inputClick1
+                }
+                e.stopPropagation();
             })
 
-            $('.select-session1 .level1 .second-level-item').click(function(){
+            // 点击第二个input框
+            var inputClick2 = false
+            $('.select-session2').click(function(e){
+                if ($('.input1').hasClass('active')) {
+                    $('.input1').removeClass('active');
+                }
+                if ($('.level1').hasClass('show')) {
+                    $('.level1').removeClass('show');
+                }
+                if(!inputClick2){
+                    $('.input2').addClass('active');
+                    $('.level2').addClass('show');
+                    console.log('!isclick2', inputClick2);
+                    inputClick2 = !inputClick2
+                } else {
+                    console.log('isclick2', inputClick2);
+                    $('.level2').removeClass('show');
+                    $('.input2').removeClass('active');
+                    inputClick2 = !inputClick2
+                }
+                e.stopPropagation();
+            })
+
+            // 点击第一个下拉框
+            $('.select-session1 .level1 .second-level-item').click(function(e){
                 var value = $(this).text();
                 var data = $(this).attr('data-term-slug');
                 console.log(value,data);
                 $('.input1').val(value);
                 $('.hidden1').val(data);
                 $('.level1').removeClass('show');
+                e.stopPropagation();
             })
 
-            $('.select-session2 .level2 .second-level-item').click(function(){
+            // 点击第二个下拉框
+            $('.select-session2 .level2 .second-level-item').click(function(e){
                 var value = $(this).text();
                 var data = $(this).attr('data-term-slug');
                 console.log(value,data);
                 $('.input2').val(value);
                 $('.hidden2').val(data);
                 $('.level2').removeClass('show');
+                e.stopPropagation();
             })
 
-            $('.select-reset-btn').click(function(){
+            // 点击重置
+            $('.select-reset-btn').click(function(e){
                 $('.select-input').val('');
                 $('.hidden1').val('');
                 $('.hidden2').val('');
                 $('.level1').removeClass('show');
                 $('.level2').removeClass('show');
                 $('.select-input').removeClass('active')
+                e.stopPropagation();
+            })
+
+            $(document).bind('click', function(e){
+                console.log('e.target', e.target);
+                console.log('e.currentTarget', e.currentTarget);
+                if(e.target !== $('.input1')){
+                    $('.level1').removeClass('show');
+                    $('.input1').removeClass('active');
+                }
+                if(e.target !== $('.input2')){
+                    $('.level2').removeClass('show');
+                    $('.input2').removeClass('active');
+                }
             })
             
             /* 分页 */
