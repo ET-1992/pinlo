@@ -1025,6 +1025,8 @@ section .container {
       float: left;
       font-weight: 400;
       cursor: pointer; }
+      .issues-wrap .content .item a:hover {
+        color: #e95205; }
       .issues-wrap .content .item .dot {
         display: inline-block;
         width: 8px;
