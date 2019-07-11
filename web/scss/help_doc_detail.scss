@@ -1,0 +1,17 @@
+.help_doc_detail_wrap{
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+    .page .content{
+        margin: 100px auto 0;
+        .slider_menu_wrap{
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            top: 90px;
+        }
+    }
+}
