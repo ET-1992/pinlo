@@ -64,6 +64,7 @@
 				width: 148px;
 				height: auto;
 				z-index: 999;
+				font-size: 16px;
 
 				.menu-item {
 					line-height: 36px;
@@ -79,7 +80,7 @@
 						&:hover {
 							background-color: #fff;
 							color: #E95205;
-							font-size: 14px;
+							font-size: 16px;
 						}
 					}
 				}

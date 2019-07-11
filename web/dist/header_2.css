@@ -40,7 +40,8 @@
         top: 90px;
         width: 148px;
         height: auto;
-        z-index: 999; }
+        z-index: 999;
+        font-size: 16px; }
         .header .header-content .header-wrap_right .sub-menu .menu-item {
           line-height: 36px;
           width: 100%;
@@ -53,7 +54,7 @@
             .header .header-content .header-wrap_right .sub-menu .menu-item a:hover {
               background-color: #fff;
               color: #E95205;
-              font-size: 14px; }
+              font-size: 16px; }
       .header .header-content .header-wrap_right .free-opening {
         width: 100px;
         height: 30px;
