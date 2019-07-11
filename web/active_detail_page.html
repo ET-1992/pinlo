@@ -46,6 +46,29 @@
             $('.item-label').click(function(){
                 $('.item-container .item-label').removeClass('active');
                 $(this).addClass('active');
+            });
+
+             /* 文章详情 */
+            $('.classify-item').hover(function(){
+                let isShowChild = $(this).children('.classify-modal').css('display');
+                if(isShowChild === 'none'){
+                    $(this).children('.classify-modal').css('display','block');
+                }else{
+                    $(this).children('.classify-modal').css('display','none');
+                }
+            });
+
+            /* 分享 */
+            $('.share-wrap .weixin').click(function(){
+                let isShowModal = $(this).parent('.share-wrap').children('#modal-weixin').css('display');
+                if(isShowModal === 'none'){
+                    $(this).parent('.share-wrap').children('#modal-weixin').css('display','block');
+                }else{
+                    $(this).parent('.share-wrap').children('#modal-weixin').css('display','none');
+                }
+            });
+            $('#modal-weixin').click(function(){
+                $(this).hide();
             })
         });
     </script>
