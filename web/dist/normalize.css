@@ -329,6 +329,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font: inherit;
+  font-family: "PingFang SC", arial, "Microsoft YaHei", sans-serif !important; 
   font-size: 100%;
   vertical-align: baseline; }
 
