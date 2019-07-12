@@ -450,7 +450,7 @@ label {
 body, button, input, select, textarea {
     font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif;
     color: #444444;
-    font-family: "PingFang SC", arial, "Microsoft YaHei", sans-serif;
+    font-family: "PingFang SC", arial, "Microsoft YaHei", sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
