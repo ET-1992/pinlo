@@ -1396,19 +1396,23 @@ section .container {
 .clearfix {
   zoom: 1; }
 
-.help_doc_detail_wrap .header {
+.help_doc_detail_wrap .header_fk {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999; }
 
-.help_doc_detail_wrap .page .content {
-  margin: 100px auto 0; }
-  .help_doc_detail_wrap .page .content .slider_menu_wrap {
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    top: 90px; }
+.help_doc_detail_wrap .header-main {
+  display: none; }
+
+.help_doc_detail_wrap .page .content .slider_menu_wrap {
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  top: 60px; }
+
+.help_doc_detail_wrap .page .content .content_left {
+  margin-top: 60px; }
 
 .page {
   background-color: #F5F8FB;
