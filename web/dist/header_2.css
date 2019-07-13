@@ -1,61 +1,65 @@
-.header {
+.header_2 {
   width: 100%;
   background-color: #FFFFFF;
   font-size: 16px; }
-  .header .header-wrap {
+  .header_2 .header-wrap {
     width: 1200px;
     margin: 0 auto; }
-  .header .header-content {
+  .header_2 .header-content {
     margin: 0 auto;
-    height: 90px;
-    line-height: 90px; }
-    .header .header-content .header-warp_left {
+    height: 60px;
+    line-height: 60px;
+    background-color: #FFFFFF;
+    position: relative; }
+    .header_2 .header-content .header-warp_left {
       width: 263px;
       display: inline-block; }
-      .header .header-content .header-warp_left .header-warp_left_img {
-        width: 100%; }
-    .header .header-content .header-wrap_right {
-      display: inline-block;
+      .header_2 .header-content .header-warp_left .header-warp_left_img {
+        width: 100%;
+        height: 60px;
+        display: block; }
+    .header_2 .header-content .header-wrap_right {
       margin-left: 250px;
+      float: right;
       position: relative; }
-      .header .header-content .header-wrap_right .menu-item {
+      .header_2 .header-content .header-wrap_right .menu-item {
         font-family: SourceHanSansSC-Light;
         font-weight: 300;
-        color: #424242;
+        color: #4f4f4f;
         margin-right: 30px;
         display: inline-block; }
-        .header .header-content .header-wrap_right .menu-item a {
-          color: #424242; }
-          .header .header-content .header-wrap_right .menu-item a:hover {
+        .header_2 .header-content .header-wrap_right .menu-item a {
+          color: #4f4f4f; }
+          .header_2 .header-content .header-wrap_right .menu-item a:hover {
             color: #E95205; }
-      .header .header-content .header-wrap_right .menu-item-has-children {
+      .header_2 .header-content .header-wrap_right .menu-item-has-children {
         display: inline-block; }
-        .header .header-content .header-wrap_right .menu-item-has-children:hover .sub-menu {
+        .header_2 .header-content .header-wrap_right .menu-item-has-children:hover .sub-menu {
           display: block; }
-      .header .header-content .header-wrap_right .sub-menu {
+      .header_2 .header-content .header-wrap_right .sub-menu {
         display: none;
         background-color: #f8f8f8;
         position: absolute;
         left: 0px;
-        top: 90px;
+        top: 60px;
         width: 148px;
         height: auto;
         z-index: 999;
         font-size: 16px; }
-        .header .header-content .header-wrap_right .sub-menu .menu-item {
+        .header_2 .header-content .header-wrap_right .sub-menu .menu-item {
           line-height: 36px;
           width: 100%;
           list-style-type: none;
           display: block; }
-          .header .header-content .header-wrap_right .sub-menu .menu-item a {
+          .header_2 .header-content .header-wrap_right .sub-menu .menu-item a {
             display: inline-block;
             width: 100%;
             text-align: center; }
-            .header .header-content .header-wrap_right .sub-menu .menu-item a:hover {
+            .header_2 .header-content .header-wrap_right .sub-menu .menu-item a:hover {
               background-color: #fff;
               color: #E95205;
               font-size: 16px; }
-      .header .header-content .header-wrap_right .free-opening {
+      .header_2 .header-content .header-wrap_right .free-opening {
         width: 100px;
         height: 30px;
         line-height: 30px;
@@ -66,10 +70,10 @@
         border-radius: 2px;
         margin-left: 10px;
         margin-right: 30px; }
-        .header .header-content .header-wrap_right .free-opening:hover {
+        .header_2 .header-content .header-wrap_right .free-opening:hover {
           color: #fff;
           background-color: rgba(233, 82, 5, 0.9); }
-      .header .header-content .header-wrap_right .management-platform {
+      .header_2 .header-content .header-wrap_right .management-platform {
         width: 100px;
         height: 30px;
         line-height: 30px;
@@ -80,3 +84,26 @@
         color: #e95205;
         border-radius: 2px;
         margin-right: 0; }
+  .header_2 .header-main {
+    height: 40px;
+    line-height: 40px;
+    background-color: #413B37;
+    text-align: right;
+    margin: 0 auto; }
+    .header_2 .header-main .menu-item {
+      outline: none;
+      text-decoration: none;
+      font-family: SourceHanSansSC-Light;
+      font-weight: 300;
+      margin-right: 30px;
+      display: inline-block;
+      color: white; }
+      .header_2 .header-main .menu-item a {
+        color: white; }
+    .header_2 .header-main .apply-for-trial {
+      display: inline-block;
+      width: 87px;
+      height: 100%;
+      font-size: 14px;
+      background: #fe6500;
+      text-align: center; }

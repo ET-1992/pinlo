@@ -1,6 +1,4 @@
-@import './header_1.scss';
-@import './header_2.scss';
-@import './header_3.scss';
+@import './header_fk.scss';
 @import './footer.scss';
 @import './right_side.scss';
 @import './page_detail.scss';
@@ -367,7 +365,7 @@
     .hezi-solve-case {
         width: 282px;
         height: 232px;
-        background: url(../images/solve.jpg) center no-repeat;
+        background: url(http://www.huodonghezi.com/huodonghezi/images/solve.jpg) center no-repeat;
         text-align: center;
         padding-top: 32px;
     }
