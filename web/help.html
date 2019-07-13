@@ -7,11 +7,14 @@
     <title>帮助中心首页</title>
     <link rel="stylesheet" href="../normalize.css">
     <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 <body>
     <!-- @@include ./head_banner_search.html -->
+<div class="help_detail_page">
     <section class="intro">
-        <div class="container">
+        <div class="help_item_box">
             <h4 class="section-title">新手必读</h4>
             <p class="section-desc">企微云平台目前已全面支持在企业微信上使用，</p> 
             <p class="section-desc">你可查看本帮助指南，快速熟悉企微云平台的使用方法。</p>
@@ -19,7 +22,7 @@
         </div>
     </section>
     <section class="bg-white">
-        <div class="container">
+        <div class="help_item_box">
             <h4 class="section-title">应用指南</h4>
             <ul class="app-wrap">
                 <li class="item">
@@ -123,7 +126,7 @@
         </div>
     </section>
     <section class="bg-white">
-        <div class="container">
+        <div class="help_item_box">
             <h4 class="section-title">进阶技巧</h4>
             <ul class="app-wrap">
                 <li class="item">
@@ -227,7 +230,7 @@
         </div>
     </section>
     <section class="issues-wrap">
-        <div class="container">
+        <div class="help_item_box">
             <h4 class="section-title">常见问题</h4>
             <ul class="content">
                 <li class="item">
@@ -284,7 +287,7 @@
         </div>
     </section>
     <section class="product-wrap">
-        <div class="container">
+        <div class="help_item_box">
             <h4 class="section-title">产品更新</h4>
             <div class="card-wrap">
                 <div class="card-item">
@@ -329,6 +332,25 @@
             </div>
         </div>
     </section>
+</div>
     <!-- @@include ./footer.html -->
+    <!-- @@include ./side_tool_bar.html -->
 </body>
+<script>
+ $(document).ready(function(){
+    /* 侧边栏 */
+    $('.hezi-tool-bar .tool-item').hover(function(){
+        let isShowModal = $(this).children('.tool-popup').css('display');
+        if(isShowModal === 'none'){
+                    $(this).children('.tool-popup').css('display', 'block');
+                }else{
+                    $(this).children('.tool-popup').css('display', 'none');
+                }
+    });
+    /* 回到顶部 */
+    $('#scrollTop').click(function(){
+        $('html,body').animate({ scrollTop: 0 }, 500);
+    })
+ });
+</script>
 </html>

@@ -211,6 +211,8 @@
     </div>
 
     <!-- @@include ./footer.html -->
+    <!-- @@include ./side_tool_bar.html -->
+
 </body>
     <script>
         $(document).ready(function(){
@@ -339,6 +341,19 @@
                   $('.active').next('.split_page').addClass('active');
                   $('.active').prev('.split_page').removeClass('active');
                 }
+            });
+            /* 侧边栏 */
+            $('.hezi-tool-bar .tool-item').hover(function(){
+                let isShowModal = $(this).children('.tool-popup').css('display');
+                if(isShowModal === 'none'){
+                    $(this).children('.tool-popup').css('display', 'block');
+                }else{
+                    $(this).children('.tool-popup').css('display', 'none');
+                }
+            });
+            /* 回到顶部 */
+            $('#scrollTop').click(function(){
+                $('html,body').animate({ scrollTop: 0 }, 500);
             })
         });
     </script>

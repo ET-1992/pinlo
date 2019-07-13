@@ -17,6 +17,7 @@
 	<!-- @@include ./tabbar_page.html -->
 	<!-- @@include ./product_card.html -->
 	<!-- @@include ./footer.html -->
+    <!-- @@include ./side_tool_bar.html -->
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
@@ -74,7 +75,20 @@
                   $('.active').next('.split_page').addClass('active');
                   $('.active').prev('.split_page').removeClass('active');
                 }
-            })
+            });
+			/* 侧边栏 */
+			$('.hezi-tool-bar .tool-item').hover(function(){
+            let isShowModal = $(this).children('.tool-popup').css('display');
+            	if(isShowModal === 'none'){
+            	    $(this).children('.tool-popup').css('display', 'block');
+            	}else{
+            	    $(this).children('.tool-popup').css('display', 'none');
+            	}
+        	});
+        	/* 回到顶部 */
+        	$('#scrollTop').click(function(){
+        	    $('html,body').animate({ scrollTop: 0 }, 500);
+        	})
 		}
 	</script>
 </body>

@@ -1,56 +1,54 @@
-section .container {
+.help_detail_page section .help_item_box {
   width: 1200px;
   margin: 0 auto;
   text-align: center; }
-  section .container .section-title {
+  .help_detail_page section .help_item_box .section-title {
     font-size: 34px;
     color: #424242;
     padding-top: 45px; }
-  section .container .section-desc {
+  .help_detail_page section .help_item_box .section-desc {
     font-size: 16px;
     color: #424242;
     text-align: center; }
 
-.intro .intro-image {
+.help_detail_page .intro .intro-image {
   width: 1200px;
   height: 550px; }
 
-.intro .section-title {
+.help_detail_page .intro .section-title {
   padding-bottom: 27px; }
 
-.bg-white {
+.help_detail_page .bg-white {
   background: #fff; }
 
-.app-wrap {
-  max-width: 947px;
+.help_detail_page .app-wrap {
+  max-width: 948px;
   margin: 65px auto 0; }
-  .app-wrap .item {
+  .help_detail_page .app-wrap .item {
     display: inline-block;
     width: 115px; }
-    .app-wrap .item .d-block {
+    .help_detail_page .app-wrap .item .d-block {
       display: block; }
-    .app-wrap .item span {
+    .help_detail_page .app-wrap .item span {
       margin: 26px 0; }
-    .app-wrap .item .item-img {
+    .help_detail_page .app-wrap .item .item-img {
       max-width: 75px;
       cursor: pointer;
-      -webkit-transition: all 0.3s;
       transition: all 0.3s; }
-    .app-wrap .item .item-img:hover {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1); }
+    .help_detail_page .app-wrap .item .item-img:hover {
+      transform: scale(1.1); }
 
-.issues-wrap {
+.help_detail_page .issues-wrap {
   padding-bottom: 30px; }
-  .issues-wrap .section-title {
+  .help_detail_page .issues-wrap .section-title {
     padding: 21px 0 36px; }
-  .issues-wrap .content {
+  .help_detail_page .issues-wrap .content {
     display: inline-block;
     margin: 0 auto;
     max-width: 900px;
     text-align: left;
     padding-left: 30px; }
-    .issues-wrap .content .item {
+    .help_detail_page .issues-wrap .content .item {
       display: block;
       font-size: 16px;
       color: #424242;
@@ -58,39 +56,38 @@ section .container {
       float: left;
       font-weight: 400;
       cursor: pointer; }
-      .issues-wrap .content .item a:hover {
+      .help_detail_page .issues-wrap .content .item a:hover {
         color: #e95205; }
-      .issues-wrap .content .item .dot {
+      .help_detail_page .issues-wrap .content .item .dot {
         display: inline-block;
         width: 8px;
         height: 8px;
         background: #e95205;
         border-radius: 50%;
         margin-right: 10px; }
-    .issues-wrap .content .item:nth-child(odd) {
+    .help_detail_page .issues-wrap .content .item:nth-child(odd) {
       width: 370px; }
-    .issues-wrap .content .item:nth-child(even) {
+    .help_detail_page .issues-wrap .content .item:nth-child(even) {
       padding-left: 160px; }
 
-.product-wrap {
+.help_detail_page .product-wrap {
   padding-bottom: 76px; }
-  .product-wrap .section-title {
+  .help_detail_page .product-wrap .section-title {
     padding: 21px 0 40px; }
-  .product-wrap .card-wrap .card-item {
+  .help_detail_page .product-wrap .card-wrap .card-item {
     background: #fff;
     width: 355px;
     height: 355px;
     display: inline-block;
     position: relative;
-    -webkit-transition: 0.3s;
     transition: 0.3s; }
-    .product-wrap .card-wrap .card-item .card-img {
+    .help_detail_page .product-wrap .card-wrap .card-item .card-img {
       width: 355px;
       height: 186px; }
-    .product-wrap .card-wrap .card-item .card-content {
+    .help_detail_page .product-wrap .card-wrap .card-item .card-content {
       padding: 22px 21px;
       text-align: left; }
-      .product-wrap .card-wrap .card-item .card-content .card-title {
+      .help_detail_page .product-wrap .card-wrap .card-item .card-content .card-title {
         font-size: 18px;
         color: #424242;
         font-weight: bold;
@@ -100,7 +97,7 @@ section .container {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 1; }
-      .product-wrap .card-wrap .card-item .card-content .card-desc {
+      .help_detail_page .product-wrap .card-wrap .card-item .card-content .card-desc {
         display: inline-block;
         font-size: 16px;
         color: #424242;
@@ -110,7 +107,7 @@ section .container {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2; }
-      .product-wrap .card-wrap .card-item .card-content .card-bottom {
+      .help_detail_page .product-wrap .card-wrap .card-item .card-content .card-bottom {
         position: absolute;
         width: 313px;
         bottom: 15px;
@@ -118,16 +115,16 @@ section .container {
         color: #424242;
         font-size: 14px;
         font-weight: 300; }
-        .product-wrap .card-wrap .card-item .card-content .card-bottom .time {
+        .help_detail_page .product-wrap .card-wrap .card-item .card-content .card-bottom .time {
           opacity: 0.5; }
-        .product-wrap .card-wrap .card-item .card-content .card-bottom .more {
+        .help_detail_page .product-wrap .card-wrap .card-item .card-content .card-bottom .more {
           display: inline-block;
           float: right;
           width: 57px;
           height: 22px;
           color: #424242;
           text-decoration: underline; }
-  .product-wrap .card-wrap .card-item:nth-child(2) {
+  .help_detail_page .product-wrap .card-wrap .card-item:nth-child(2) {
     margin: 0 50px; }
-  .product-wrap .card-wrap .card-item:hover {
+  .help_detail_page .product-wrap .card-wrap .card-item:hover {
     box-shadow: 0 3px 15px 3px rgba(51, 51, 51, 0.5); }
