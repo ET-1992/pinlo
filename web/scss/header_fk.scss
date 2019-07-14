@@ -11,7 +11,41 @@
     
     .header-wrap_right {
         float: right;
-    }
+	}
+	.search-box{
+		float: right;
+		display: none;
+		height: 37px;
+		.input_text{
+			width: 747px;
+			height: 37px;
+			border: 1px solid #B1B1B7;
+			font-size: 14px;
+			color: #000000;
+			border-right: none;
+			padding:0;
+			padding-left: 10px;
+		}
+		.search_bt{
+			width: 90px;
+			height: 37px;
+			line-height: 37px;
+			background: #B1B1B7;
+			font-size: 14px;
+			color: #fff;
+			border: 1px solid #B1B1B7;
+			border-left: none;
+			padding: 1px 0;
+		}
+		.form_box{
+			display: inline-block;
+		}
+		.search_close {
+			width: 17px;
+			cursor: pointer;
+			margin-left: 10px;
+		}
+	}
 
 	.header-top {
 		width: 100%;

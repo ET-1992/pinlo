@@ -261,7 +261,26 @@
         /* 回到顶部 */
         $('#scrollTop').click(function(){
             $('html,body').animate({ scrollTop: 0 }, 500);
-        })
+        });
+        /* 搜索 */
+        $('.header-wrap_right .header-wrap_right_search').click(function(){
+            $(this).parent('.header-wrap_right').css('display', 'none');
+            $(this).parent('.header-wrap_right').next('.search-box').css('display', 'block');
+        });
+        $('.search-box .search_close').click(function(){
+            $(this).parent('.search-box').prev('.header-wrap_right').css('display', 'block');
+            $(this).parent('.search-box').css('display', 'none');
+        });
+        $('.search-box .input_text').blur(function(){
+            $(this).css('border-color', '#B1B1B7');
+            $(this).next('.search_bt').css('background', '#B1B1B7');
+            $(this).next('.search_bt').css('border-color', '#B1B1B7');
+        });
+        $('.search-box .form_box .input_text').focus(function(){
+            $(this).css('border-color', '#e44b5d');
+            $(this).next('.search_bt').css('background', '#e44b5d');
+            $(this).next('.search_bt').css('border-color', '#e44b5d');
+        });
     });
 </script>
 </html>
