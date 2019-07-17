@@ -10,6 +10,7 @@
     height: 405px;
     display: inline-block;
     position: relative;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     margin-right: 26px; }
     .product-card .card-wrap .card-item .card-img {

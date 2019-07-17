@@ -26,6 +26,7 @@
         left: 0;
         top: 0;
         background: #f77053;
+        background: -webkit-gradient(linear, left top, left bottom, from(#f77053), to(#e44b5d));
         background: linear-gradient(to bottom, #f77053 0%, #e44b5d 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f77053', endColorstr='#e44b5d', GradientType=0);
         border-radius: 1px; }

@@ -34,9 +34,11 @@
     .help_detail_page .app-wrap .item .item-img {
       max-width: 75px;
       cursor: pointer;
+      -webkit-transition: all 0.3s;
       transition: all 0.3s; }
     .help_detail_page .app-wrap .item .item-img:hover {
-      transform: scale(1.1); }
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
 
 .help_detail_page .issues-wrap {
   padding-bottom: 30px; }
@@ -80,6 +82,7 @@
     height: 355px;
     display: inline-block;
     position: relative;
+    -webkit-transition: 0.3s;
     transition: 0.3s; }
     .help_detail_page .product-wrap .card-wrap .card-item .card-img {
       width: 355px;

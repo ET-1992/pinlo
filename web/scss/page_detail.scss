@@ -183,6 +183,27 @@
                     clear: both;
                 }
                 .bdsharebuttonbox {
+                    .bds_poster {
+                        // background: url(./image/airplane.png) center no-repeat;
+                        // margin-right: 0;
+                        width: 113px;
+                        height: 33px;
+                        border: 1px solid rgba(0, 158, 219, 1);
+                        border-radius: 17px;
+                        display: block;
+                        padding: 8px;
+                        img {
+                            width: 18px;
+                            height: 16px;
+                            margin-right: 15px;
+                        }
+
+                        .bds_poster_span {
+                            // font-size: 16px;
+                            color: rgba(0, 158, 219, 1);
+                            margin-right: 0;
+                        }
+                    }
                     .bds_tsina {
                         background: url(./image/sina.png) center no-repeat;
                         margin-right: 0;
