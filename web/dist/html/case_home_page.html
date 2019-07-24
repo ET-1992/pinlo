@@ -53,9 +53,15 @@
 <!-- start carousel.html-->
 <div class="swiper-container">
 	<div class="swiper-wrapper">
-		<div class="swiper-slide">Slide 1</div>
-		<div class="swiper-slide">Slide 2</div>
-		<div class="swiper-slide">Slide 3</div>
+		<div class="swiper-slide">
+			<img src="http://wbg2.do1.com.cn/wp-content/uploads/2019/07/1563157049-%E6%A1%88%E4%BE%8Bbanner02.jpg?imageView2/1/w/128/h/27/q/70#" />
+		</div>
+		<div class="swiper-slide">
+			<img src="http://wbg2.do1.com.cn/wp-content/uploads/2019/07/1563157049-%E6%A1%88%E4%BE%8Bbanner02.jpg?imageView2/1/w/128/h/27/q/70#" />
+		</div>
+		<div class="swiper-slide">
+			<img src="http://wbg2.do1.com.cn/wp-content/uploads/2019/07/1563157049-%E6%A1%88%E4%BE%8Bbanner02.jpg?imageView2/1/w/128/h/27/q/70#" />
+		</div>
 	</div>
 	<!-- 如果需要分页器 -->
 	<div class="swiper-pagination"></div>
@@ -370,6 +376,7 @@
 				direction: 'horizontal', // 水平切换选项
 				loop: true, // 循环模式选项
 				autoplay: true, // 自动切换
+				autoHeight: true, //高度随内容变化
 
 				// 如果需要分页器
 				pagination: {
@@ -380,31 +387,18 @@
 					bulletActiveClass: 'my-bullet-active',
 				},
 
+				observer: true,
+
 				//设置宽度为全屏
 				width: window.innerWidth,
 
 				// 断点设定
 				breakpoints: {
-					//当宽度小于等于320
-					320: {
-						width: undefined,
-						spaceBetween: 10
-					},
-					//当宽度小于等于480
-					480: {
-						width: undefined,
-						spaceBetween: 20
-					},
-					//当宽度小于等于640
-					640: {
-						width: undefined,
-						spaceBetween: 30
-					},
 					768: {
 						width: undefined,
 						spaceBetween: 40
 					},
-					1024: {
+					1280: {
 						width: undefined,
 						spaceBetween: 50
 					}
@@ -416,19 +410,10 @@
 						this.params.width = window.innerWidth;
 						this.update();
 					},
-				 } ,
-
-				// // 如果需要前进后退按钮
-				// navigation: {
-				//     nextEl: '.swiper-button-next',
-				//     prevEl: '.swiper-button-prev',
-				// },
-
-				// // 如果需要滚动条
-				// scrollbar: {
-				//     el: '.swiper-scrollbar',
-				// },
+				 },
 			})
+
+			mySwiper.pagination.update();
 
 			// tabber 切换
 			$('.panel-navbar .panel-navbar_item').on('click', function () {
