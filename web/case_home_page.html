@@ -28,6 +28,7 @@
 				direction: 'horizontal', // 水平切换选项
 				loop: true, // 循环模式选项
 				autoplay: true, // 自动切换
+				autoHeight: true, //高度随内容变化
 
 				// 如果需要分页器
 				pagination: {
@@ -38,31 +39,18 @@
 					bulletActiveClass: 'my-bullet-active',
 				},
 
+				observer: true,
+
 				//设置宽度为全屏
 				width: window.innerWidth,
 
 				// 断点设定
 				breakpoints: {
-					//当宽度小于等于320
-					320: {
-						width: undefined,
-						spaceBetween: 10
-					},
-					//当宽度小于等于480
-					480: {
-						width: undefined,
-						spaceBetween: 20
-					},
-					//当宽度小于等于640
-					640: {
-						width: undefined,
-						spaceBetween: 30
-					},
 					768: {
 						width: undefined,
 						spaceBetween: 40
 					},
-					1024: {
+					1280: {
 						width: undefined,
 						spaceBetween: 50
 					}
@@ -74,19 +62,10 @@
 						this.params.width = window.innerWidth;
 						this.update();
 					},
-				 } ,
-
-				// // 如果需要前进后退按钮
-				// navigation: {
-				//     nextEl: '.swiper-button-next',
-				//     prevEl: '.swiper-button-prev',
-				// },
-
-				// // 如果需要滚动条
-				// scrollbar: {
-				//     el: '.swiper-scrollbar',
-				// },
+				 },
 			})
+
+			mySwiper.pagination.update();
 
 			// tabber 切换
 			$('.panel-navbar .panel-navbar_item').on('click', function () {
