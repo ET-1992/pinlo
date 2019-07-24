@@ -418,4 +418,14 @@
         border-radius: 5px;
     }
     
+
+    .fixed {
+        position: fixed;
+        z-index: 10;
+    }
+
+    p .aligncenter {
+        display: inline-block;
+        margin: 0 auto;
+    }
 }

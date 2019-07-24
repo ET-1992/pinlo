@@ -174,7 +174,9 @@
 
 .footer {
   background: #323c41;
-  color: #cbcbcb; }
+  color: #cbcbcb;
+  z-index: 10000;
+  position: relative; }
   .footer .container {
     width: 1200px;
     padding-right: 15px;
@@ -1785,3 +1787,9 @@ dd a:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e87ff', endColorstr='#00ccff', GradientType=1);
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5) inset;
     border-radius: 5px; }
+  .page .fixed {
+    position: fixed;
+    z-index: 10; }
+  .page p .aligncenter {
+    display: inline-block;
+    margin: 0 auto; }

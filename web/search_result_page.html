@@ -242,6 +242,44 @@
             $('#scrollTop').click(function(){
                 $('html,body').animate({ scrollTop: 0 }, 500);
             })
+            
+              /* 盒子悬停 */
+              $(document).bind('scroll', function () {
+
+var scrollH = $(this).scrollTop();
+
+if ($('.content_right').length > 0) {
+
+    var rightHH = $('.content_right').outerHeight(true);
+
+    var rightH = $('.right-side-wrap').outerHeight(true);
+
+    var domH = $(document).height();
+
+    var winH = $(window).height();
+
+    var rightT = $('.content_right').offset().top;
+
+    if (scrollH - rightHH >= rightT) {
+
+        //console.log(1)
+
+        $('.right-side-wrap').addClass('fixed').css({
+            'bottom': '60px'
+        })
+
+        } else {
+
+        //console.log(3)
+
+        $('.right-side-wrap').removeClass('fixed').css({
+            'bottom': '0'
+        })
+
+        }
+    }
+});
+
         });
     </script>
 </html>

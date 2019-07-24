@@ -1,6 +1,8 @@
 .footer {
   background: #323c41;
-  color: #cbcbcb; }
+  color: #cbcbcb;
+  z-index: 10000;
+  position: relative; }
   .footer .container {
     width: 1200px;
     padding-right: 15px;
