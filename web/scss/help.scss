@@ -1,4 +1,6 @@
 .help_detail_page{
+    display: flex;
+    flex-direction: column;
 section{
     .help_item_box{
         width: 1200px;
@@ -17,8 +19,9 @@ section{
     }
 }
 .intro{
+    background: #f5f8fb;
    .intro-image{
-       width: 1200px;
+       max-width: 1200px;
        height: 550px;
    }
    .section-title{
