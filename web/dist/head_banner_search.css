@@ -1,5 +1,4 @@
 .banner-search-wrap {
-  max-width: 1920px;
   position: relative; }
   .banner-search-wrap .banner-bg {
     width: 100%;
@@ -37,7 +36,8 @@
         border: none;
         padding: 5px 10px;
         border-radius: 3px;
-        font-size: 16px; }
+        font-size: 16px;
+        color: #333; }
       .banner-search-wrap .content .search-box .btn {
         width: 80px;
         height: 34px;
@@ -45,4 +45,5 @@
         background: #E95205;
         border: none;
         font-size: 16px;
-        color: #fff; }
+        color: #fff;
+        margin-right: 4px; }

@@ -43,7 +43,7 @@
 		.search_close {
 			width: 17px;
 			cursor: pointer;
-			margin-left: 10px;
+			margin-left: 8px;
 		}
 	}
 
@@ -163,6 +163,7 @@
 
 				.menu-item-has-children {
 					display: inline-block;
+					position: relative;
 
 					&:hover {
 						.sub-menu {
@@ -175,7 +176,7 @@
 					display: none;
 					background-color: rgba(248, 248, 248, 1);
 					position: absolute;
-					left: 40px;
+					left: -37px;
 					top: 60px;
 					width: 148px;
 					height: auto;

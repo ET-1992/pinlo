@@ -38,6 +38,44 @@
 					bulletActiveClass: 'my-bullet-active',
 				},
 
+				//设置宽度为全屏
+				width: window.innerWidth,
+
+				// 断点设定
+				breakpoints: {
+					//当宽度小于等于320
+					320: {
+						width: undefined,
+						spaceBetween: 10
+					},
+					//当宽度小于等于480
+					480: {
+						width: undefined,
+						spaceBetween: 20
+					},
+					//当宽度小于等于640
+					640: {
+						width: undefined,
+						spaceBetween: 30
+					},
+					768: {
+						width: undefined,
+						spaceBetween: 40
+					},
+					1024: {
+						width: undefined,
+						spaceBetween: 50
+					}
+				},
+
+				 //窗口缩放时设置width
+				 on: {
+					resize: function(){
+						this.params.width = window.innerWidth;
+						this.update();
+					},
+				 } ,
+
 				// // 如果需要前进后退按钮
 				// navigation: {
 				//     nextEl: '.swiper-button-next',
