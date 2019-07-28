@@ -1,1 +1,2 @@
-npm run start
+npm run web
+npm run h5
