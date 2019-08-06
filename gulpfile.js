@@ -33,14 +33,27 @@ gulp.task('image-web', function () {
     .pipe(connect.reload())
 });
 
+gulp.task('font-web', function () {
+  gulp.src('./src/web/font/*')
+    .pipe(gulp.dest('./src/web/dist/font'))
+    .pipe(connect.reload())
+});
+
+gulp.task('js-web', function () {
+  gulp.src('./src/web/js/*')
+    .pipe(gulp.dest('./src/web/dist/js'))
+    .pipe(connect.reload())
+});
 
 gulp.task('watch-web', function () {
   gulp.watch(['./src/web/*.html'], ['html-web']);
   gulp.watch(['./src/web/scss/*.scss'], ['sass-web']);
   gulp.watch(['./src/web/image/*'], ['image-web']);
+  gulp.watch(['./src/web/font/*'], ['font-web']);
+  gulp.watch(['./src/web/js/*'], ['js-web']);
 });
  
-gulp.task('web', ['connect-web', 'html-web', 'sass-web', 'image-web','watch-web']);
+gulp.task('web', ['connect-web', 'html-web', 'sass-web', 'image-web', 'font-web', 'js-web', 'watch-web']);
 
 gulp.task('connect-h5', function() {
   connect.server({

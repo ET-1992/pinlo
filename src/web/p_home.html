@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>首页</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../js/simpler-sidebar.min.js"></script>
+        <link href="../normalize.css" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="p_home_wrap">
+            <!-- @@include ./m_header.html -->
+            <!-- @@include ./m_sidebar.html -->
+            <div class="home_banner">
+                <a href="#">
+                    <img src="../image/banner.png" alt="">
+                </a>
+            </div>
+            <div class="ad_box clearfix">
+                <div class="ad_item">
+                    <a href="#" class="ad_img">
+                        <img src="../image/ad.png" alt="">
+                    </a>
+                    <div class="ad_content">
+                       <a href="#" class="desc">In partnership with technology start-ups, Gucci brand applications add AR virtual shoe testing capabilities</a>
+                       <a href="#" class="title">Luxury brands</a>
+                   </div>
+                </div>
+                <div class="ad_item">
+                    <a href="#" class="ad_img">
+                        <img src="../image/ad.png" alt="">
+                    </a>
+                    <div class="ad_content">
+                       <a href="#" class="desc">In partnership with technology start-ups, Gucci brand applications add AR virtual shoe testing capabilities</a>
+                       <a href="#" class="title">THE BUSINESS OF BEAUTY</a>
+                   </div>
+                </div>
+                <div class="ad_item">
+                    <a href="#" class="ad_img">
+                        <img src="../image/ad.png" alt="">
+                    </a>
+                    <div class="ad_content">
+                       <a href="#" class="desc">StockX, the American Sports Shoe Exchange, has completed a new round of financing of $110 million</a>
+                       <a href="#" class="title">Express Financial Reporting</a>
+                   </div>
+                </div>
+                <div class="ad_item">
+                    <a href="#" class="ad_img">
+                        <img src="../image/ad.png" alt="">
+                    </a>
+                    <div class="ad_content">
+                       <a href="#" class="desc">Gorgeous ambition releases "Gorgeous Brand List - Top 500 Overseas"</a>
+                       <a href="#" class="title">Exclusive Research</a>
+                   </div>
+                </div>
+            </div>
+            <!-- @@include ./m_newsletter1.html -->
+            <!-- @@include ./m_footer.html -->
+        </div>
+    </body>
+    <script>
+        $(function() {
+            $('#sidebar-wrap').sidebar({
+                opener: '#toggle-sidebar',
+                top: '110px',
+                sidebar: {
+                    align: 'right',
+                    width: 336
+                }
+            });
+        });
+    </script>
+</html>
