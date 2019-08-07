@@ -17,9 +17,10 @@
  }
 
  html {
+    font-size:50px !important;
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
-    font-family: "PingFang SC", arial, "Microsoft YaHei", sans-serif !important;
+    font-family: "Helvetica", arial, "Microsoft YaHei", sans-serif !important;
   }
   
   /* Sections
@@ -450,7 +451,7 @@ label {
 body, button, input, select, textarea {
     font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif;
     color: #444444;
-    font-family: "PingFang SC", arial, "Microsoft YaHei", sans-serif !important;
+    font-family: "Helvetica", arial, "Microsoft YaHei", sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -529,7 +530,6 @@ input[type="text"], input[type="password"], div, ul, li, input, a {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -webkit-appearance: none;
 }
 
 /* 清除浮动 */
@@ -589,7 +589,6 @@ a:visited {
 }
 
 body {
-    min-width: 1200px;
     background-color: #f5f8fb;
 }
 
