@@ -1,5 +1,5 @@
 .newsletter1_wrap{
-    width: 67%;
+    width: 930px;
     height: 132px;
     line-height: 132px;
     background: #fff;
@@ -34,6 +34,18 @@
                 border: none;
                 font-size: 16px;
             }
+            .sectors{
+                display: inline-block;
+                width: 113px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-left: 1px solid #979797;
+                span{
+                    display: block;
+                    cursor: pointer;
+                }
+            }
         }
         .select-btn{
             float: left;
@@ -45,7 +57,8 @@
             font-weight: bold;
             color: #000000;
             text-align: center;
-            margin: 0 20px;
+            margin-left: 20px;
+            cursor: pointer;
         }
     }
 }

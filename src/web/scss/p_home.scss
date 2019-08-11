@@ -49,4 +49,22 @@
             border: none;
         }
     }
+    .main_content{
+        margin: 0 auto;
+        padding: 0 50px;
+        background: #fff;
+       
+        .main_content_left{
+            float: left;
+            width: 75%;
+        }
+        .main_content_right{
+            float: right;
+            .right_ad_img{
+                margin-top: 38px;
+                width: 313px;
+                object-fit: contain;
+            }
+        }
+    }
 }
