@@ -39,3 +39,18 @@
         color: #F8D943; }
   .p_home_wrap .ad_box .ad_item:last-child {
     border: none; }
+
+.p_home_wrap .main_content {
+  margin: 0 auto;
+  padding: 0 50px;
+  background: #fff; }
+  .p_home_wrap .main_content .main_content_left {
+    float: left;
+    width: 75%; }
+  .p_home_wrap .main_content .main_content_right {
+    float: right; }
+    .p_home_wrap .main_content .main_content_right .right_ad_img {
+      margin-top: 38px;
+      width: 313px;
+      -o-object-fit: contain;
+         object-fit: contain; }

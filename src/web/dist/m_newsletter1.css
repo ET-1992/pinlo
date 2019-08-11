@@ -1,5 +1,5 @@
 .newsletter1_wrap {
-  width: 67%;
+  width: 930px;
   height: 132px;
   line-height: 132px;
   background: #fff;
@@ -31,6 +31,16 @@
         width: 365px;
         border: none;
         font-size: 16px; }
+      .newsletter1_wrap .select-form .select-session .sectors {
+        display: inline-block;
+        width: 113px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-left: 1px solid #979797; }
+        .newsletter1_wrap .select-form .select-session .sectors span {
+          display: block;
+          cursor: pointer; }
     .newsletter1_wrap .select-form .select-btn {
       float: left;
       width: 144px;
@@ -41,4 +51,5 @@
       font-weight: bold;
       color: #000000;
       text-align: center;
-      margin: 0 20px; }
+      margin-left: 20px;
+      cursor: pointer; }
