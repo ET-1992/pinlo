@@ -10,6 +10,7 @@
         .news-item{
             height: auto;
             margin-bottom: 38px;
+            display: flex;
             .left-img{
                 float: left;
                 width: 365px;
@@ -20,7 +21,7 @@
                 position: relative;
                 height: 203px;
                 margin-left: 38px;
-                max-width: 60%;
+                flex: 1;
                 .item-top{
                     margin-bottom: 16px;
                     .text{
@@ -39,6 +40,7 @@
                     display:-webkit-box; 
                     -webkit-box-orient:vertical;
                     -webkit-line-clamp:3; 
+                    text-align: left;
                 }
                 .item-last{
                     padding-top: 10px;

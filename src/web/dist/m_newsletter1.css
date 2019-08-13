@@ -1,5 +1,5 @@
 .newsletter1_wrap {
-  width: 930px;
+  width: 1100px;
   height: 132px;
   line-height: 132px;
   background: #fff;
@@ -7,28 +7,29 @@
   background-image: url("../image/ad.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .newsletter1_wrap .title {
-    float: left;
     font-size: 40px;
     color: #fff;
-    padding: 0 20px; }
+    padding-right: 20px; }
   .newsletter1_wrap .select-form {
-    display: table-cell;
-    height: 132px;
-    vertical-align: middle; }
+    display: flex;
+    align-items: center; }
     .newsletter1_wrap .select-form .select-session {
-      float: left;
+      display: flex;
+      align-items: center;
       background: #fff;
-      height: 40px;
-      line-height: 40px; }
+      height: 40px; }
       .newsletter1_wrap .select-form .select-session .icon {
         display: inline-block;
         width: 20px;
         height: 20px; }
       .newsletter1_wrap .select-form .select-session .select-input {
         display: inline-block;
-        width: 365px;
+        width: 500px;
         border: none;
         font-size: 16px; }
       .newsletter1_wrap .select-form .select-session .sectors {

@@ -6,7 +6,8 @@
 
 .latest-news-wrap .content .news-item {
   height: auto;
-  margin-bottom: 38px; }
+  margin-bottom: 38px;
+  display: flex; }
   .latest-news-wrap .content .news-item .left-img {
     float: left;
     width: 365px;
@@ -16,7 +17,7 @@
     position: relative;
     height: 203px;
     margin-left: 38px;
-    max-width: 60%; }
+    flex: 1; }
     .latest-news-wrap .content .news-item .right-content .item-top {
       margin-bottom: 16px; }
       .latest-news-wrap .content .news-item .right-content .item-top .text {
@@ -32,7 +33,8 @@
       text-overflow: ellipsis;
       display: -webkit-box;
       -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3; }
+      -webkit-line-clamp: 3;
+      text-align: left; }
     .latest-news-wrap .content .news-item .right-content .item-last {
       padding-top: 10px; }
       .latest-news-wrap .content .news-item .right-content .item-last .item-date {

@@ -46,7 +46,7 @@
   background: #fff; }
   .p_home_wrap .main_content .main_content_left {
     float: left;
-    width: 75%; }
+    width: 70%; }
   .p_home_wrap .main_content .main_content_right {
     float: right; }
     .p_home_wrap .main_content .main_content_right .right_ad_img {
@@ -54,3 +54,13 @@
       width: 313px;
       -o-object-fit: contain;
          object-fit: contain; }
+
+.p_home_wrap .bottom_content {
+  margin: 0 auto;
+  padding: 0 50px;
+  background: #fff; }
+  .p_home_wrap .bottom_content .bottom_content_left {
+    float: left;
+    width: 70%; }
+  .p_home_wrap .bottom_content .bottom_content_right {
+    float: right; }
