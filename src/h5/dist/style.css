@@ -889,8 +889,10 @@
   font-size: 0.3rem; }
 
 .register-icon {
+  width: 0.4rem;
+  height: 0.26rem;
   position: relative;
-  left: 6.7rem;
+  left: 6.6rem;
   top: -0.56rem; }
 
 .register-checkbox {
@@ -1375,6 +1377,13 @@ content*/
   margin-bottom: 0.4rem;
   color: #9B9B9B; }
 
+.content-logo {
+  width: 3.4rem;
+  height: 0.54rem; }
+
+.tt3-img {
+  width: 3.4rem; }
+
 .content-tt3 span {
   margin-right: 0.4rem;
   margin-left: 0.4rem; }
@@ -1441,3 +1450,7 @@ content*/
   font-size: 0.26rem;
   color: #000;
   font-weight: bold; }
+
+.interview-img {
+  width: 4.2rem;
+  height: 0.2rem; }
