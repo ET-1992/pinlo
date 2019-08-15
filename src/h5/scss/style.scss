@@ -1,15 +1,15 @@
 @import './footer.scss';
 @import './newsletter.scss';
 @import './header_1.scss';
-@import './right_side.scss';
-@import './page_detail.scss';
-@import './related_articles.scss';
-@import './side_tool_bar.scss';
+
+@function vw($px) {
+  @return ($px / 750) * 100vw;
+}
 
 /*login*/
 .login-title{
-  width: 5.2rem;
-  height: 0.76rem;
+  width: vw(520);
+  height: vw(76);
   padding: 0.24rem 1.06rem;
   margin-left: 1.1rem;
   margin-top: 0.86rem;
