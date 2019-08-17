@@ -1,55 +1,59 @@
+@function  vw($px){
+  @return ($px /750)*100vw;
+}
+
 .newsletter-wrap{
   width: 100%;
-  height: 3.79rem;
+  height: vw(379);
 }
 .newsletter-tbg{
   width: 100%;
-  height: 3.79rem;
+  height: vw(379);
 }
 .newsletter-title{
   color:#fff;
-  font-size: 0.6rem;
+  font-size: vw(60);
   position: relative;
-  margin-left: 2.4rem;
-  margin-top: -3.6rem;
+  margin-left: vw(240);
+  margin-top: vw(-360);
 }
 .newsletter-input{
-  width: 5rem;
-  height: 0.75rem;
-  line-height:0.75rem;
+  width: vw(500);
+  height: vw(75);
+  line-height:vw(75);
   float:left;
-  padding-left:0.6rem;
+  padding-left:vw(60);
 }
 .newsletter-Sectors{
   float:left;
-  width: 1.35rem;
-  height: 0.75rem;
+  width: vw(135);
+  height: vw(75);
   background: #fff;
-  border-left:0px;
+  border-left:0;
 }
 .newsletter-email{
-  width: 0.16rem;
-  height: 0.16rem;
+  width: vw(16);
+  height:vw(16);
   position: relative;
-  left: -6.08rem;
-  top: 0.18rem;
+  left: vw(-608);
+  top: vw(18);
 
 }
 .newsletter-main{
   position:relative;
-  margin-left:0.58rem;
-  margin-top: 0.3rem;
+  margin-left:vw(58);
+  margin-top: vw(30);
 }
 .newsletter-button{
-  width: 6.35rem;
-  height: 0.75rem;
+  width: vw(635);
+  height: vw(75);
   background: #F8D943;
-  border-radius:2px;
-  font-size:0.3rem;
+  border-radius:vw(2);
+  font-size:vw(30);
   color:#000;
   font-weight:bold;
   position:relative;
-  margin-left:0.58rem;
-  margin-top:0.4rem;
+  margin-left:vw(58);
+  margin-top:vw(40);
   border:0;
 }

@@ -1,59 +1,63 @@
+@function  vw($px){
+  @return ($px /750)*100vw;
+}
+
 .head{
-  height:1.12rem;
+  height:vw(112);
   border-bottom:1px solid #000;
 }
 .head-logo{
-  height: 0.38rem;
-  width: 2.4rem;
+  height: vw(38);
+  width: vw(240);
   position: relative;
   left: 50%;
-  top: 0.28rem;
-  margin-left: -1.74rem;
-  margin-top: -0.195rem;
+  top: vw(28);
+  margin-left: vw(-174);
+  margin-top: vw(-19.5);
 }
 .head-search{
-  height:0.31rem;
-  width:0.31rem;
-  margin-right:0.2rem;
+  height:vw(31);
+  width:vw(31);
+  margin-right:vw(20);
 }
 .head-person{
-  height:0.31rem;
-  width:0.31rem;
-  margin-left:0.2rem;
+  height:vw(31);
+  width:vw(31);
+  margin-left:vw(20);
 }
 .head-right{
-  margin-top:0.3rem;
-  margin-right:0.2rem;
+  margin-top:vw(30);
+  margin-right:vw(20);
   float: right;
 
 }
 .head-false{
-  width: 0.38rem;
-  height: 0.31rem;
-  margin-top:0.4rem;
-  margin-left:0.21rem;
+  width: vw(38);
+  height: vw(31);
+  margin-top:vw(40);
+  margin-left:vw(21);
 }
 .head-bar{
-  width: 0.38rem;
-  height: 0.31rem;
-  margin-top:0.4rem;
-  margin-left:0.21rem;
+  width: vw(38);
+  height: vw(31);
+  margin-top:vw(40);
+  margin-left:vw(21);
 }
 .head-menu{
   background:#fff;
-  width: 4.97rem;
-  height: 12.24rem;
+  width: vw(497);
+  height: vw(1224);
   position:absolute;
   display:none;
   z-index:9999;
 }
 .head-menu ul li{
-  height: 1.58rem;
+  height: vw(158);
   border-bottom: 1px solid #D8D8D8;
-  padding-left:0.65rem;
-  font-size:0.32rem;
+  padding-left:vw(65);
+  font-size:vw(32);
   font-weight: bold;
-  line-height:1.58rem;
+  line-height:vw(158);
 }
 .head-menu ul li a{
   color:#000;
