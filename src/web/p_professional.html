@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Professional</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/sidebar.min.js"></script>
+    <link href="../normalize.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+     <!-- @@include ./m_header.html -->
+     <div class="body-content">
+            <!-- @@include ./m_sidebar.html -->
+            <!-- @@include ./m_search.html -->
+            <div class="page">
+                <div class="link">首页 > Professional</div>
+                <div class="content">
+                    
+                </div>
+            </div>
+     </div>
+    <!-- @@include ./m_footer.html -->
+</body>
+    <script>
+        $(document).ready(function(){
+            $('#sidebar-wrap').sidebar({
+                opener: '#toggle-sidebar',
+                top: '110px',
+                sidebar: {
+                    align: 'right',
+                    width: 336
+                }
+            });
+            $('#search-box').click(function(){
+               if($('.head-search-wrap').css('display') === 'none'){
+                $('.head-search-wrap').slideDown(400);
+                $('html , body').animate({scrollTop: 0},'slow');
+               }else{
+                $('.head-search-wrap').slideUp(400);
+               }
+            })
+        });
+    </script>
+</html>

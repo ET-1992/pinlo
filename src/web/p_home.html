@@ -13,82 +13,88 @@
         <div class="p_home_wrap">
 
             <!-- @@include ./m_header.html -->
+            
+            <div class="body-content">
 
-            <!-- @@include ./m_sidebar.html -->
-
-            <div class="home_banner">
-                <a href="#">
-                    <img src="../image/banner.png" alt="">
-                </a>
-            </div>
-            <div class="ad_box clearfix">
-                <div class="ad_item">
-                    <a href="#" class="ad_img">
-                        <img src="../image/ad.png" alt="">
+                <!-- @@include ./m_sidebar.html -->
+    
+                <!-- @@include ./m_search.html -->
+    
+                <div class="home_banner">
+                    <a href="#">
+                        <img src="../image/banner.png" alt="">
                     </a>
-                    <div class="ad_content">
-                       <a href="#" class="desc">In partnership with technology start-ups, Gucci brand applications add AR virtual shoe testing capabilities</a>
-                       <a href="#" class="title">Luxury brands</a>
-                   </div>
                 </div>
-                <div class="ad_item">
-                    <a href="#" class="ad_img">
-                        <img src="../image/ad.png" alt="">
-                    </a>
-                    <div class="ad_content">
-                       <a href="#" class="desc">In partnership with technology start-ups, Gucci brand applications add AR virtual shoe testing capabilities</a>
-                       <a href="#" class="title">THE BUSINESS OF BEAUTY</a>
-                   </div>
-                </div>
-                <div class="ad_item">
-                    <a href="#" class="ad_img">
-                        <img src="../image/ad.png" alt="">
-                    </a>
-                    <div class="ad_content">
-                       <a href="#" class="desc">StockX, the American Sports Shoe Exchange, has completed a new round of financing of $110 million</a>
-                       <a href="#" class="title">Express Financial Reporting</a>
-                   </div>
-                </div>
-                <div class="ad_item">
-                    <a href="#" class="ad_img">
-                        <img src="../image/ad.png" alt="">
-                    </a>
-                    <div class="ad_content">
-                       <a href="#" class="desc">Gorgeous ambition releases "Gorgeous Brand List - Top 500 Overseas"</a>
-                       <a href="#" class="title">Exclusive Research</a>
-                   </div>
-                </div>
-            </div>
-
-            <!-- @@include ./m_newsletter1.html -->
-
-            <div class="main_content clearfix">
-                <div class="main_content_left">
-                    <!-- @@include ./m_latest_news.html -->
+                <div class="ad_box clearfix">
+                    <div class="ad_item">
+                        <a href="#" class="ad_img">
+                            <img src="../image/ad.png" alt="">
+                        </a>
+                        <div class="ad_content">
+                           <a href="#" class="desc">In partnership with technology start-ups, Gucci brand applications add AR virtual shoe testing capabilities</a>
+                           <a href="#" class="title">Luxury brands</a>
+                       </div>
+                    </div>
+                    <div class="ad_item">
+                        <a href="#" class="ad_img">
+                            <img src="../image/ad.png" alt="">
+                        </a>
+                        <div class="ad_content">
+                           <a href="#" class="desc">In partnership with technology start-ups, Gucci brand applications add AR virtual shoe testing capabilities</a>
+                           <a href="#" class="title">THE BUSINESS OF BEAUTY</a>
+                       </div>
+                    </div>
+                    <div class="ad_item">
+                        <a href="#" class="ad_img">
+                            <img src="../image/ad.png" alt="">
+                        </a>
+                        <div class="ad_content">
+                           <a href="#" class="desc">StockX, the American Sports Shoe Exchange, has completed a new round of financing of $110 million</a>
+                           <a href="#" class="title">Express Financial Reporting</a>
+                       </div>
+                    </div>
+                    <div class="ad_item">
+                        <a href="#" class="ad_img">
+                            <img src="../image/ad.png" alt="">
+                        </a>
+                        <div class="ad_content">
+                           <a href="#" class="desc">Gorgeous ambition releases "Gorgeous Brand List - Top 500 Overseas"</a>
+                           <a href="#" class="title">Exclusive Research</a>
+                       </div>
+                    </div>
                 </div>
     
-                <div class="main_content_right">
-                    <!-- @@include ./m_daily_brief.html -->
-                    <img src="../image/ad.png" alt="" class="right_ad_img">
+                <!-- @@include ./m_newsletter1.html -->
+    
+                <div class="main_content clearfix">
+                    <div class="main_content_left">
+                        <!-- @@include ./m_latest_news.html -->
+                    </div>
+        
+                    <div class="main_content_right">
+                        <!-- @@include ./m_daily_brief.html -->
+                        <img src="../image/ad.png" alt="" class="right_ad_img">
+                    </div>
                 </div>
-            </div>
+    
+                <div class="bottom_content clearfix">
+                    <div class="bottom_content_left">
+                        <!-- @@include ./m_video.html -->
+                    </div>
+                    <div class="bottom_content_right">
+                        <!-- @@include ./m_indepth.html -->
+                    </div>
+                </div>
+    
+                <!-- @@include ./m_testimonials.html -->
 
-            <div class="bottom_content clearfix">
-                <div class="bottom_content_left">
-                    <!-- @@include ./m_video.html -->
-                </div>
-                <div class="bottom_content_right">
-                    <!-- @@include ./m_indepth.html -->
-                </div>
             </div>
-
-            <!-- @@include ./m_testimonials.html -->
 
             <!-- @@include ./m_footer.html -->
         </div>
     </body>
     <script>
-        $(function() {
+        $(document).ready(function(){
             $('#sidebar-wrap').sidebar({
                 opener: '#toggle-sidebar',
                 top: '110px',
@@ -97,6 +103,14 @@
                     width: 336
                 }
             });
+            $('#search-box').click(function(){
+               if($('.head-search-wrap').css('display') === 'none'){
+                $('.head-search-wrap').slideDown(400);
+                $('html , body').animate({scrollTop: 0},'slow');
+               }else{
+                $('.head-search-wrap').slideUp(400);
+               }
+            })
         });
     </script>
 </html>
