@@ -538,6 +538,13 @@
                     width: 336
                 }
             });
+            $(document).click(function() {
+                if( $('#sidebar-wrap').attr('data-sidebar') === 'active'){
+                    $('#toggle-sidebar').attr('src', '../image/close.png')
+                }else{
+                    $('#toggle-sidebar').attr('src', '../image/more.png')
+                }
+            });
             $('#search-box').click(function(){
                if($('.head-search-wrap').css('display') === 'none'){
                 $('.head-search-wrap').slideDown(400);
