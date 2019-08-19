@@ -1,13 +1,22 @@
-.body-content{
-    margin-top: 112px;
-
-    .page{
-
-        .link{
-
-        }
-        .content{
-            
+.professional-wrap{
+    
+    .body-content{
+        margin-top: 112px;
+        .page{
+            padding: 17px 50px 0;
+            .link{
+                color: #9B9B9B;
+                font-size: 12px;
+            }
+            .content{
+                .page_title{
+                    text-align: center;
+                    color: #1D1E20;
+                    font-weight: bold;
+                    font-size: 34px;
+                    padding: 25px 0 35px;
+                }
+            }
         }
     }
 }

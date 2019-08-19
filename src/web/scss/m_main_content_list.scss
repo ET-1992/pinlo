@@ -1,0 +1,57 @@
+.main_content_list{
+    width: 100%;
+    .item_list{
+        $width: 30%;
+        float: left;
+        width: $width;
+        margin-bottom: 65px;
+        .item_box{
+            .item_image{
+                $height: $width*(5/3);
+                display: block;
+                width: 100%;
+                height: $height;
+            }
+            .item_tag{
+
+            }
+            .item_title{
+                color: #1D1E20;
+                font-weight: bold;
+                font-size: 27px;
+            }
+            .item_desc{
+                color: #9B9B9B;
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .item_bottom{
+                
+                .item_left_part{
+                    float: left;
+                    .item_date{
+                        display: inline-block;
+                    }
+                    .item_btn{
+                        display: inline-block;
+                        .btn{
+                            display: inline-block;
+                            .icon{
+
+                            }
+                            .text{
+
+                            }
+                        }
+                    }
+                }
+                .item_view_more{
+                    float: right;
+                }
+            }
+        }
+    }
+    .item_list:nth-child(3n-1){
+        margin: 0 5%;
+    }
+}

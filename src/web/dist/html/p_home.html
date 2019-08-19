@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>首页</title>
+        <title>Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
@@ -23,28 +23,28 @@
         </div>
     </div>
     <div class="navbar-wrap">
-        <a href="#" class="logo">
+        <a href="./p_home.html" class="logo">
             <img src="../image/logo.png" alt="" />
         </a>
         <div class="right-part">
             <ul>
                 <li>
-                    <a href="#">PROFESSIONAL</a>
+                    <a href="./p_professional.html">PROFESSIONAL</a>
                 </li>
                 <li>
-                    <a href="#">INTERVIEW</a>
+                    <a href="./p_interview.html">INTERVIEW</a>
                 </li>
                 <li>
-                    <a href="#">RESEARCH</a>
+                    <a href="./p_research.html">RESEARCH</a>
                 </li>
                 <li>
-                    <a href="#">EVENT</a>
+                    <a href="./p_event.html">EVENT</a>
                 </li>
                 <li>
-                    <a href="#">CONTACT</a>
+                    <a href="./p_contact..html">CONTACT</a>
                 </li>
                 <li>
-                    <a href="#">ABOUT</a>
+                    <a href="./p_about.html">ABOUT</a>
                 </li>
             </ul>
             <div class="right_part_btn">
@@ -62,22 +62,22 @@
 <div class="sidebar-wrap" id="sidebar-wrap">
     <ul class="sidebar-nav">
         <li>
-            <a href="#">PROFESSIONAL</a>
+            <a href="./p_professional.html">PROFESSIONAL</a>
         </li>
         <li>
-            <a href="#">INTERVIEW</a>
+            <a href="./p_interview.html">INTERVIEW</a>
         </li>
         <li>
-            <a href="#">RESEARCH</a>
+            <a href="./p_research.html">RESEARCH</a>
         </li>
         <li>
-            <a href="#">EVENT</a>
+            <a href="./p_event.html">EVENT</a>
         </li>
         <li>
-            <a href="#">CONTACT</a>
+            <a href="./p_contact..html">CONTACT</a>
         </li>
         <li>
-            <a href="#">ABOUT</a>
+            <a href="./p_about.html">ABOUT</a>
         </li>
     </ul>
 </div>
@@ -147,8 +147,8 @@
                        </div>
                     </div>
                 </div>
-    
-<!-- start m_newsletter1.html-->
+                <div class="home_newsletter">
+<!-- start m_newsletter.html-->
 <div class="newsletter1_wrap">
     <h2 class="title">Newsletter</h2>
     <form class="select-form">
@@ -168,8 +168,8 @@
         <div class="select-btn">Newsletter</div>
     </form>
 </div>
-<!-- end m_newsletter1.html-->
-    
+<!-- end m_newsletter.html-->
+                </div>
                 <div class="main_content clearfix">
                     <div class="main_content_left">
 <!-- start m_latest_news.html-->
@@ -447,42 +447,42 @@
 <div class="footer-wrap">
     <ul class="footer-nav">
         <li>
-            <a href="#">PROFESSIONAL</a>
+            <a href="./p_professional.html">PROFESSIONAL</a>
         </li>
         <li>
-            <a href="#">INTERVIEW</a>
+            <a href="./p_interview.html">INTERVIEW</a>
         </li>
         <li>
-            <a href="#">RESEARCH</a>
+            <a href="./p_research.html">RESEARCH</a>
         </li>
         <li>
-            <a href="#">EVENT</a>
+            <a href="./p_event.html">EVENT</a>
         </li>
         <li>
-            <a href="#">CONTACT</a>
+            <a href="./p_contact..html">CONTACT</a>
         </li>
         <li>
-            <a href="#">ABOUT</a>
+            <a href="./p_about.html">ABOUT</a>
         </li>
     </ul>
     <ul class="third-box">
         <li>
-            <a href="">
+            <a href="#">
                 <img src="../image/facebook.png" alt="">
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="#">
                 <img src="../image/twitter.png" alt="">
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="#">
                 <img src="../image/linkedin.png" alt="">
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="#">
                 <img src="../image/google.png" alt="">
             </a>
         </li>
@@ -500,6 +500,13 @@
                 sidebar: {
                     align: 'right',
                     width: 336
+                }
+            });
+            $('#toggle-sidebar').click(function() {
+                if( $('#sidebar-wrap').attr('data-sidebar') === 'active'){
+                    $('#toggle-sidebar').attr('src', '../image/close.png')
+                }else{
+                    $('#toggle-sidebar').attr('src', '../image/more.png')
                 }
             });
             $('#search-box').click(function(){

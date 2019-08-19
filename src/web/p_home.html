@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>首页</title>
+        <title>Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
@@ -63,9 +63,9 @@
                        </div>
                     </div>
                 </div>
-    
-                <!-- @@include ./m_newsletter1.html -->
-    
+                <div class="home_newsletter">
+                    <!-- @@include ./m_newsletter.html -->
+                </div>
                 <div class="main_content clearfix">
                     <div class="main_content_left">
                         <!-- @@include ./m_latest_news.html -->
@@ -101,6 +101,13 @@
                 sidebar: {
                     align: 'right',
                     width: 336
+                }
+            });
+            $('#toggle-sidebar').click(function() {
+                if( $('#sidebar-wrap').attr('data-sidebar') === 'active'){
+                    $('#toggle-sidebar').attr('src', '../image/close.png')
+                }else{
+                    $('#toggle-sidebar').attr('src', '../image/more.png')
                 }
             });
             $('#search-box').click(function(){

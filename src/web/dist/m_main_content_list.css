@@ -1,0 +1,30 @@
+.main_content_list {
+  width: 100%; }
+  .main_content_list .item_list {
+    float: left;
+    width: 30%;
+    margin-bottom: 65px; }
+    .main_content_list .item_list .item_box .item_image {
+      display: block;
+      width: 100%;
+      height: 50%; }
+    .main_content_list .item_list .item_box .item_title {
+      color: #1D1E20;
+      font-weight: bold;
+      font-size: 27px; }
+    .main_content_list .item_list .item_box .item_desc {
+      color: #9B9B9B;
+      font-weight: bold;
+      font-size: 14px; }
+    .main_content_list .item_list .item_box .item_bottom .item_left_part {
+      float: left; }
+      .main_content_list .item_list .item_box .item_bottom .item_left_part .item_date {
+        display: inline-block; }
+      .main_content_list .item_list .item_box .item_bottom .item_left_part .item_btn {
+        display: inline-block; }
+        .main_content_list .item_list .item_box .item_bottom .item_left_part .item_btn .btn {
+          display: inline-block; }
+    .main_content_list .item_list .item_box .item_bottom .item_view_more {
+      float: right; }
+  .main_content_list .item_list:nth-child(3n-1) {
+    margin: 0 5%; }

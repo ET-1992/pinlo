@@ -61,3 +61,6 @@
       width: 70%; }
     .p_home_wrap .body-content .bottom_content .bottom_content_right {
       float: right; }
+  .p_home_wrap .body-content .home_newsletter {
+    width: 1100px;
+    margin: 50px auto; }
