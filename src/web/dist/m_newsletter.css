@@ -1,47 +1,49 @@
-.newsletter1_wrap {
-  width: 930px;
+.newsletter_wrap {
+  width: 100%;
   height: 132px;
   line-height: 132px;
   background: #fff;
-  margin: 50px auto;
   background-image: url("../image/ad.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
-  .newsletter1_wrap .title {
-    float: left;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .newsletter_wrap .title {
     font-size: 40px;
     color: #fff;
-    padding: 0 20px; }
-  .newsletter1_wrap .select-form {
-    display: table-cell;
-    height: 132px;
-    vertical-align: middle; }
-    .newsletter1_wrap .select-form .select-session {
-      float: left;
+    padding-right: 20px; }
+  .newsletter_wrap .select-form {
+    display: flex;
+    align-items: center; }
+    .newsletter_wrap .select-form .select-session {
+      display: flex;
+      align-items: center;
       background: #fff;
-      height: 40px;
-      line-height: 40px; }
-      .newsletter1_wrap .select-form .select-session .icon {
+      height: 40px; }
+      .newsletter_wrap .select-form .select-session .icon {
         display: inline-block;
         width: 20px;
         height: 20px; }
-      .newsletter1_wrap .select-form .select-session .select-input {
+      .newsletter_wrap .select-form .select-session .select-input {
         display: inline-block;
-        width: 365px;
+        width: 500px;
         border: none;
         font-size: 16px; }
-      .newsletter1_wrap .select-form .select-session .sectors {
+      .newsletter_wrap .select-form .select-session .select-input[disabled] {
+        background-color: #fff; }
+      .newsletter_wrap .select-form .select-session .sectors {
         display: inline-block;
         width: 113px;
         height: 40px;
         line-height: 40px;
         text-align: center;
         border-left: 1px solid #979797; }
-        .newsletter1_wrap .select-form .select-session .sectors span {
+        .newsletter_wrap .select-form .select-session .sectors span {
           display: block;
           cursor: pointer; }
-    .newsletter1_wrap .select-form .select-btn {
+    .newsletter_wrap .select-form .select-btn {
       float: left;
       width: 144px;
       height: 40px;

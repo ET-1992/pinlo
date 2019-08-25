@@ -403,8 +403,7 @@ img, input, select, textarea, button {
 input[type="text"], input[type="password"], div, ul, li, input, a {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-appearance: none; }
+  -moz-box-sizing: border-box; }
 
 /* 清除浮动 */
 .clearfix:after {
