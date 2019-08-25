@@ -12,9 +12,19 @@ html, body {
   left: 50%;
   margin-top: -232px;
   margin-left: -240px;
-  padding: 62px 37px; }
+  padding: 62px 37px;
+  position: relative; }
+  .sign-in-wrap .closeModal {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
+    cursor: pointer; }
   .sign-in-wrap .tab {
-    width: 280px;
+    width: 281px;
     height: 48px;
     border: 2px solid #F8D943;
     border-radius: 2px;

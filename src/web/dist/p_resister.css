@@ -1,0 +1,79 @@
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.resister-wrap {
+  width: 480px;
+  height: 630px;
+  background: #FFFFFF;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -315px;
+  margin-left: -240px;
+  padding: 62px 37px;
+  position: relative; }
+  .resister-wrap .closeModal {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
+    cursor: pointer; }
+  .resister-wrap .tab {
+    width: 281px;
+    height: 48px;
+    border: 2px solid #F8D943;
+    border-radius: 2px;
+    margin: 0 auto; }
+    .resister-wrap .tab .item-tab {
+      display: inline-block;
+      width: 136px;
+      text-align: center;
+      line-height: 44px;
+      font-size: 18px;
+      color: #000000;
+      font-weight: bold;
+      cursor: pointer; }
+    .resister-wrap .tab .active-tab {
+      background: #F8D943; }
+  .resister-wrap .form-wrap .input {
+    width: 407px;
+    height: 50px;
+    display: block;
+    border: 1px solid #9B9B9B;
+    margin: 28px auto;
+    padding: 0 20px; }
+  .resister-wrap .options {
+    margin-bottom: 29px; }
+    .resister-wrap .options .remember {
+      float: left;
+      line-height: 1.5; }
+      .resister-wrap .options .remember .checkBox {
+        width: 17px;
+        height: 17px;
+        border: 1px solid #9B9B9B;
+        margin-right: 8px; }
+      .resister-wrap .options .remember span {
+        font-size: 14px;
+        color: #666666; }
+    .resister-wrap .options .fogot {
+      float: right;
+      font-size: 14px;
+      font-weight: bold;
+      color: #F8D943; }
+  .resister-wrap .submit_btn {
+    width: 407px;
+    height: 50px;
+    line-height: 44px;
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    background: #F8D943;
+    text-align: center;
+    line-height: 50px;
+    border: none;
+    cursor: pointer; }

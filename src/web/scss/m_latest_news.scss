@@ -25,13 +25,23 @@
                 .item-top{
                     margin-bottom: 16px;
                     .text{
-                        font-size: 10px;
-                        font-style: italic;
-                        font-weight: bold;
-                        color: #000000;
+                        background: #F8D943;
+                        height: 10px;
+                        width: 100px;
+                        position: relative;
+                        span{
+                            position: absolute;
+                            font-size: 10px;
+                            font-style: italic;
+                            font-weight: bold;
+                            color: #000000;
+                            width: 100%;
+                            text-align: center;
+                            top: -6px;
+                        }
                     }
                 }
-                .item-middle{
+                .item-content{
                     color: #1D1E20;
                     font-size: 27px;
                     font-weight: bold;

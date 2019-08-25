@@ -8,6 +8,7 @@
         <script src="../js/sidebar.min.js"></script>
         <link href="../normalize.css" rel="stylesheet">
         <link href="../style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
     </head>
     <body>
         <div class="p_home_wrap">
@@ -91,8 +92,10 @@
             </div>
 
             <!-- @@include ./m_footer.html -->
+            <!-- @@include ./m_newsletter_popup.html -->
         </div>
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
     <script>
         $(document).ready(function(){
             $('#sidebar-wrap').sidebar({
@@ -103,7 +106,14 @@
                     width: 336
                 }
             });
-            $(document).click(function() {
+            $('#toggle-sidebar').click(function() {
+                if( $('#sidebar-wrap').attr('data-sidebar') === 'active'){
+                    $('#toggle-sidebar').attr('src', '../image/close.png')
+                }else{
+                    $('#toggle-sidebar').attr('src', '../image/more.png')
+                }
+            });
+            $('[data-sidebar="mask"]').click(function() {
                 if( $('#sidebar-wrap').attr('data-sidebar') === 'active'){
                     $('#toggle-sidebar').attr('src', '../image/close.png')
                 }else{
@@ -117,7 +127,42 @@
                }else{
                 $('.head-search-wrap').slideUp(400);
                }
+            });
+
+            $('.newsletter').click(function () {
+                $('.m_newsletter_popup_wrap .mask').show();
+                $('.m_newsletter_popup_wrap .popup_box').show(400);
             })
+            $('.m_newsletter_popup_wrap .mask').click(function () {
+                $('.m_newsletter_popup_wrap .mask').hide();
+                $('.m_newsletter_popup_wrap .popup_box').hide(400);
+            });
+
+            var mySwiper = new Swiper('.swiper-container', {
+				direction: 'horizontal', // 水平切换选项
+				loop: true, // 循环模式选项
+				autoplay: true, // 自动切换
+
+				// 如果需要分页器
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+					clickableClass: 'my-pagination-clickable',
+					bulletClass: 'my-bullet',
+					bulletActiveClass: 'my-bullet-active',
+				},
+
+				// 如果需要前进后退按钮
+				navigation: {
+				    nextEl: '.swiper-button-next',
+				    prevEl: '.swiper-button-prev',
+				},
+
+				// 如果需要滚动条
+				scrollbar: {
+				    el: '.swiper-scrollbar',
+				},
+			})
         });
     </script>
 </html>

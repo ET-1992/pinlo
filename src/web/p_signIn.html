@@ -10,37 +10,26 @@
     </head>
     <body style="display: none">
         <div class="sign-in-wrap">
+            <img class="closeModal" src="../image/closeModal.png" />
             <div class="tab">
-                <div class="item-tab active-tab">Sign In</div>
-                <div class="item-tab">Register</div>
+                <a href="./p_signIn.html" class="item-tab active-tab">Sign In</a>
+                <a href="./p_resister.html" class="item-tab">Register</a>
             </div>
-            <form class="form-wrap" method="post" action="" id="form" onsubmit="return validate_form(this)">
-                <input class="input" name="email" type="text" placeholder="YOUE EMAIL" />
-                <input class="input" name="password" type="password" placeholder="PASSWORD" />
+            <form class="form-wrap" method="post" action="" id="form">
+                <input class="input" name="email" type="text" placeholder="YOUE EMAIL" required/>
+                <input class="input" name="password" type="password" placeholder="PASSWORD" required/>
                 <div class="options clearfix">
                     <div class="remember">
-                        <input class="checkBox" type="checkbox" checked="checked" name="remember" />
+                        <input class="checkBox" type="checkbox" checked name="remember" />
                         <span>Remember me</span>
                     </div>
-                    <a href="#" class="fogot">Fogot your password? </a>
+                    <a href="./p_fogot_password.html" class="fogot">Fogot your password? </a>
                 </div>
-                <input class="submit_btn" type="submit" name="submit" value="Sign In">
+                <button class="submit_btn" type="submit" name="submit">Sign In</button>
             </form>
         </div>
     </body>
     <script>
-        function validate_form(thisform) { 
-            if (form.email.value == ""){
-                alert("请输入用户名！");
-                form.email.focus();
-                return false;
-            }
-            if (form.password.value == ""){
-                alert("请输入密码！");
-                form.password.focus();
-                return false;
-            }
-        }
         $(document).ready(function(){
             $('body').slideDown(400);
         });
