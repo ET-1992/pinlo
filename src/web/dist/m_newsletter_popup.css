@@ -1,3 +1,27 @@
+@-webkit-keyframes sideDown {
+  from {
+    top: -100%; }
+  to {
+    top: 50%; } }
+
+@keyframes sideDown {
+  from {
+    top: -100%; }
+  to {
+    top: 50%; } }
+
+@-webkit-keyframes sideUp {
+  from {
+    top: 50%; }
+  to {
+    top: -100%; } }
+
+@keyframes sideUp {
+  from {
+    top: 50%; }
+  to {
+    top: -100%; } }
+
 .m_newsletter_popup_wrap .mask {
   display: none;
   position: fixed;
@@ -7,14 +31,13 @@
   left: 0px;
   z-index: 10001;
   background-color: black;
-  opacity: 0.5; }
+  opacity: 0.7; }
 
 .m_newsletter_popup_wrap .popup_box {
-  display: none;
   width: 1028px;
   height: 550px;
   position: fixed;
-  top: 50%;
+  top: -100%;
   left: 50%;
   margin-top: -275px;
   margin-left: -514px;

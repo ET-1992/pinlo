@@ -41,8 +41,13 @@
         text-align: center;
         border-left: 1px solid #979797; }
         .newsletter_wrap .select-form .select-session .sectors span {
-          display: block;
+          display: inline-block;
           cursor: pointer; }
+        .newsletter_wrap .select-form .select-session .sectors img.icon {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          margin-left: 10px; }
     .newsletter_wrap .select-form .select-btn {
       float: left;
       width: 144px;

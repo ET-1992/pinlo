@@ -254,6 +254,7 @@
             <input class="select-input" placeholder="Email address" disabled type="text"/>
             <div class="sectors">
                 <span class="text">Sectors</span>
+                <img class="icon" src="../image/down.png" alt="">
             </div>
         </div>
         <div class="select-btn newsletter">Newsletter</div>
@@ -342,13 +343,13 @@
                }
             });
             $('.newsletter').click(function () {
-                $('.m_newsletter_popup_wrap .mask').show();
-                $('.m_newsletter_popup_wrap .popup_box').show(400);
+                $('.m_newsletter_popup_wrap .mask').fadeIn();
+                $('.m_newsletter_popup_wrap .popup_box').css({'animation': 'sideDown .5s linear', 'top' : '50%'})
             })
             $('.m_newsletter_popup_wrap .mask').click(function () {
-                $('.m_newsletter_popup_wrap .mask').hide();
-                $('.m_newsletter_popup_wrap .popup_box').hide(400);
-            })
+                $('.m_newsletter_popup_wrap .mask').fadeOut();
+                $('.m_newsletter_popup_wrap .popup_box').css({'animation': 'sideUp .5s linear', 'top' : '-100%'})
+            });
         });
     </script>
 </html>
