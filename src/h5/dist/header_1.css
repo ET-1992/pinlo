@@ -1,58 +1,58 @@
 .head {
-  height: 1.12rem;
+  height: 14.93333vw;
   border-bottom: 1px solid #000; }
 
 .head-logo {
-  height: 0.38rem;
-  width: 2.4rem;
+  height: 5.06667vw;
+  width: 32vw;
   position: relative;
   left: 50%;
-  top: 0.28rem;
-  margin-left: -1.74rem;
-  margin-top: -0.195rem; }
+  top: 3.73333vw;
+  margin-left: -23.2vw;
+  margin-top: -2.6vw; }
 
 .head-search {
-  height: 0.31rem;
-  width: 0.31rem;
-  margin-right: 0.2rem; }
+  height: 4.13333vw;
+  width: 4.13333vw;
+  margin-right: 2.66667vw; }
 
 .head-person {
-  height: 0.31rem;
-  width: 0.31rem;
-  margin-left: 0.2rem; }
+  height: 4.13333vw;
+  width: 4.13333vw;
+  margin-left: 2.66667vw; }
 
 .head-right {
-  margin-top: 0.3rem;
-  margin-right: 0.2rem;
+  margin-top: 4vw;
+  margin-right: 2.66667vw;
   float: right; }
 
 .head-false {
-  width: 0.38rem;
-  height: 0.31rem;
-  margin-top: 0.4rem;
-  margin-left: 0.21rem; }
+  width: 5.06667vw;
+  height: 4.13333vw;
+  margin-top: 5.33333vw;
+  margin-left: 2.8vw; }
 
 .head-bar {
-  width: 0.38rem;
-  height: 0.31rem;
-  margin-top: 0.4rem;
-  margin-left: 0.21rem; }
+  width: 5.06667vw;
+  height: 4.13333vw;
+  margin-top: 5.33333vw;
+  margin-left: 2.8vw; }
 
 .head-menu {
   background: #fff;
-  width: 4.97rem;
-  height: 12.24rem;
+  width: 66.26667vw;
+  height: 163.2vw;
   position: absolute;
   display: none;
   z-index: 9999; }
 
 .head-menu ul li {
-  height: 1.58rem;
+  height: 21.06667vw;
   border-bottom: 1px solid #D8D8D8;
-  padding-left: 0.65rem;
-  font-size: 0.32rem;
+  padding-left: 8.66667vw;
+  font-size: 4.26667vw;
   font-weight: bold;
-  line-height: 1.58rem; }
+  line-height: 21.06667vw; }
 
 .head-menu ul li a {
   color: #000; }
