@@ -1160,7 +1160,8 @@
 
 .main-text2 {
   margin-left: 2.66667vw;
-  margin-right: 2.66667vw; }
+  margin-right: 2.66667vw;
+  margin-top: 10.66667vw; }
 
 .text2-tt1 {
   color: #202124;
@@ -1188,6 +1189,9 @@
   font-weight: bold;
   margin-top: 1.33333vw; }
 
+.text2-tt2 a {
+  color: #1D1E20; }
+
 .text2-tt3 {
   margin-top: 1.33333vw;
   margin-bottom: 5.33333vw;
@@ -1209,7 +1213,11 @@
 
 .main-text3 {
   margin-left: 2.66667vw;
-  margin-right: 2.66667vw; }
+  margin-right: 2.66667vw;
+  margin-top: 10.66667vw; }
+
+.main-text4 {
+  margin-top: 10.66667vw; }
 
 .text3-line {
   width: 94.66667vw;
@@ -1276,15 +1284,15 @@
   width: 5.73333vw;
   height: 5.73333vw;
   position: relative;
-  top: -21.33333vw;
-  left: -44vw; }
+  top: -40vw;
+  left: -2.66667vw; }
 
 .text5-right {
   width: 5.73333vw;
   height: 5.73333vw;
   position: relative;
-  top: -21.33333vw;
-  left: 44vw; }
+  top: -40vw;
+  left: 84.8vw; }
 
 /*research*/
 .research-title {
@@ -1451,6 +1459,116 @@ content*/
   font-weight: bold; }
 
 .interview-img {
-  width: 56vw;
-  height: 3.2vw;
-  margin-bottom: 1.2vw; }
+  width: 10.66667vw;
+  height: 2.66667vw;
+  margin-bottom: 1.2vw;
+  margin-left: 2.66667vw; }
+
+.interview-img2 {
+  width: 16vw;
+  height: 2.66667vw;
+  margin-bottom: 1.2vw;
+  margin-left: 2.66667vw; }
+
+/*personaldata*/
+.collection-title {
+  width: 100%;
+  height: 10.13333vw; }
+
+.collection-title1 {
+  float: left;
+  width: 50%;
+  height: 10.13333vw;
+  line-height: 9.6vw;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4vw;
+  color: #000; }
+
+.collection-title2 {
+  float: left;
+  width: 50%;
+  height: 10.13333vw;
+  line-height: 10.13333vw;
+  text-align: center;
+  background: #F8D943;
+  font-weight: bold;
+  font-size: 4vw;
+  color: #000; }
+
+.collection-data {
+  margin-top: 9.86667vw;
+  text-align: center;
+  font-size: 4vw;
+  font-weight: bold; }
+
+.collection-input1 {
+  width: 94.66667vw;
+  height: 10.13333vw;
+  border: 1px solid #9B9B9B;
+  margin-left: 2.66667vw;
+  margin-top: 11.46667vw;
+  background: #F1F1F1;
+  padding-left: 4.66667vw; }
+
+.collection-input2 {
+  width: 94.66667vw;
+  height: 10.13333vw;
+  border: 1px solid #9B9B9B;
+  margin-left: 2.66667vw;
+  margin-top: 7.46667vw;
+  background: #F1F1F1;
+  padding-left: 4.66667vw; }
+
+.collection-button {
+  width: 94.66667vw;
+  height: 10.13333vw;
+  margin-left: 2.66667vw;
+  margin-top: 8vw;
+  margin-bottom: 13.33333vw;
+  background: #F8D943;
+  border-radius: 2px;
+  font-size: 4vw;
+  color: #000;
+  font-weight: bold; }
+
+/*mycollertion*/
+.collection-div {
+  width: 94.93333vw;
+  height: 27.33333vw;
+  background: #fff;
+  margin: 10vw 2.66667vw; }
+
+.left-coll {
+  width: 31.86667vw;
+  height: 21.2vw;
+  float: left;
+  margin-left: 2.93333vw;
+  margin-top: 3.2vw;
+  background: #D8D8D8; }
+
+.right-coll {
+  width: 51.2vw;
+  height: 12.8vw;
+  float: right;
+  margin-right: 4.13333vw; }
+
+.coll-text1 {
+  font-size: 4vw;
+  color: #1D1E20;
+  font-weight: bold;
+  margin-top: 2.66667vw; }
+
+.coll-text2 {
+  margin-top: 5.33333vw; }
+
+.coll-tip1 {
+  float: left;
+  font-weight: bold; }
+
+.coll-tip2 {
+  float: right;
+  background: #D8D8D8;
+  color: #fff;
+  padding: 0.26667vw 0.8vw;
+  border-radius: 0.8vw; }
