@@ -1,52 +1,89 @@
 .p_home_wrap{
-
-    .home_banner{
-        margin-top: 160px;
-        img{
+    .body-content{
+        margin-top: 112px;
+        .home_banner{
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        .ad_box{
+            margin-top: 20px;
             width: 100%;
-            object-fit: contain;
-        }
-    }
-    .ad_box{
-        margin-top: 20px;
-        width: 100%;
-        border-bottom: 1px solid rgba(151, 151, 151, 0.3);
-        .ad_item{
-            float: left;
-            width: 25%;
-            padding: 10px 0;
-            border-right: 1px solid rgba(151, 151, 151, 0.3);
-            .ad_img{
+            border-bottom: 1px solid rgba(151, 151, 151, 0.3);
+            .ad_item{
                 float: left;
-                background: #ccc;
-                margin-left: 19px;
-                img{
-                    width: 80px;
+                width: 25%;
+                padding: 10px 0;
+                border-right: 1px solid rgba(151, 151, 151, 0.3);
+                .ad_img{
+                    float: left;
+                    background: #ccc;
+                    margin-left: 19px;
+                    img{
+                        width: 80px;
+                        height: 80px;
+                        object-fit: cover;
+                    }
+                }
+                .ad_content{
+                    display: table-cell;
+                    vertical-align: bottom;
                     height: 80px;
-                    object-fit: cover;
+                    padding-left: 16px;
+                    a{
+                        display: block;
+                    }
+                    .desc{
+                        max-width: 90%;
+                        font-size: 12px;
+                        color: #000000;
+                    }
+                    .title{
+                        font-size: 14px;
+                        color: #F8D943;
+                    }
                 }
             }
-            .ad_content{
-                display: table-cell;
-                vertical-align: bottom;
-                height: 80px;
-                padding-left: 16px;
-                a{
-                    display: block;
-                }
-                .desc{
-                    max-width: 90%;
-                    font-size: 12px;
-                    color: #000000;
-                }
-                .title{
-                    font-size: 14px;
-                    color: #F8D943;
+            .ad_item:last-child{
+                border: none;
+            }
+        }
+        .main_content{
+            margin: 0 auto;
+            padding: 0 50px;
+            background: #fff;
+           
+            .main_content_left{
+                float: left;
+                width: 70%;
+            }
+            .main_content_right{
+                float: right;
+                .right_ad_img{
+                    margin-top: 38px;
+                    width: 313px;
+                    object-fit: contain;
                 }
             }
         }
-        .ad_item:last-child{
-            border: none;
+        .bottom_content{
+            margin: 0 auto;
+            padding: 0 50px;
+            background: #fff;
+           
+            .bottom_content_left{
+                float: left;
+                width: 70%;
+            }
+            .bottom_content_right{
+                float: right;
+                
+            }
+        }
+        .home_newsletter{
+            width: 1100px;
+            margin: 50px auto;
         }
     }
 }

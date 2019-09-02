@@ -1,0 +1,54 @@
+.about-wrap{
+
+    .body-content{
+        margin-top: 112px;
+        .page{
+            padding: 17px 50px 0;
+            .link{
+                color: #9B9B9B;
+                font-size: 16px;
+            }
+            .content{
+                margin: 49px auto 118px;
+                .left_nav__sidebar{
+                    width: 20%;
+                    float: left;
+                    li{
+                        height: 100px;
+                        line-height: 100px;
+                        text-align: center;
+                        background: #ffffff;
+                        a{
+                            display: block;
+                            font-weight: bold;
+                            font-size: 15px;
+                            color: #2B2B2B;
+                        }
+                    }
+                    .active,
+                    li:hover{
+                        background: #F6F6F6;
+                    }
+                }
+                .right_main_content{
+                    float: right;
+                    width: 75%;
+                    h2{
+                        color: #2B2B2B;
+                        font-size: 34px;
+                        font-weight: bold;
+                        line-height: 1;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid #979797;
+                    }
+                    p{
+                        color: #000000;
+                        font-size: 15px;
+                        font-weight: bold;
+                        margin: 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}

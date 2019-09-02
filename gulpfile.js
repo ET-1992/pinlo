@@ -2,9 +2,7 @@ var gulp = require('gulp'),
   connect = require('gulp-connect'),
   gulpSass = require('gulp-sass'),
   gulpAutoprefixer = require('gulp-autoprefixer'),
-  extender = require('gulp-html-extend'),
-  postcss = require('gulp-postcss'),
-  pxtorem = require('postcss-pxtorem');
+  extender = require('gulp-html-extend')
  
 gulp.task('connect-web', function() {
   connect.server({

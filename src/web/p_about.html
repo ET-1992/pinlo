@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ABOUT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/sidebar.min.js"></script>
+    <link href="../normalize.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="about-wrap">
+        <!-- @@include ./m_header.html -->
+        <div class="body-content">
+            <!-- @@include ./m_sidebar.html -->
+            <!-- @@include ./m_search.html -->
+            <div class="page">
+                <div class="link">
+                    <a href="./p_home.html">Home</a> 
+                    > 
+                    <a href="#">About</a>
+                </div>
+                <div class="content clearfix">
+                    <ul class="left_nav__sidebar">
+                        <li class="active">
+                            <a href="#">ABOUT LUXECO</a>
+                        </li>
+                        <li>
+                            <a href="#">COPTRIGHT STATEMENT</a>
+                        </li>
+                        <li>
+                            <a href="#">JOIN Luxe.CO </a>
+                        </li>
+                        <li>
+                            <a href="#">BUSINESS COOPERATION</a>
+                        </li>
+                    </ul>
+                    <div class="right_main_content">
+                        <h2>ABOUT LUXECO</h2>
+
+                        <p>Luxe.CO is China’s influential online business media for luxury, fashion and lifestyle, with special attention to the intersection of fashion, finance and technology.</p>
+
+                        <p>Over the past five years, Luxe.CO has become the go-to place for entrepreneurs, investors, professionals, opinion leaders and high-end consumers for the latest and well-curated news and analysis on luxury, fashion and lifestyle brand operation, investment and technological innovation. Also, our app and website constitute a very user-friendly database for in-depth brand knowledge, fashion finance transactions and industry research papers.</p>
+                        
+                        <p>Since 2015, Luxe.CO has successfully hosted “Global Fashion Innovation and Investment Forum”, for more details, please visit forum.luxe.co.</p>
+                        
+                        <p>Luxe.CO is China’s influential online business media for luxury, fashion and lifestyle, with special attention to the intersection of fashion, finance and technology.</p>
+                        
+                        <p>Over the past five years, Luxe.CO has become the go-to place for entrepreneurs, investors, professionals, opinion leaders and high-end consumers for the latest and well-curated news and analysis on luxury, fashion and lifestyle brand operation, investment and technological innovation. Also, our app and website constitute a very user-friendly database for in-depth brand knowledge, fashion finance transactions and industry research papers.</p>
+                        
+                        <p>Since 2015, Luxe.CO has successfully hosted “Global Fashion Innovation and Investment Forum”, for more details, please visit forum.luxe.co.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- @@include ./m_newsletter_popup.html -->
+        <!-- @@include ./m_newsletter.html -->
+        <!-- @@include ./m_footer.html -->
+    </div>
+</body>
+    <script>
+        $(document).ready(function(){
+            $('#sidebar-wrap').sidebar({
+                opener: '#toggle-sidebar',
+                top: '110px',
+                sidebar: {
+                    align: 'right',
+                    width: 336
+                }
+            });
+            $(document).click(function() {
+                if( $('#sidebar-wrap').attr('data-sidebar') === 'active'){
+                    $('#toggle-sidebar').attr('src', '../image/close.png')
+                }else{
+                    $('#toggle-sidebar').attr('src', '../image/more.png')
+                }
+            });
+            $('#search-box').click(function(){
+               if($('.head-search-wrap').css('display') === 'none'){
+                $('.head-search-wrap').slideDown(400);
+                $('html , body').animate({scrollTop: 0},'slow');
+               }else{
+                $('.head-search-wrap').slideUp(400);
+               }
+            });
+            $('.newsletter').click(function () {
+                $('.m_newsletter_popup_wrap .mask').fadeIn();
+                $('.m_newsletter_popup_wrap .popup_box').css({'animation': 'sideDown .5s linear', 'top' : '50%'})
+            })
+            $('.m_newsletter_popup_wrap .mask').click(function () {
+                $('.m_newsletter_popup_wrap .mask').fadeOut();
+                $('.m_newsletter_popup_wrap .popup_box').css({'animation': 'sideUp .5s linear', 'top' : '-100%'})
+            });
+        });
+    </script>
+</html>
