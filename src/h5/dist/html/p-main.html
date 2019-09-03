@@ -125,13 +125,26 @@
         <button class="main-button2">See More</button>
      </div>
 
-     <div class="main-text5">
-        <div class="text2-tt1">TESTIMONIALS</div>
-        <div class="text5-tt1">
-              <div class="text5-tt2">“When you feel like hope is gone, look inside . you will find a hero lies in you. dreams are hard to follow, but don't let anyone steal your dream.”</div>
-              <div class="text5-tt3">Howell</div>
+     <div>
+        <div class="main-tt">TESTIMONIALS</div>
 
-        </div>
+         <div class="main-wrap">
+           <div class="main-swipe">
+             <div class="text5-tt1">
+               <div class="text5-tt2">“When you feel like hope is gone, look inside . you will find a hero lies in you. dreams are hard to follow, but don't let anyone steal your dream.”</div>
+               <div class="text5-tt3">Howell</div>
+             </div>
+             <div class="text5-tt1">
+               <div class="text5-tt2">you will find a hero lies in you. dreams are hard to follow, but don't let anyone steal your dream.”</div>
+               <div class="text5-tt3">Howell</div>
+             </div>
+             <div class="text5-tt1">
+               <div class="text5-tt2">dreams are hard to follow, but don't let anyone steal your dream.”</div>
+               <div class="text5-tt3">Howell</div>
+             </div>
+           </div>
+         </div>
+
          <div>
            <img class="text5-left" src="../image/right.png" alt="">
            <img class="text5-right" src="../image/left.png" alt="">
@@ -188,5 +201,23 @@
 <!-- end m-footer.html-->
 
 </body>
-
+<script type="text/javascript">
+  // 获取元素
+  var prev = document.querySelector(".text5-left");
+  var next = document.querySelector(".text5-right");
+  var swipe = document.querySelector(".main-swipe");
+  // 声明当前展示的图片的顺序
+  var index = 0;
+  // 点击prev next
+  next.onclick = function(){
+    index = index == 2 ? 0 : ++index;
+    // 定位元素left才会生效
+    swipe.style.left = -index *100 + '%';
+  }
+  prev.onclick = function(){
+    // 点击prev立即展示上一张
+    index = index == 0 ? 2 : --index;
+    swipe.style.left = -index *100 + '%';
+  }
+</script>
 </html>
