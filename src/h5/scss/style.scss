@@ -805,3 +805,16 @@ content*/
   border-radius:6px;
   text-align: center;
 }
+
+
+.swiper-container {
+  width: vw(750);
+  height: vw(480);
+  margin-top:vw(90);
+  margin-left:vw(97);
+  margin-bottom:vw(90);
+}
+
+.main .swiper-pagination-bullet-active {
+  background: #F8D943;
+}

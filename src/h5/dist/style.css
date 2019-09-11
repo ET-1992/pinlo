@@ -1594,3 +1594,13 @@ content*/
   box-shadow: 0 0 0.93333vw 0 rgba(0, 0, 0, 0.5);
   border-radius: 6px;
   text-align: center; }
+
+.swiper-container {
+  width: 100vw;
+  height: 64vw;
+  margin-top: 12vw;
+  margin-left: 12.93333vw;
+  margin-bottom: 12vw; }
+
+.main .swiper-pagination-bullet-active {
+  background: #F8D943; }

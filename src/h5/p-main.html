@@ -9,17 +9,24 @@
     <link rel="stylesheet" href="../normalize.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../header_1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
 
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 </head>
 
 <body>
      <!-- @@include ./m-header_2.html -->
 
-    <div class="content">
-      <img class="main-banner2" src="../image/Overlay.png" alt="">
-      <img class="main-banner3" src="../image/seltter-bg.png" alt="">
-    </div>
+     <div class="swiper-container main">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"> <img class="main-banner2" src="../image/Overlay.png" alt=""></div>
+          <div class="swiper-slide"> <img class="main-banner3" src="../image/seltter-bg.png" alt=""></div>
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+      </div>
+
      <!-- @@include ./m-Newsletter.html -->
      <div class="main-text1">
         <div class="text1-tt1">Daily Brief</div>
@@ -102,6 +109,18 @@
 
 </body>
 <script type="text/javascript">
+
+window.onload = function() {
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  })
+  
   // 获取元素
   var prev = document.querySelector(".text5-left");
   var next = document.querySelector(".text5-right");
@@ -123,5 +142,6 @@
     index = index == 0 ? swiperLength - 1 : --index;
     swipe.style.left = -index *100 + '%';
   }
+}
 </script>
 </html>
