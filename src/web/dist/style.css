@@ -128,7 +128,7 @@
   height: 132px;
   line-height: 132px;
   background: #fff;
-  background-image: url("../image/ad.png");
+  background-image: url("./image/ad.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -669,7 +669,7 @@
         height: 50px;
         margin-left: -25px;
         margin-top: -25px;
-        background: url("../image/lock.png") no-repeat;
+        background: url("./image/lock.png") no-repeat;
         background-size: cover;
         cursor: auto; }
       .main_content_list .item_list .item-box-image.lock.item-box-image:before {
