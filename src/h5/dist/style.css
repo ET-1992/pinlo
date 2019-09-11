@@ -1578,7 +1578,6 @@ content*/
   position: relative; }
 
 .main-swipe {
-  width: 300%;
   height: 58.4vw;
   display: flex;
   position: absolute;

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="../normalize.css">
@@ -139,9 +139,13 @@
                <div class="text5-tt3">Howell</div>
              </div>
              <div class="text5-tt1">
-               <div class="text5-tt2">dreams are hard to follow, but don't let anyone steal your dream.”</div>
-               <div class="text5-tt3">Howell</div>
-             </div>
+              <div class="text5-tt2">you will find a hero lies in you. dreams are hard to follow, but don't let anyone steal your dream.”</div>
+              <div class="text5-tt3">Howell</div>
+            </div>
+            <div class="text5-tt1">
+              <div class="text5-tt2">you will find a hero lies in you. dreams are hard to follow, but don't let anyone steal your dream.”</div>
+              <div class="text5-tt3">Howell</div>
+            </div>
            </div>
          </div>
 
@@ -206,17 +210,21 @@
   var prev = document.querySelector(".text5-left");
   var next = document.querySelector(".text5-right");
   var swipe = document.querySelector(".main-swipe");
+
+  var swiperLength = document.querySelectorAll(".text5-tt1") && document.querySelectorAll(".text5-tt1").length;
+
+  swipe.style.width  = ((swiperLength) * 100) + "%"
   // 声明当前展示的图片的顺序
   var index = 0;
   // 点击prev next
   next.onclick = function(){
-    index = index == 2 ? 0 : ++index;
+    index = index == swiperLength - 1 ? 0 : ++index;
     // 定位元素left才会生效
     swipe.style.left = -index *100 + '%';
   }
   prev.onclick = function(){
     // 点击prev立即展示上一张
-    index = index == 0 ? 2 : --index;
+    index = index == 0 ? swiperLength - 1 : --index;
     swipe.style.left = -index *100 + '%';
   }
 </script>
