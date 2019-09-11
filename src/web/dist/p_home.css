@@ -54,8 +54,8 @@
            object-fit: contain; }
   .p_home_wrap .body-content .bottom_content {
     margin: 0 auto;
-    padding: 0 50px;
-    background: #fff; }
+    padding: 40px 50px;
+    background: #f1f1f1; }
     .p_home_wrap .body-content .bottom_content .bottom_content_left {
       float: left;
       width: 70%; }

@@ -5,7 +5,7 @@
     <title>ABOUT</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script>
     <script src="../js/sidebar.min.js"></script>
     <link href="../normalize.css" rel="stylesheet">
     <link href="../style.css" rel="stylesheet">
@@ -24,34 +24,19 @@
                     <a href="#">About</a>
                 </div>
                 <div class="content clearfix">
-                    <ul class="left_nav__sidebar">
-                        <li class="active">
-                            <a href="#">ABOUT LUXECO</a>
-                        </li>
-                        <li>
-                            <a href="#">COPTRIGHT STATEMENT</a>
-                        </li>
-                        <li>
-                            <a href="#">JOIN Luxe.CO </a>
-                        </li>
-                        <li>
-                            <a href="#">BUSINESS COOPERATION</a>
-                        </li>
+                    <ul class="left_nav_sidebar">
+                        <li class="active" data-tab="collection">MY COLLECTION</li>
+                        <li data-tab="personal">PERSONAL DATA</li>
                     </ul>
                     <div class="right_main_content">
-                        <h2>ABOUT LUXECO</h2>
+                        <div id="tab-collection" class="persinal_data_wrap active">
+                            <h2>Revision of personal data</h2>
 
-                        <p>Luxe.CO is China’s influential online business media for luxury, fashion and lifestyle, with special attention to the intersection of fashion, finance and technology.</p>
+                        </div>
+                        <div id="tab-personal" class="my_collection_wrap">
+                            <h2>My Collection</h2>
 
-                        <p>Over the past five years, Luxe.CO has become the go-to place for entrepreneurs, investors, professionals, opinion leaders and high-end consumers for the latest and well-curated news and analysis on luxury, fashion and lifestyle brand operation, investment and technological innovation. Also, our app and website constitute a very user-friendly database for in-depth brand knowledge, fashion finance transactions and industry research papers.</p>
-                        
-                        <p>Since 2015, Luxe.CO has successfully hosted “Global Fashion Innovation and Investment Forum”, for more details, please visit forum.luxe.co.</p>
-                        
-                        <p>Luxe.CO is China’s influential online business media for luxury, fashion and lifestyle, with special attention to the intersection of fashion, finance and technology.</p>
-                        
-                        <p>Over the past five years, Luxe.CO has become the go-to place for entrepreneurs, investors, professionals, opinion leaders and high-end consumers for the latest and well-curated news and analysis on luxury, fashion and lifestyle brand operation, investment and technological innovation. Also, our app and website constitute a very user-friendly database for in-depth brand knowledge, fashion finance transactions and industry research papers.</p>
-                        
-                        <p>Since 2015, Luxe.CO has successfully hosted “Global Fashion Innovation and Investment Forum”, for more details, please visit forum.luxe.co.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,6 +79,14 @@
                 $('.m_newsletter_popup_wrap .mask').fadeOut();
                 $('.m_newsletter_popup_wrap .popup_box').css({'animation': 'sideUp .5s linear', 'top' : '-100%'})
             });
+
+            $('.left_nav_sidebar li').click(function(){
+                $('.left_nav_sidebar li').removeClass('active');
+                $(this).addClass('active');
+                let tab = $(this).attr('data-tab');
+                $('.right_main_content').children().removeClass('active');
+                $(`#tab-${tab}`).addClass('active');
+            })
         });
     </script>
 </html>

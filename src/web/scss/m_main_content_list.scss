@@ -1,113 +1,127 @@
 .main_content_list{
     width: 100%;
     .item_list{
+        position: relative;
         float: left;
         width: 30%;
         margin-bottom: 65px;
-        .item_box{
-            .item-box-image{
-                position: relative;
-                display: block;
+        height: 508px;
+        .item-box-image{
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 226px;
+            object-fit: cover;
+            .img{
                 width: 100%;
-                height: 226px;
-                object-fit: cover;
-                .img{
-                    width: 100%;
-                    vertical-align: top;
-                }
-                
-                &.lock{
-                    .icon{
-                        position: absolute;
-                        left: 50%;
-                        top: 50%;
-                        width: 50px;
-                        height: 50px;
-                        margin-left: -25px;
-                        margin-top: -25px;
-                        background: url('../image/lock.png') no-repeat;
-                        background-size: cover;
-                        cursor: auto;
-                    }
-                    &.item-box-image:before{
-                        content: '\A';
-                        position: absolute;
-                        width: 100%; 
-                        height:100%;
-                        top:0; 
-                        left:0;
-                        background:rgba(0,0,0,0.6);
-                        opacity: 0.67;
-                        cursor: auto;
-                    }
-                }
+                vertical-align: top;
             }
-            .item_tag{
-                margin-top: 20px;
-                background: #F8D943;
-                height: 10px;
-                width: 100px;
-                position: relative;
-                span{
+            
+            &.lock{
+                .icon{
                     position: absolute;
-                    font-size: 10px;
-                    font-style: italic;
-                    font-weight: bold;
-                    color: #000000;
-                    width: 100%;
-                    text-align: center;
-                    top: -6px;
+                    left: 50%;
+                    top: 50%;
+                    width: 50px;
+                    height: 50px;
+                    margin-left: -25px;
+                    margin-top: -25px;
+                    background: url('../image/lock.png') no-repeat;
+                    background-size: cover;
+                    cursor: auto;
+                }
+                &.item-box-image:before{
+                    content: '\A';
+                    position: absolute;
+                    width: 100%; 
+                    height:100%;
+                    top:0; 
+                    left:0;
+                    background:rgba(0,0,0,0.6);
+                    opacity: 0.67;
+                    cursor: auto;
                 }
             }
-            .item_title{
-                color: #1D1E20;
+        }
+        .item_tag{
+            margin-top: 20px;
+            background: #F8D943;
+            height: 7px;
+            display: inline-block;
+            span{
+                font-size: 10px;
+                font-style: italic;
                 font-weight: bold;
-                font-size: 27px;
-                margin: 16px 0;
+                color: #000000;
+                text-align: center;
+                display: block;
+                padding: 0 10px;
+                margin-top: -7px;
             }
-            .item_desc{
-                color: #9B9B9B;
-                font-weight: bold;
-                font-size: 14px;
-            }
-            .item_bottom{
-                margin-top: 16px;
+        }
+        .item_title{
+            color: #1D1E20;
+            font-weight: bold;
+            font-size: 27px;
+            margin: 16px 0;
+            overflow:hidden; 
+            text-overflow:ellipsis;
+            display:-webkit-box; 
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp: 2; 
+            text-align: left;
+        }
+        .item_desc{
+            color: #9B9B9B;
+            font-weight: bold;
+            font-size: 14px;
+            overflow:hidden; 
+            text-overflow:ellipsis;
+            display:-webkit-box; 
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp: 5; 
+            text-align: left;
+        }
+        .item_bottom{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .item_left_part{
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                .item_left_part{
+                .item_date{
+                    font-size: 12px;
+                    color: #9B9B9B;
+                }
+                .item_btn{
                     display: flex;
                     align-items: center;
-                    .item_date{
-                        font-size: 12px;
-                        color: #9B9B9B;
-                    }
-                    .item_btn{
+                    padding: 0 10px;
+                    .btn{
                         display: flex;
                         align-items: center;
                         padding: 0 10px;
-                        .btn{
-                            display: flex;
-                            align-items: center;
-                            padding: 0 10px;
-                            .icon{
-                                width: 15px;
-                                height: 15px;
-                            }
-                            .text{
-                                font-size: 12px;
-                                color: #9B9B9B;
-                                padding-left: 5px;
-                            }
+                        .icon{
+                            width: 15px;
+                            height: 15px;
+                        }
+                        .text{
+                            font-size: 12px;
+                            color: #9B9B9B;
+                            padding-left: 5px;
                         }
                     }
                 }
-                .item_view_more{
-                    float: right;
-                    color: #F8D943;
-                    font-size: 14px;
-                    font-weight: bold;
-                }
+            }
+            .item_view_more{
+                float: right;
+                color: #F8D943;
+                font-size: 14px;
+                font-weight: bold;
             }
         }
     }

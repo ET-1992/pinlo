@@ -5,6 +5,12 @@
     background-color: #fff;
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
+    position: fixed; 
+    top: 110px; 
+    bottom: 0px; 
+    width: 336px; 
+    right: -336px; 
+    z-index: 3000;
     .sidebar-nav{
         line-height: 40px; 
         list-style-type: none;

@@ -10,7 +10,7 @@
             }
             .content{
                 margin: 49px auto 118px;
-                .left_nav__sidebar{
+                .left_nav_sidebar{
                     width: 20%;
                     float: left;
                     li{
@@ -18,16 +18,20 @@
                         line-height: 100px;
                         text-align: center;
                         background: #ffffff;
-                        a{
-                            display: block;
-                            font-weight: bold;
-                            font-size: 15px;
-                            color: #2B2B2B;
-                        }
+                        box-sizing: border-box;
+                        border-left: 5px solid #ffffff;
+                        cursor: pointer;
+                        display: block;
+                        font-weight: bold;
+                        font-size: 15px;
+                        color: #2B2B2B;
                     }
-                    .active,
                     li:hover{
+                        color: #000000;
+                    }
+                    .active{
                         background: #F6F6F6;
+                        border-left-color: #F8D943;
                     }
                 }
                 .right_main_content{
@@ -46,6 +50,15 @@
                         font-size: 15px;
                         font-weight: bold;
                         margin: 20px 0;
+                    }
+                    .persinal_data_wrap{
+                        display: none;
+                    }
+                    .my_collection_wrap{
+                        display: none;
+                    }
+                    .active{
+                        display: block;
                     }
                 }
             }
