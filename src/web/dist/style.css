@@ -280,19 +280,19 @@
     .latest-news-wrap .content .news-item .right-content .item-top {
       margin-bottom: 16px; }
       .latest-news-wrap .content .news-item .right-content .item-top .text {
+        margin-top: 20px;
         background: #F8D943;
-        height: 10px;
-        width: 100px;
-        position: relative; }
+        height: 7px;
+        display: inline-block; }
         .latest-news-wrap .content .news-item .right-content .item-top .text span {
-          position: absolute;
           font-size: 10px;
           font-style: italic;
           font-weight: bold;
           color: #000000;
-          width: 100%;
           text-align: center;
-          top: -6px; }
+          display: block;
+          padding: 0 10px;
+          margin-top: -7px; }
     .latest-news-wrap .content .news-item .right-content .item-content {
       color: #1D1E20;
       font-size: 27px;
