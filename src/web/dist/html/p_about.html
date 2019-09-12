@@ -115,13 +115,92 @@
                         <li data-tab="personal">PERSONAL DATA</li>
                     </ul>
                     <div class="right_main_content">
-                        <div id="tab-collection" class="persinal_data_wrap active">
+                        <div id="tab-personal" class="persinal_data_wrap">
                             <h2>Revision of personal data</h2>
-
+                            <form class="personal_data_form" method="post" action="">
+                                <div class="input_box">
+                                    <label for="username">User name</label>
+                                    <input type="text" name="username" id="username" required/>
+                                </div>
+                                <p class="name_tips">（User name cannot be changed）</p>
+                                <div class="input_box">
+                                    <label for="firstname">First name</label>
+                                    <input type="text" name="firstname" id="firstname" required/>
+                                </div>
+                                <div class="input_box">
+                                    <label for="lastname">Last name</label>
+                                    <input type="text" name="lastname" id="lastname" required/>
+                                </div>
+                                <div class="input_box">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email" required/>
+                                </div>
+                                <div class="input_box">
+                                    <label for="password">New password</label>
+                                    <div class="password_box">
+                                        <input type="password" name="password" id="password" required/>
+                                        <img class="show_password" src="../image/show_password.png" />
+                                    </div>
+                                </div>
+                                <div class="input_box">
+                                    <label for="password_repeat">Enter the new password again</label>
+                                    <div class="password_box">
+                                        <input type="password" name="password_repeat" id="password_repeat" required/>
+                                        <img class="show_password" src="../image/show_password.png" />
+                                    </div>
+                                </div>
+                                <button type="submit" class="submit_btn">Revise</button>
+                            </form>
                         </div>
-                        <div id="tab-personal" class="my_collection_wrap">
+                        <div id="tab-collection" class="my_collection_wrap active">
                             <h2>My Collection</h2>
-
+                            <ul class="main_box">
+                                <li>
+                                    <a href="#">
+                                        <div class="item_box">
+                                            <img src="" class="left_image"> 
+                                            <div class="right_part">
+                                                <h3>ALBERTO CAMERLENGO, CEO OF FURLA GROUP</h3>
+                                                <div class="desc">The fiscal year of 2018 was an important year for Furla, the Italian luxury leather brand.  Furla took over full control of   the distribution networks in mainland China, Hong Kong, Macau and Singapore. Furla also invested heavily in supply chain optimization…</div>
+                                                <div class="bottom">
+                                                    <span class="date">May 20, 2019</span>
+                                                    <a href="#" class="cancelBt">Cancel Collection</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item_box">
+                                            <img src="" class="left_image"> 
+                                            <div class="right_part">
+                                                <h3>ALBERTO CAMERLENGO, CEO OF FURLA GROUP</h3>
+                                                <div class="desc">The fiscal year of 2018 was an important year for Furla, the Italian luxury leather brand.  Furla took over full control of   the distribution networks in mainland China, Hong Kong, Macau and Singapore. Furla also invested heavily in supply chain optimization…</div>
+                                                <div class="bottom">
+                                                    <span class="date">May 20, 2019</span>
+                                                    <a href="#" class="cancelBt">Cancel Collection</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item_box">
+                                            <img src="" class="left_image"> 
+                                            <div class="right_part">
+                                                <h3>ALBERTO CAMERLENGO, CEO OF FURLA GROUP</h3>
+                                                <div class="desc">The fiscal year of 2018 was an important year for Furla, the Italian luxury leather brand.  Furla took over full control of the distribution networks in mainland China, Hong Kong, Macau and Singapore. Furla also invested heavily in supply chain optimization…</div>
+                                                <div class="bottom">
+                                                    <span class="date">May 20, 2019</span>
+                                                    <a href="#" class="cancelBt">Cancel Collection</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -244,6 +323,13 @@
                 let tab = $(this).attr('data-tab');
                 $('.right_main_content').children().removeClass('active');
                 $(`#tab-${tab}`).addClass('active');
+            });
+            $('.show_password').click(function() {
+                if($(this).prev('input').attr('type') === 'password'){
+                    $(this).prev('input').attr('type', 'text')
+                }else{
+                    $(this).prev('input').attr('type', 'password')
+                }
             })
         });
     </script>

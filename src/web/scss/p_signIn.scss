@@ -25,14 +25,16 @@ html, body{
         cursor: pointer;
     }
     .tab{
-        width: 281px;
+        width: 280px;
         height: 48px;
         border: 2px solid #F8D943;
         border-radius: 2px;
         margin: 0 auto;
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
         .item-tab{
-            display: inline-block;
-            width: 136px;
+            flex: 1;
             text-align: center;
             line-height: 44px;
             font-size: 18px;
@@ -53,6 +55,7 @@ html, body{
             border: 1px solid #9B9B9B;
             margin: 28px auto;
             padding: 0 20px;
+            background:#F1F1F1;
         }
     }
     .options{

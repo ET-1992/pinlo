@@ -24,14 +24,16 @@ html, body {
     z-index: 999;
     cursor: pointer; }
   .resister-wrap .tab {
-    width: 281px;
+    width: 280px;
     height: 48px;
     border: 2px solid #F8D943;
     border-radius: 2px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
     .resister-wrap .tab .item-tab {
-      display: inline-block;
-      width: 136px;
+      flex: 1;
       text-align: center;
       line-height: 44px;
       font-size: 18px;
@@ -46,7 +48,25 @@ html, body {
     display: block;
     border: 1px solid #9B9B9B;
     margin: 28px auto;
-    padding: 0 20px; }
+    padding: 0 20px;
+    background: #F1F1F1; }
+  .resister-wrap .form-wrap .password_box {
+    width: 407px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border: 1px solid #9B9B9B;
+    background: #F1F1F1; }
+    .resister-wrap .form-wrap .password_box input {
+      width: 100%;
+      border: none;
+      height: 100%; }
+    .resister-wrap .form-wrap .password_box .show_password {
+      width: 30px;
+      -o-object-fit: contain;
+         object-fit: contain;
+      margin-right: 10px;
+      cursor: pointer; }
   .resister-wrap .options {
     margin-bottom: 29px; }
     .resister-wrap .options .remember {
