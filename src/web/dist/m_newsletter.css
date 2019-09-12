@@ -18,14 +18,15 @@
     display: flex;
     align-items: center; }
     .newsletter_wrap .select-form .select-session {
+      position: relative;
       display: flex;
       align-items: center;
       background: #fff;
       height: 40px; }
       .newsletter_wrap .select-form .select-session .icon {
-        display: inline-block;
+        display: block;
         width: 20px;
-        height: 20px; }
+        margin: 0 5px 0 10px; }
       .newsletter_wrap .select-form .select-session .select-input {
         display: inline-block;
         width: 500px;
@@ -39,7 +40,8 @@
         height: 40px;
         line-height: 40px;
         text-align: center;
-        border-left: 1px solid #979797; }
+        border-left: 1px solid #979797;
+        cursor: pointer; }
         .newsletter_wrap .select-form .select-session .sectors span {
           display: inline-block;
           cursor: pointer; }
@@ -48,6 +50,25 @@
           width: 10px;
           height: 10px;
           margin-left: 10px; }
+      .newsletter_wrap .select-form .select-session .select-input-list {
+        display: none;
+        background-color: #F8F8F8;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        min-width: 202px;
+        z-index: 999; }
+        .newsletter_wrap .select-form .select-session .select-input-list .select-item {
+          height: 38px;
+          line-height: 38px;
+          width: 100%;
+          list-style-type: none;
+          text-align: center;
+          cursor: pointer; }
+          .newsletter_wrap .select-form .select-session .select-input-list .select-item:hover {
+            background-color: #fff;
+            color: #E95205;
+            font-size: 14px; }
     .newsletter_wrap .select-form .select-btn {
       float: left;
       width: 144px;
@@ -59,4 +80,5 @@
       color: #000000;
       text-align: center;
       margin-left: 20px;
-      cursor: pointer; }
+      cursor: pointer;
+      border: none; }

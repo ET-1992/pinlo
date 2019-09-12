@@ -58,10 +58,36 @@
 
 .p_home_wrap .body-content {
   margin-top: 112px; }
-  .p_home_wrap .body-content .home_banner img {
+  .p_home_wrap .body-content .home_banner .swiper-container {
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain; }
+    height: 100%;
+    background-color: #fff;
+    font-weight: bold;
+    text-align: center; }
+    .p_home_wrap .body-content .home_banner .swiper-container .swiper-wrapper .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .p_home_wrap .body-content .home_banner .swiper-container .swiper-wrapper .swiper-slide a {
+        width: 100%;
+        height: 100%;
+        display: block; }
+      .p_home_wrap .body-content .home_banner .swiper-container .swiper-wrapper .swiper-slide img {
+        width: 100%;
+        height: 400px;
+        -o-object-fit: cover;
+           object-fit: cover; }
+    .p_home_wrap .body-content .home_banner .swiper-container .my-bullet {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 100%;
+      background: #999999;
+      opacity: .2;
+      margin: 0 10px; }
+    .p_home_wrap .body-content .home_banner .swiper-container .my-bullet-active {
+      background: #F8D943;
+      opacity: 1; }
   .p_home_wrap .body-content .ad_box {
     margin-top: 20px;
     width: 100%;
@@ -143,14 +169,15 @@
     display: flex;
     align-items: center; }
     .newsletter_wrap .select-form .select-session {
+      position: relative;
       display: flex;
       align-items: center;
       background: #fff;
       height: 40px; }
       .newsletter_wrap .select-form .select-session .icon {
-        display: inline-block;
+        display: block;
         width: 20px;
-        height: 20px; }
+        margin: 0 5px 0 10px; }
       .newsletter_wrap .select-form .select-session .select-input {
         display: inline-block;
         width: 500px;
@@ -164,7 +191,8 @@
         height: 40px;
         line-height: 40px;
         text-align: center;
-        border-left: 1px solid #979797; }
+        border-left: 1px solid #979797;
+        cursor: pointer; }
         .newsletter_wrap .select-form .select-session .sectors span {
           display: inline-block;
           cursor: pointer; }
@@ -173,6 +201,25 @@
           width: 10px;
           height: 10px;
           margin-left: 10px; }
+      .newsletter_wrap .select-form .select-session .select-input-list {
+        display: none;
+        background-color: #F8F8F8;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        min-width: 202px;
+        z-index: 999; }
+        .newsletter_wrap .select-form .select-session .select-input-list .select-item {
+          height: 38px;
+          line-height: 38px;
+          width: 100%;
+          list-style-type: none;
+          text-align: center;
+          cursor: pointer; }
+          .newsletter_wrap .select-form .select-session .select-input-list .select-item:hover {
+            background-color: #fff;
+            color: #E95205;
+            font-size: 14px; }
     .newsletter_wrap .select-form .select-btn {
       float: left;
       width: 144px;
@@ -184,7 +231,8 @@
       color: #000000;
       text-align: center;
       margin-left: 20px;
-      cursor: pointer; }
+      cursor: pointer;
+      border: none; }
 
 .sidebar-wrap {
   position: relative;

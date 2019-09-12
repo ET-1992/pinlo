@@ -19,14 +19,15 @@
         display: flex;
         align-items: center;
         .select-session{
+            position: relative;
             display: flex;
             align-items: center;
             background: #fff;
             height: 40px;
             .icon{
-                display: inline-block;
+                display: block;
                 width: 20px;
-                height: 20px;
+                margin: 0 5px 0 10px;
             }
             .select-input{
                 display: inline-block;
@@ -44,6 +45,7 @@
                 line-height: 40px;
                 text-align: center;
                 border-left: 1px solid #979797;
+                cursor: pointer;
                 span{
                     display: inline-block;
                     cursor: pointer;
@@ -53,6 +55,29 @@
                     width: 10px;
                     height: 10px;
                     margin-left: 10px;
+                }
+            }
+            .select-input-list {
+                display: none;
+                background-color: #F8F8F8;
+                position: absolute;
+                top: 40px;
+                right: 0;
+                min-width: 202px;
+                z-index: 999;
+    
+                .select-item {
+                    height: 38px;
+                    line-height: 38px;
+                    width: 100%;
+                    list-style-type: none;
+                    text-align: center;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #fff;
+                        color: #E95205;
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -68,6 +93,7 @@
             text-align: center;
             margin-left: 20px;
             cursor: pointer;
+            border: none;
         }
     }
 }

@@ -108,10 +108,24 @@
 <!-- end m_search.html-->
     
                 <div class="home_banner">
-                    <a href="#">
-                        <img src="../image/banner.png" alt="">
-                    </a>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="../image/banner.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="../image/news.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
                 </div>
+
                 <div class="ad_box clearfix">
                     <div class="ad_item">
                         <a href="#" class="ad_img">
@@ -156,14 +170,20 @@
     <h2 class="title">Newsletter</h2>
     <form class="select-form">
         <div class="select-session">
-            <span class="icon"></span>
-            <input class="select-input" placeholder="Email address" disabled type="text"/>
+            <img class="icon" src="../image/email_icon.png" alt="">
+            <input class="select-input" placeholder="Email address" type="text"/>
+            <input class="select-input-hidden" type="hidden" name="term-slug" value=""/>
             <div class="sectors">
                 <span class="text">Sectors</span>
                 <img class="icon" src="../image/down.png" alt="">
             </div>
+		    <ul class="select-input-list">
+		    	<li class="select-item" data-term-slug="value1">2312312312</li>
+		    	<li class="select-item" data-term-slug="value2">ddfdfd</li>
+		    	<li class="select-item" data-term-slug="value3">rtrtrtrt</li>
+            </ul>
         </div>
-        <div class="select-btn newsletter">Newsletter</div>
+        <button type="submit" class="select-btn">Newsletter</button>
     </form>
 </div>
 <!-- end m_newsletter.html-->
@@ -600,7 +620,7 @@
                 $('.m_newsletter_popup_wrap .popup_box').css({'animation': 'sideUp .5s linear', 'top' : '-100%'})
             });
 
-            var mySwiper = new Swiper('.swiper-container', {
+            var testimonials_swiper = new Swiper('.testimonials-wrap .swiper-container', {
 				direction: 'horizontal', // 水平切换选项
 				loop: true, // 循环模式选项
 				autoplay: true, // 自动切换
@@ -624,7 +644,48 @@
 				scrollbar: {
 				    el: '.swiper-scrollbar',
 				},
-			})
+			});
+            var banner_swiper = new Swiper('.home_banner .swiper-container', {
+				direction: 'horizontal', // 水平切换选项
+				loop: true, // 循环模式选项
+				autoplay: true, // 自动切换
+
+				// 如果需要分页器
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+					clickableClass: 'my-pagination-clickable',
+					bulletClass: 'my-bullet',
+					bulletActiveClass: 'my-bullet-active',
+				},
+
+				// 如果需要前进后退按钮
+				navigation: {
+				    nextEl: '.swiper-button-next',
+				    prevEl: '.swiper-button-prev',
+				},
+
+				// 如果需要滚动条
+				scrollbar: {
+				    el: '.swiper-scrollbar',
+				},
+            });
+            
+            $('.select-session .sectors').click(function(){
+                if($('.select-session .select-input-list').css('display') === 'none'){
+                    $('.select-session .select-input-list').show();
+                } else {
+                    $('.select-session .select-input-list').hide();
+                }
+            })
+            // 点击下拉框
+            $('.select-session .select-item').click(function(e){
+                var value = $(this).text();
+                var data = $(this).attr('data-term-slug');
+                $('.select-input').val(value);
+                $('.select-input-hidden').val(data);
+                $('.select-input-list').hide();
+            })
         });
     </script>
 </html>

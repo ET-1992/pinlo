@@ -778,14 +778,20 @@
     <h2 class="title">Newsletter</h2>
     <form class="select-form">
         <div class="select-session">
-            <span class="icon"></span>
-            <input class="select-input" placeholder="Email address" disabled type="text"/>
+            <img class="icon" src="../image/email_icon.png" alt="">
+            <input class="select-input" placeholder="Email address" type="text"/>
+            <input class="select-input-hidden" type="hidden" name="term-slug" value=""/>
             <div class="sectors">
                 <span class="text">Sectors</span>
                 <img class="icon" src="../image/down.png" alt="">
             </div>
+		    <ul class="select-input-list">
+		    	<li class="select-item" data-term-slug="value1">2312312312</li>
+		    	<li class="select-item" data-term-slug="value2">ddfdfd</li>
+		    	<li class="select-item" data-term-slug="value3">rtrtrtrt</li>
+            </ul>
         </div>
-        <div class="select-btn newsletter">Newsletter</div>
+        <button type="submit" class="select-btn">Newsletter</button>
     </form>
 </div>
 <!-- end m_newsletter.html-->
@@ -882,6 +888,22 @@
             $('.tips_modal_wrap .close').click(function(){
                 $('.tips_modal_wrap').fadeOut();
             });
+
+            $('.select-session .sectors').click(function(){
+                if($('.select-session .select-input-list').css('display') === 'none'){
+                    $('.select-session .select-input-list').show();
+                } else {
+                    $('.select-session .select-input-list').hide();
+                }
+            })
+            // 点击下拉框
+            $('.select-session .select-item').click(function(e){
+                var value = $(this).text();
+                var data = $(this).attr('data-term-slug');
+                $('.select-input').val(value);
+                $('.select-input-hidden').val(data);
+                $('.select-input-list').hide();
+            })
         });
     </script>
 </html>

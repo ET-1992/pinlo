@@ -82,6 +82,22 @@
             $('.tips_modal_wrap .close').click(function(){
                 $('.tips_modal_wrap').fadeOut();
             });
+
+            $('.select-session .sectors').click(function(){
+                if($('.select-session .select-input-list').css('display') === 'none'){
+                    $('.select-session .select-input-list').show();
+                } else {
+                    $('.select-session .select-input-list').hide();
+                }
+            })
+            // 点击下拉框
+            $('.select-session .select-item').click(function(e){
+                var value = $(this).text();
+                var data = $(this).attr('data-term-slug');
+                $('.select-input').val(value);
+                $('.select-input-hidden').val(data);
+                $('.select-input-list').hide();
+            })
         });
     </script>
 </html>
