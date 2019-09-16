@@ -17,7 +17,10 @@
             </div>
             <form class="form-wrap" method="post" action="" id="form">
                 <input class="input" name="email" type="text" placeholder="YOUE EMAIL" required/>
-                <input class="input" name="password" type="password" placeholder="PASSWORD" required/>
+                <div class="password_box">
+                    <input class="input" name="password" type="password" placeholder="PASSWORD" required/>
+                    <img class="show_password" src="../image/show_password.png" />
+                </div>
                 <div class="options clearfix">
                     <div class="remember">
                         <input class="checkBox" type="checkbox" checked name="remember" />
@@ -32,6 +35,13 @@
     <script>
         $(document).ready(function(){
             $('body').slideDown(400);
+            $('.show_password').click(function(){
+                if($(this).prev('input').attr('type') === 'password'){
+                    $(this).prev('input').attr('type', 'text')
+                }else{
+                    $(this).prev('input').attr('type', 'password')
+                }
+            });
         });
     </script>
 </html>

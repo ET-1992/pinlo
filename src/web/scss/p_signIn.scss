@@ -56,6 +56,30 @@ html, body{
             margin: 28px auto;
             padding: 0 20px;
             background:#F1F1F1;
+            font-size: 18px;
+        }
+        .input::placeholder{
+            font-size: 12px;
+        }
+        .password_box{
+            width: 407px;
+            display:flex;
+            align-items: center;
+            height:50px;
+            border: 1px solid #9B9B9B;
+            background:#F1F1F1;
+            margin-bottom: 20px;
+            input{
+                width:100%;
+                border:none;
+                height:100%;
+            }
+            .show_password{
+                width: 30px;
+                object-fit:contain;
+                margin-right: 10px;
+                cursor: pointer;
+            }
         }
     }
     .options{

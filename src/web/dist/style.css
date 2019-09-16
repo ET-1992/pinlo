@@ -875,7 +875,36 @@ html, body {
     border: 1px solid #9B9B9B;
     margin: 28px auto;
     padding: 0 20px;
-    background: #F1F1F1; }
+    background: #F1F1F1;
+    font-size: 18px; }
+  .sign-in-wrap .form-wrap .input::-webkit-input-placeholder {
+    font-size: 12px; }
+  .sign-in-wrap .form-wrap .input::-moz-placeholder {
+    font-size: 12px; }
+  .sign-in-wrap .form-wrap .input:-ms-input-placeholder {
+    font-size: 12px; }
+  .sign-in-wrap .form-wrap .input::-ms-input-placeholder {
+    font-size: 12px; }
+  .sign-in-wrap .form-wrap .input::placeholder {
+    font-size: 12px; }
+  .sign-in-wrap .form-wrap .password_box {
+    width: 407px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border: 1px solid #9B9B9B;
+    background: #F1F1F1;
+    margin-bottom: 20px; }
+    .sign-in-wrap .form-wrap .password_box input {
+      width: 100%;
+      border: none;
+      height: 100%; }
+    .sign-in-wrap .form-wrap .password_box .show_password {
+      width: 30px;
+      -o-object-fit: contain;
+         object-fit: contain;
+      margin-right: 10px;
+      cursor: pointer; }
   .sign-in-wrap .options {
     margin-bottom: 29px; }
     .sign-in-wrap .options .remember {
@@ -958,14 +987,26 @@ html, body {
     border: 1px solid #9B9B9B;
     margin: 28px auto;
     padding: 0 20px;
-    background: #F1F1F1; }
+    background: #F1F1F1;
+    font-size: 18px; }
+  .resister-wrap .form-wrap .input::-webkit-input-placeholder {
+    font-size: 12px; }
+  .resister-wrap .form-wrap .input::-moz-placeholder {
+    font-size: 12px; }
+  .resister-wrap .form-wrap .input:-ms-input-placeholder {
+    font-size: 12px; }
+  .resister-wrap .form-wrap .input::-ms-input-placeholder {
+    font-size: 12px; }
+  .resister-wrap .form-wrap .input::placeholder {
+    font-size: 12px; }
   .resister-wrap .form-wrap .password_box {
     width: 407px;
     display: flex;
     align-items: center;
     height: 50px;
     border: 1px solid #9B9B9B;
-    background: #F1F1F1; }
+    background: #F1F1F1;
+    margin-bottom: 20px; }
     .resister-wrap .form-wrap .password_box input {
       width: 100%;
       border: none;
@@ -1052,7 +1093,18 @@ html, body {
     border: 1px solid #9B9B9B;
     margin: 28px auto;
     padding: 0 20px;
-    background: #F1F1F1; }
+    background: #F1F1F1;
+    font-size: 18px; }
+  .foget-password-wrap .form-wrap .input::-webkit-input-placeholder {
+    font-size: 12px; }
+  .foget-password-wrap .form-wrap .input::-moz-placeholder {
+    font-size: 12px; }
+  .foget-password-wrap .form-wrap .input:-ms-input-placeholder {
+    font-size: 12px; }
+  .foget-password-wrap .form-wrap .input::-ms-input-placeholder {
+    font-size: 12px; }
+  .foget-password-wrap .form-wrap .input::placeholder {
+    font-size: 12px; }
   .foget-password-wrap .return {
     display: block;
     text-align: center;
