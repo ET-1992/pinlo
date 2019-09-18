@@ -1162,7 +1162,7 @@
 .main-text2 {
   margin-left: 2.66667vw;
   margin-right: 2.66667vw;
-  margin-top: 10.66667vw; }
+  margin-top: 2.66667vw; }
 
 .text2-tt1 {
   color: #202124;
@@ -1241,8 +1241,12 @@
   height: 10.66667vw;
   font-size: 4vw;
   color: #1D1E20;
-  font-weight: bold;
-  letter-spacing: -0.13333vw; }
+  letter-spacing: -0.13333vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; }
 
 .text4-bg {
   width: 100%;
@@ -1252,7 +1256,7 @@
   color: #1D1E20;
   font-size: 5.33333vw;
   margin: 5.33333vw 8.26667vw;
-  font-weight: bold;
+  line-height: 6.66667vw;
   letter-spacing: -0.13333vw; }
 
 .main-text5 {
@@ -1261,7 +1265,7 @@
 
 .text5-tt2 {
   font-size: 4vw;
-  font-weight: bold;
+  line-height: 6vw;
   letter-spacing: -0.13333vw; }
 
 .text5-tt3 {
@@ -1287,13 +1291,11 @@
 /*research*/
 .research-title {
   width: 100%;
-  height: 5.6vw;
   font-size: 8vw;
   color: #202124;
   text-align: center;
-  font-weight: bold;
   margin-top: 2.66667vw;
-  margin-bottom: 5.33333vw; }
+  margin-bottom: 4.66667vw; }
 
 .research-rt1 {
   font-size: 2.66667vw;
@@ -1303,16 +1305,16 @@
   letter-spacing: -0.13333vw; }
 
 .aboutus-text1 {
-  margin: 10.66667vw 2.66667vw;
+  margin: 8vw 2.66667vw;
   font-size: 3.46667vw;
-  letter-spacing: -0.13333vw;
-  font-weight: bold; }
+  line-height: 4.53333vw;
+  letter-spacing: -0.13333vw; }
 
 /*
 Contact*/
 .contact-text1 {
-  margin: 8vw 2.66667vw 6vw 0.26667vw;
-  font-weight: bold;
+  margin: 4.66667vw 2.66667vw 6vw 2.66667vw;
+  line-height: 4.53333vw;
   font-size: 3.46667vw;
   text-align: center;
   letter-spacing: -0.13333vw; }
@@ -1346,15 +1348,14 @@ Contact*/
 /*
 content*/
 .content-title {
-  width: 100%;
-  height: 17.33333vw;
-  line-height: 1;
   font-size: 8vw;
   color: #202124;
-  text-align: center;
-  font-weight: bold;
+  text-align: justify;
+  line-height: 8.66667vw;
   margin-top: 5.33333vw;
-  margin-bottom: 2.66667vw; }
+  margin-bottom: 2.66667vw;
+  margin-left: 2.66667vw;
+  margin-right: 2.66667vw; }
 
 .content-tt1 {
   color: #9B9B9B;
@@ -1389,7 +1390,7 @@ content*/
   margin: 5.33333vw 2.66667vw;
   font-size: 3.46667vw;
   letter-spacing: -0.13333vw;
-  font-weight: bold; }
+  line-height: 6vw; }
 
 .content-preson {
   width: 57.73333vw;
@@ -1400,7 +1401,7 @@ content*/
   margin: 5.33333vw 2.66667vw;
   font-size: 3.46667vw;
   letter-spacing: -0.13333vw;
-  font-weight: bold; }
+  line-height: 6vw; }
 
 .content-bg1 {
   width: 100%;
@@ -1420,9 +1421,9 @@ content*/
   float: right;
   width: 74.26667vw;
   height: 36.66667vw;
+  line-height: 4.66667vw;
   font-size: 3.2vw;
   color: #1D1E20;
-  font-weight: bold;
   letter-spacing: -0.13333vw; }
 
 .content-pt1 {
@@ -1546,15 +1547,14 @@ content*/
 .coll-text1 {
   font-size: 4vw;
   color: #1D1E20;
-  font-weight: bold;
-  margin-top: 2.66667vw; }
+  margin-top: 2.66667vw;
+  line-height: 6.4vw; }
 
 .coll-text2 {
   margin-top: 5.33333vw; }
 
 .coll-tip1 {
-  float: left;
-  font-weight: bold; }
+  float: left; }
 
 .coll-tip2 {
   float: right;

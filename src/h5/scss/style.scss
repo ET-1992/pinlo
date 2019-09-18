@@ -359,7 +359,7 @@
 .main-text2{
   margin-left:vw(20);
   margin-right:vw(20);
-  margin-top:vw(80);
+  margin-top:vw(20);
 }
 .text2-tt1{
   color:#202124;
@@ -438,8 +438,12 @@
   height: vw(80);
   font-size: vw(30);
   color:#1D1E20;
-  font-weight: bold;
   letter-spacing:vw(-1);
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
 }
 .text4-bg{
   width: 100%;
@@ -449,7 +453,7 @@
   color:#1D1E20;
   font-size:vw(40);
   margin:vw(40) vw(62);
-  font-weight: bold;
+  line-height: vw(50);
   letter-spacing:vw(-1);
 }
 .main-text5{
@@ -458,7 +462,7 @@
 }
 .text5-tt2{
   font-size:vw(30);
-  font-weight: bold;
+  line-height: vw(45);
   letter-spacing:vw(-1);
 }
 .text5-tt3{
@@ -485,13 +489,11 @@
 /*research*/
 .research-title{
   width: 100%;
-  height: vw(42);
   font-size:vw(60);
   color:#202124;
   text-align: center;
-  font-weight: bold;
   margin-top:vw(20);
-  margin-bottom:vw(40);
+  margin-bottom:vw(35);
 }
 .research-rt1{
   font-size: vw(20);
@@ -502,17 +504,17 @@
 }
 
 .aboutus-text1{
-  margin:vw(80) vw(20);
+  margin:vw(60) vw(20);
   font-size:vw(26);
+  line-height:vw(34) ;
   letter-spacing:vw(-1);
-  font-weight: bold;
 
 }
 /*
 Contact*/
 .contact-text1{
-  margin:vw(60) vw(20) vw(45) vw(02);
-  font-weight: bold;
+  margin:vw(35) vw(20) vw(45) vw(20);
+  line-height: vw(34);
   font-size:vw(26);
   text-align:center;
   letter-spacing:vw(-1);
@@ -546,15 +548,14 @@ Contact*/
 /*
 content*/
 .content-title{
-  width: 100%;
-  height: vw(130);
-  line-height:1;
   font-size:vw(60);
   color:#202124;
-  text-align: center;
-  font-weight: bold;
+  text-align: justify;
+  line-height: vw(65);
   margin-top:vw(40);
   margin-bottom:vw(20);
+  margin-left:vw(20);
+  margin-right:vw(20);
 }
 .content-tt1{
   color:#9B9B9B;
@@ -589,8 +590,7 @@ content*/
   margin:vw(40) vw(20);
   font-size:vw(26);
   letter-spacing:vw(-1);
-  font-weight: bold;
-
+  line-height: vw(45);
 }
 .content-preson{
   width: vw(433);
@@ -602,7 +602,7 @@ content*/
   margin:vw(40) vw(20);
   font-size:vw(26);
   letter-spacing:vw(-1);
-  font-weight: bold;
+  line-height: vw(45);
 }
 .content-bg1{
   width: 100%;
@@ -622,9 +622,9 @@ content*/
   float:right;
   width: vw(557);
   height: vw(275);
+  line-height: vw(35);
   font-size: vw(24);
   color:#1D1E20;
-  font-weight: bold;
   letter-spacing:vw(-1);
 }
 .content-pt1{
@@ -633,9 +633,7 @@ content*/
   font-size: vw(18);
   letter-spacing:vw(-1);
 }
-.content-text4{
 
-}
 .text4-mt1{
   color:#202124;
   font-size: vw(60);
@@ -755,15 +753,14 @@ content*/
 .coll-text1{
   font-size:vw(30);
   color:#1D1E20;
-  font-weight: bold;
   margin-top:vw(20);
+  line-height: vw(48);
 }
 .coll-text2{
   margin-top:vw(40);
 }
 .coll-tip1{
   float:left;
-  font-weight: bold;
 }
 .coll-tip2{
   float:right;
