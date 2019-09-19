@@ -25,6 +25,9 @@
         background: #F8D943;
         height: 7px;
         display: inline-block; }
+        .latest-news-wrap .content .news-item .right-content .item-top .text a {
+          color: #000000;
+          cursor: pointer; }
         .latest-news-wrap .content .news-item .right-content .item-top .text span {
           font-size: 10px;
           font-style: italic;

@@ -1,7 +1,8 @@
 .main_content_list{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     .item_list{
-        float: left;
         width: 30%;
         margin-bottom: 65px;
         .content_box{
@@ -47,6 +48,10 @@
                 background: #F8D943;
                 height: 7px;
                 display: inline-block;
+                a{
+                    color: #000000;
+                    cursor: pointer;
+                }
                 span{
                     font-size: 10px;
                     font-style: italic;
