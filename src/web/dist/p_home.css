@@ -80,13 +80,25 @@
            object-fit: contain; }
   .p_home_wrap .body-content .bottom_content {
     margin: 0 auto;
-    padding: 40px 50px;
-    background: #f1f1f1; }
+    padding: 0 50px; }
+    .p_home_wrap .body-content .bottom_content.bg-dark {
+      background: #f1f1f1; }
     .p_home_wrap .body-content .bottom_content .bottom_content_left {
       float: left;
       width: 70%; }
+      .p_home_wrap .body-content .bottom_content .bottom_content_left h2 {
+        font-size: 33px;
+        font-weight: bold;
+        color: #1D1E20;
+        margin-bottom: 30px; }
     .p_home_wrap .body-content .bottom_content .bottom_content_right {
       float: right; }
+      .p_home_wrap .body-content .bottom_content .bottom_content_right h2 {
+        font-size: 33px;
+        font-weight: bold;
+        color: #1D1E20;
+        margin-bottom: 30px;
+        width: 313px; }
   .p_home_wrap .body-content .home_newsletter {
     width: 1100px;
     margin: 50px auto; }

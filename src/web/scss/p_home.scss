@@ -103,16 +103,29 @@
         }
         .bottom_content{
             margin: 0 auto;
-            padding: 40px 50px;
-            background: rgb(241, 241, 241);
-           
+            padding: 0 50px;
+            &.bg-dark{
+                background: rgb(241, 241, 241);
+            }
             .bottom_content_left{
                 float: left;
                 width: 70%;
+                h2{
+                    font-size: 33px;
+                    font-weight: bold;
+                    color: #1D1E20;
+                    margin-bottom: 30px;
+                }
             }
             .bottom_content_right{
                 float: right;
-                
+                h2{
+                    font-size: 33px;
+                    font-weight: bold;
+                    color: #1D1E20;
+                    margin-bottom: 30px;
+                    width: 313px;
+                }
             }
         }
         .home_newsletter{

@@ -1,4 +1,5 @@
 .latest-news-wrap{
+    margin-bottom: 90px;
     .title{
         font-size: 33px;
         font-weight: bold;
@@ -24,8 +25,8 @@
                 flex: 1;
                 .item-top{
                     margin-bottom: 16px;
+                    margin-top: -6px;
                     .text{
-                        margin-top: 20px;
                         background: #F8D943;
                         height: 7px;
                         display: inline-block;
@@ -37,7 +38,7 @@
                             text-align: center;
                             display: block;
                             padding: 0 10px;
-                            margin-top: -7px;
+                            margin-top: -5px;
                         }
                     }
                 }
@@ -88,6 +89,9 @@
                     font-weight: bold;
                 }
             }
+        }
+        .news-item:last-child{
+            margin-bottom: 0;
         }
     }
 }
