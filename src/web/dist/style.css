@@ -345,6 +345,9 @@
           background: #F8D943;
           height: 7px;
           display: inline-block; }
+          .latest-news-wrap .content .news-item .right-content .item-top .text a {
+            font-weight: bold;
+            color: #000000; }
           .latest-news-wrap .content .news-item .right-content .item-top .text span {
             font-size: 10px;
             font-style: italic;
@@ -756,6 +759,9 @@
         background: #F8D943;
         height: 7px;
         display: inline-block; }
+        .main_content_list .item_list .content_box .item_tag a {
+          font-weight: bold;
+          color: #000000; }
         .main_content_list .item_list .content_box .item_tag span {
           font-size: 10px;
           font-style: italic;
