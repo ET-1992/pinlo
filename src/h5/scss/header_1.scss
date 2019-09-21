@@ -4,10 +4,10 @@
 
 .head{
   height:vw(112);
-  border-bottom:1px solid #000;
+  box-shadow: 1px 1px 1px #bdb9b9;
 }
 .head-logo{
-  height: vw(38);
+  height: vw(40);
   width: vw(240);
   position: relative;
   left: 50%;
@@ -16,13 +16,13 @@
   margin-top: vw(-19.5);
 }
 .head-search{
-  height:vw(31);
-  width:vw(31);
+  height:vw(36);
+  width:vw(36);
   margin-right:vw(20);
 }
 .head-person{
-  height:vw(31);
-  width:vw(31);
+  height:vw(36);
+  width:vw(36);
   margin-left:vw(20);
 }
 .head-right{
@@ -32,13 +32,13 @@
 
 }
 .head-false{
-  width: vw(38);
+  width: vw(31);
   height: vw(31);
   margin-top:vw(40);
   margin-left:vw(21);
 }
 .head-bar{
-  width: vw(38);
+  width: vw(31);
   height: vw(31);
   margin-top:vw(40);
   margin-left:vw(21);

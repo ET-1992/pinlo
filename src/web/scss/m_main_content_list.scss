@@ -1,7 +1,8 @@
 .main_content_list{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     .item_list{
-        float: left;
         width: 30%;
         margin-bottom: 65px;
         .content_box{
@@ -50,6 +51,7 @@
                 a{
                     font-weight: bold;
                     color: #000000;
+                    cursor: pointer;
                 }
                 span{
                     font-size: 10px;
