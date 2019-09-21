@@ -50,6 +50,8 @@
   font-size:vw(30);
   color:#000;
   font-weight:bold;
+  border:0;
+  box-shadow: 4px 4px 4px -2px #b7b6b6cc;
 }
 .login-back{
   font-size: vw(24);
@@ -121,6 +123,8 @@
   font-size:vw(30);
   color:#000;
   font-weight:bold;
+  border:0;
+  box-shadow: 4px 4px 4px -2px #b7b6b6cc;
 }
 /*sign in*/
 .sign--checkbox,.sign-remember{
@@ -247,11 +251,8 @@
   margin-top:vw(30);
 }
 .professional-tip{
-  width: vw(150);
-  height:vw(20);
   font-size:vw(18);
   color:rgba(0,0,0,1);
-  line-height:vw(20);
   margin-left:vw(20);
   margin-top:vw(30);
   border-bottom: 4px solid #F8D943;
@@ -300,6 +301,8 @@
   font-size:vw(30);
   color:#000;
   font-weight:bold;
+  border:0;
+  box-shadow: 4px 4px 4px -2px #6d6767cc;
 }
 /*main*/
 .main-banner2{
@@ -331,6 +334,8 @@
   font-size:vw(24);
   color:#000;
   font-weight:bold;
+  border:0;
+  box-shadow: 2px 2px 2px -1px #6d6767cc;
 }
 .text1-tt1{
   font-size: vw(60);
@@ -360,22 +365,21 @@
   margin-left:vw(20);
   margin-right:vw(20);
   margin-top:vw(20);
+  margin-bottom:vw(60);
 }
 .text2-tt1{
   color:#202124;
   font-size: vw(60);
+  font-weight: bold;
 }
 .text2-bg{
   width: vw(710);
   height: vw(399);
-  margin-top:vw(30);
 }
 .text2-tip{
-  width: vw(150);
-  height:vw(20);
   font-size:vw(18);
+  font-weight: bold;
   color:rgba(0,0,0,1);
-  line-height:vw(20);
   margin-top:vw(10);
   border-bottom: 4px solid #F8D943;
   font-style:italic;
@@ -402,12 +406,13 @@
   width: vw(198);
   height: vw(63);
   margin-left:vw(250);
-  margin-bottom:vw(100);
   background: #F8D943;
   border-radius:2px;
   font-size:vw(24);
   color:#000;
   font-weight:bold;
+  border:0;
+  box-shadow: 2px 2px 2px -1px #6d6767cc;
 }
 .main-text3{
   margin-left:vw(20);
@@ -415,6 +420,9 @@
   margin-top:vw(80);
 }
 .main-text4{
+  margin-top:vw(80);
+}
+.main-text6{
   margin-top:vw(80);
 }
 .text3-line{
@@ -490,10 +498,11 @@
 .research-title{
   width: 100%;
   font-size:vw(60);
+  font-weight: bold;
   color:#202124;
   text-align: center;
   margin-top:vw(20);
-  margin-bottom:vw(35);
+  margin-bottom:vw(20);
 }
 .research-rt1{
   font-size: vw(20);
@@ -513,7 +522,7 @@
 /*
 Contact*/
 .contact-text1{
-  margin:vw(35) vw(20) vw(45) vw(20);
+  margin:vw(15) vw(20) vw(45) vw(20);
   line-height: vw(34);
   font-size:vw(26);
   text-align:center;
@@ -544,6 +553,8 @@ Contact*/
   font-size:vw(26);
   color:#000;
   font-weight:bold;
+  border:0;
+  box-shadow: 4px 4px 4px -2px #6d6767cc;
 }
 /*
 content*/
@@ -551,6 +562,7 @@ content*/
   font-size:vw(60);
   color:#202124;
   text-align: justify;
+  font-weight: bold;
   line-height: vw(65);
   margin-top:vw(40);
   margin-bottom:vw(20);
@@ -590,7 +602,7 @@ content*/
   margin:vw(40) vw(20);
   font-size:vw(26);
   letter-spacing:vw(-1);
-  line-height: vw(45);
+  line-height: vw(48);
 }
 .content-preson{
   width: vw(433);
@@ -602,12 +614,11 @@ content*/
   margin:vw(40) vw(20);
   font-size:vw(26);
   letter-spacing:vw(-1);
-  line-height: vw(45);
+  line-height: vw(48);
 }
 .content-bg1{
   width: 100%;
   height: vw(529);
-  margin-bottom: vw(100);
 }
 .content-person{
   width: vw(101);
@@ -638,6 +649,7 @@ content*/
   color:#202124;
   font-size: vw(60);
   margin-left:vw(20);
+  font-weight: bold;
 }
 .content-button{
   width: vw(242);
@@ -650,20 +662,27 @@ content*/
   font-size:vw(26);
   color:#000;
   font-weight:bold;
+  border:0;
+  box-shadow: 4px 4px 4px -2px #6d6767cc;
 }
-.interview-img{
-  width: vw(80);
+.interview-img3{
+  width: vw(70);
   height: vw(20);
   margin-bottom: vw(9);
   margin-left:vw(20);
 }
 .interview-img2{
-  width: vw(120);
+  width: vw(100);
   height: vw(20);
   margin-bottom: vw(9);
   margin-left:vw(20);
 }
-
+.interview-img1{
+  width: vw(80);
+  height: vw(20);
+  margin-bottom: vw(9);
+  margin-left:vw(20);
+}
 /*personaldata*/
 .collection-title{
   width:100%;
@@ -724,7 +743,8 @@ content*/
   border-radius:2px;
   font-size:vw(30);
   color:#000;
-  font-weight:bold;
+  font-weight:bold;  border:0;
+  box-shadow: 4px 4px 4px -2px #bbaeaecc;
 }
 
 /*mycollertion*/
@@ -775,6 +795,7 @@ content*/
   margin-right:vw(20);
   color:#202124;
   font-size: vw(60);
+  font-weight: bold;
 }
 .main-wrap{
   width:100%;

@@ -1,6 +1,6 @@
 .head {
   height: 14.93333vw;
-  border-bottom: 1px solid #000; }
+  box-shadow: 1px 1px 1px #bdb9b9; }
 
 .head-logo {
   height: 5.06667vw;
@@ -12,13 +12,13 @@
   margin-top: -2.6vw; }
 
 .head-search {
-  height: 4.13333vw;
-  width: 4.13333vw;
+  height: 4.8vw;
+  width: 4.8vw;
   margin-right: 2.66667vw; }
 
 .head-person {
-  height: 4.13333vw;
-  width: 4.13333vw;
+  height: 4.8vw;
+  width: 4.8vw;
   margin-left: 2.66667vw; }
 
 .head-right {
@@ -27,13 +27,13 @@
   float: right; }
 
 .head-false {
-  width: 5.06667vw;
+  width: 4.13333vw;
   height: 4.13333vw;
   margin-top: 5.33333vw;
   margin-left: 2.8vw; }
 
 .head-bar {
-  width: 5.06667vw;
+  width: 4.13333vw;
   height: 4.13333vw;
   margin-top: 5.33333vw;
   margin-left: 2.8vw; }
