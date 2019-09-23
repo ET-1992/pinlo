@@ -86,7 +86,8 @@ Description: Used to style the TinyMCE editor.
   .editor h6:first-child {
     margin-top: 0; }
   .editor p {
-    margin: 0 0 28px; }
+    margin: 0 0 28px;
+    font-size: 20px; }
   .editor b,
   .editor strong {
     font-weight: 700; }

@@ -44,7 +44,7 @@
         display: inline-block; }
         .main_content_list .item_list .content_box .item_tag a {
           font-weight: bold;
-          color: #000000; 
+          color: #000000;
           cursor: pointer; }
         .main_content_list .item_list .content_box .item_tag span {
           font-size: 10px;
@@ -68,7 +68,7 @@
         text-align: left; }
       .main_content_list .item_list .content_box .item_desc {
         color: #9B9B9B;
-        font-weight: bold;
+        font-weight: normal;
         font-size: 14px;
         overflow: hidden;
         text-overflow: ellipsis;

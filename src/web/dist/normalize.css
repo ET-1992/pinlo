@@ -419,7 +419,7 @@ input[type="text"], input[type="password"], div, ul, li, input, a {
   zoom: 1; }
 
 html, p {
-  text-align: justify;
+  text-align: left;
   text-justify: inter-ideograph; }
 
 table {
