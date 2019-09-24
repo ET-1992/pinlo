@@ -469,7 +469,6 @@ input[type="text"], input[type="password"], div, ul, li, input, a {
   zoom: 1; }
 
 html, p {
-  text-align: justify;
   text-justify: inter-ideograph; }
 
 table {
