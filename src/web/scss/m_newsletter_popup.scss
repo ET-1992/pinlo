@@ -41,6 +41,16 @@
         z-index: 10002;
         background: #ffffff;
         box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.5);
+        .closeModal{
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: 999;
+            cursor: pointer;
+        }
         img.banner{
             display: block;
             width: 100%;
