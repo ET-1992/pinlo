@@ -53,4 +53,5 @@
   margin-left: 7.73333vw;
   margin-top: 5.33333vw;
   border: 0;
-  box-shadow: 4px 4px 4px -2px #6d6767cc; }
+  -webkit-box-shadow: 4px 4px 4px -2px #6d6767cc;
+          box-shadow: 4px 4px 4px -2px #6d6767cc; }

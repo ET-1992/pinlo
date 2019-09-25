@@ -27,6 +27,7 @@
         position: absolute;
         left: 0;
         top: 0;
+        background: -webkit-gradient(linear, left top, left bottom, from(#f77053), to(#e44b5d));
         background: linear-gradient(to bottom, #f77053 0%, #e44b5d 100%);
         border-radius: 1px; }
     .right-side-wrap .block-item .item-title-head .article-tab-bar {

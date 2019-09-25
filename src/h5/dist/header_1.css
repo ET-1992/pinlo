@@ -1,6 +1,7 @@
 .head {
   height: 14.93333vw;
-  box-shadow: 1px 1px 1px #bdb9b9; }
+  -webkit-box-shadow: 1px 1px 1px #bdb9b9;
+          box-shadow: 1px 1px 1px #bdb9b9; }
 
 .head-logo {
   height: 5.33333vw;

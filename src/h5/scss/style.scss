@@ -307,14 +307,11 @@
 /*main*/
 .main-banner2{
   width: vw(750);
-  height: vw(480);
+  height: vw(580);
 }
 .main-banner3{
-  width: vw(556);
-  height: vw(362);
-  margin-top:vw(90);
-  margin-left:vw(97);
-  margin-bottom:vw(90);
+  width: vw(750);
+  height: vw(580);
 }
 .main-text1{
   margin-top:vw(90);
@@ -483,14 +480,14 @@
   width: vw(43);
   height: vw(43);
   position: relative;
-  top: vw(-240);
+  top: vw(175);
   left: vw(1);
 }
 .text5-right{
   width: vw(43);
   height: vw(43);
   position: relative;
-  top: vw(-240);
+  top: vw(175);
   left: vw(655);
 }
 
@@ -826,11 +823,15 @@ content*/
 
 
 .swiper-container {
-  width: vw(750);
-  height: vw(480);
-  margin-top:vw(90);
+  width: 100%;
+  height: vw(580);
   margin-left:vw(97);
   margin-bottom:vw(90);
+
+  img {
+    width: 100%;
+    height: vw(580) !important;
+  }
 }
 
 .main .swiper-pagination-bullet-active {
