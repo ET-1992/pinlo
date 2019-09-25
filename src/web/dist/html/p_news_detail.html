@@ -225,6 +225,7 @@
 <div class="m_newsletter_popup_wrap">
     <div class="mask"></div>
     <div class="popup_box">
+        <img id="close_newsletter_popup" class="closeModal" src="../image/closeModal.png" alt="">
         <img src="../image/banner.png" alt="" class="banner">
         <form class="form">
             <input type="text" name="email" placeholder="*Your email" required />
@@ -341,6 +342,11 @@
                 $('.m_newsletter_popup_wrap .popup_box').css({'animation': 'sideDown .5s linear', 'top' : '50%'})
             })
             $('.m_newsletter_popup_wrap .mask').click(function () {
+                $('.m_newsletter_popup_wrap .mask').fadeOut();
+                $('.m_newsletter_popup_wrap .popup_box').css({'animation': 'sideUp .5s linear', 'top' : '-100%'})
+            });
+
+            $('.m_newsletter_popup_wrap #close_newsletter_popup').click(function () {
                 $('.m_newsletter_popup_wrap .mask').fadeOut();
                 $('.m_newsletter_popup_wrap .popup_box').css({'animation': 'sideUp .5s linear', 'top' : '-100%'})
             });

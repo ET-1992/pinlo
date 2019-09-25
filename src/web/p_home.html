@@ -160,6 +160,11 @@
                 $('.m_newsletter_popup_wrap .popup_box').css({'animation': 'sideUp .5s linear', 'top' : '-100%'})
             });
 
+            $('.m_newsletter_popup_wrap #close_newsletter_popup').click(function () {
+                $('.m_newsletter_popup_wrap .mask').fadeOut();
+                $('.m_newsletter_popup_wrap .popup_box').css({'animation': 'sideUp .5s linear', 'top' : '-100%'})
+            });
+
             var testimonials_swiper = new Swiper('.testimonials-wrap .swiper-container', {
 				direction: 'horizontal', // 水平切换选项
 				loop: true, // 循环模式选项

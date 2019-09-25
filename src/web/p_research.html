@@ -79,6 +79,11 @@
                 $('.m_newsletter_popup_wrap .popup_box').css({'animation': 'sideUp .5s linear', 'top' : '-100%'})
             });
 
+            $('.m_newsletter_popup_wrap #close_newsletter_popup').click(function () {
+                $('.m_newsletter_popup_wrap .mask').fadeOut();
+                $('.m_newsletter_popup_wrap .popup_box').css({'animation': 'sideUp .5s linear', 'top' : '-100%'})
+            });
+
             $('.tips_modal_wrap .close').click(function(){
                 $('.tips_modal_wrap').fadeOut();
             });
