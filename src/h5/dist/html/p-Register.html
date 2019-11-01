@@ -51,7 +51,38 @@
         <button class="rigister-button">Register</button>
     </div>
 
-
+<!-- start m-popup.html-->
+<div class="main-popup">
+	<div class="popup-bg"></div>
+	<div class="popup-content">
+		<div class="main-popup_img">
+			<img src="../image/icon-popup.png" alt="弹窗">
+			<img class="main-popup_close" src="../image/popup-close.png" alt="关闭">
+		</div>
+		<div class="main-popup_text">
+			<div class="main-popup_input">
+				<input class="main-popup_input-text" placeholder="*Your email" type="email">
+			</div>
+			<div class="main-popup_btn"><img src="../image/subscribe.png" alt="预订"></div>
+		</div>
+	</div>
+</div>
+<!-- end m-popup.html-->
 </body>
+<script>
+    window.onload = function () {
+        // 弹窗
+        var btn = document.querySelector(".main-popup_close");
+        var popup = document.getElementsByClassName("popup-bg")[0];
+        var body = document.getElementsByTagName("body")[0];
+        var content = document.getElementsByClassName("popup-content")[0];
+        body.setAttribute("class", "body-hidden");
 
+        btn.addEventListener("click", function () {
+            popup.setAttribute("class", "hidden-popup");
+            body.removeAttribute("class");
+            content.setAttribute("class", "hidden-popup");
+        });
+    }
+</script>
 </html>

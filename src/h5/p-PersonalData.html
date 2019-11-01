@@ -39,10 +39,26 @@
 
   <!-- @@include ./m-Newsletter.html -->
   <!-- @@include ./m-footer.html -->
+  <!-- @@include ./m-popup.html -->
 
 </div>
 
 
 </body>
+<script>
+  window.onload = function () {
+    // 弹窗
+    var btn = document.querySelector(".main-popup_close");
+    var popup = document.getElementsByClassName("popup-bg")[0];
+    var body = document.getElementsByTagName("body")[0];
+    var content = document.getElementsByClassName("popup-content")[0];
+    body.setAttribute("class", "body-hidden");
 
+    btn.addEventListener("click", function () {
+      popup.setAttribute("class", "hidden-popup");
+      body.removeAttribute("class");
+      content.setAttribute("class", "hidden-popup");
+    });
+  }
+</script>
 </html>
