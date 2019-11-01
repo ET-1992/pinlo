@@ -6,7 +6,8 @@ html, body {
   width: 480px;
   height: 464px;
   background: #FFFFFF;
-  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5);
   position: relative;
   top: 50%;
   left: 50%;
@@ -29,11 +30,19 @@ html, body {
     border: 2px solid #F8D943;
     border-radius: 2px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .sign-in-wrap .tab .item-tab {
-      flex: 1;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
       text-align: center;
       line-height: 44px;
       font-size: 18px;
@@ -63,8 +72,12 @@ html, body {
     font-size: 12px; }
   .sign-in-wrap .form-wrap .password_box {
     width: 407px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 50px;
     border: 1px solid #9B9B9B;
     background: #F1F1F1;

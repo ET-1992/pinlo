@@ -5,8 +5,12 @@
   .head-search-wrap .input-box {
     background: #fff;
     padding: 10px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 43px; }
     .head-search-wrap .input-box ::-webkit-input-placeholder {
       /* WebKit, Blink, Edge */
@@ -29,7 +33,9 @@
       font-style: italic;
       font-weight: bold; }
     .head-search-wrap .input-box .input {
-      flex: 1;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
       border: none;
       display: inline-block;
       font-size: 40px; }

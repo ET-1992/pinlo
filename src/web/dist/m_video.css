@@ -1,4 +1,6 @@
 .video-wrap .item-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 30px 0; }
   .video-wrap .item-video .item-video-image {
@@ -31,7 +33,9 @@
     position: relative;
     height: 203px;
     margin-left: 38px;
-    flex: 1; }
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
     .video-wrap .item-video .right-part .content {
       color: #1D1E20;
       font-size: 26px;
@@ -54,5 +58,6 @@
       color: #1D1E20;
       background: #F8D943;
       border-radius: 2px;
-      box-shadow: 0 1px 2px 1px #9B9B9B;
+      -webkit-box-shadow: 0 1px 2px 1px #9B9B9B;
+              box-shadow: 0 1px 2px 1px #9B9B9B;
       cursor: pointer; }

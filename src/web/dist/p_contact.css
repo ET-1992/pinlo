@@ -76,7 +76,8 @@
         background: #F8D943;
         border: none;
         border-radius: 2px;
-        box-shadow: 0 1px 2px 1px #9B9B9B;
+        -webkit-box-shadow: 0 1px 2px 1px #9B9B9B;
+                box-shadow: 0 1px 2px 1px #9B9B9B;
         cursor: pointer;
         margin-top: 28px;
         margin-bottom: 130px; }

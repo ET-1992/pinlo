@@ -3,7 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
   z-index: 10000; }
   .header-wrap .header-top {
     height: 34px;

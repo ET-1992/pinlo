@@ -8,6 +8,8 @@
   .latest-news-wrap .content .news-item {
     height: auto;
     margin-bottom: 38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
     .latest-news-wrap .content .news-item .left-img {
       float: left;
@@ -18,7 +20,9 @@
       position: relative;
       height: 203px;
       margin-left: 38px;
-      flex: 1; }
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
       .latest-news-wrap .content .news-item .right-content .item-top {
         margin-bottom: 16px;
         margin-top: -6px; }
@@ -51,18 +55,30 @@
         text-align: left; }
       .latest-news-wrap .content .news-item .right-content .item-last {
         padding-top: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center; }
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
         .latest-news-wrap .content .news-item .right-content .item-last .item-date {
           font-size: 12px;
           color: #9B9B9B; }
         .latest-news-wrap .content .news-item .right-content .item-last .item-btn {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          align-items: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
           padding: 0 10px; }
           .latest-news-wrap .content .news-item .right-content .item-last .item-btn .btn {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             padding: 0 10px; }
             .latest-news-wrap .content .news-item .right-content .item-last .item-btn .btn .icon {
               width: 15px;

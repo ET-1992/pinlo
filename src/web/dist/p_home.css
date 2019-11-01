@@ -7,16 +7,22 @@
     font-weight: bold;
     text-align: center; }
     .p_home_wrap .body-content .home_banner .swiper-container .swiper-wrapper .swiper-slide {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center; }
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       .p_home_wrap .body-content .home_banner .swiper-container .swiper-wrapper .swiper-slide a {
         width: 100%;
         height: 100%;
         display: block; }
       .p_home_wrap .body-content .home_banner .swiper-container .swiper-wrapper .swiper-slide img {
         width: 100%;
-        height: 400px;
+        height: 571px;
         -o-object-fit: cover;
            object-fit: cover; }
     .p_home_wrap .body-content .home_banner .swiper-container .my-bullet {

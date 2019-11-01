@@ -60,18 +60,18 @@ Description: Used to style the TinyMCE editor.
     font-weight: 900;
     margin: 56px 0 28px; }
   .editor h1 {
-    font-size: 33px;
+    font-size: 34px;
     line-height: 1.2727272727; }
   .editor h2 {
-    font-size: 28px;
+    font-size: 29px;
     line-height: 1.25; }
   .editor h3 {
-    font-size: 23px;
+    font-size: 24px;
     line-height: 1.2173913043; }
   .editor h4,
   .editor h5,
   .editor h6 {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.1052631579; }
   .editor h4 {
     letter-spacing: 0.13333em;
@@ -87,7 +87,7 @@ Description: Used to style the TinyMCE editor.
     margin-top: 0; }
   .editor p {
     margin: 0 0 28px;
-    font-size: 20px; }
+    font-size: 18px; }
   .editor b,
   .editor strong {
     font-weight: 700; }
@@ -254,7 +254,8 @@ Description: Used to style the TinyMCE editor.
   .editor del {
     opacity: 0.8; }
   .editor a {
-    box-shadow: 0 1px 0 0 currentColor;
+    -webkit-box-shadow: 0 1px 0 0 currentColor;
+            box-shadow: 0 1px 0 0 currentColor;
     color: #007acc;
     text-decoration: none; }
   .editor fieldset {
@@ -323,7 +324,8 @@ Description: Used to style the TinyMCE editor.
     display: none; }
   .editor .wp-audio-shortcode a,
   .editor .wp-playlist a {
-    box-shadow: none; }
+    -webkit-box-shadow: none;
+            box-shadow: none; }
   .editor .mce-content-body .wp-audio-playlist {
     margin: 0;
     padding-bottom: 0; }
