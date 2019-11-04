@@ -19,7 +19,7 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
-  font-family: "Helvetica", arial, "Microsoft YaHei", sans-serif !important; }
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important; }
 
 /* Sections
      ========================================================================== */
@@ -394,7 +394,7 @@ label {
 body, button, input, select, textarea {
   font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif;
   color: #444444;
-  font-family: "Helvetica", arial, "Microsoft YaHei", sans-serif !important; }
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%; }
@@ -514,7 +514,7 @@ body {
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 

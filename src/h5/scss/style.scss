@@ -18,7 +18,6 @@
   margin-left: vw(110);
   margin-top: vw(86);
   border: 2px solid #F8D943;
-  font-family: Helvetica;
   font-size: vw(25);
   line-height: 1;
   color: #000;
@@ -839,21 +838,17 @@ content*/
 }
 
 // 弹窗
-.main-popup {
+.popup-bg {
   width: 100%;
   height: 100%;
-  .popup-bg {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 998;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 998;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   .popup-content {
     width: vw(520);
     height: vw(821);
