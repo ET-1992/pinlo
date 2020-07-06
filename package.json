@@ -22,5 +22,7 @@
     "gulp-html-extend": "^1.1.6",
     "gulp-sass": "^4.0.2"
   },
-  "browserslist": ["last 2 versions"]
+  "browserslist": [
+    "last 2 versions"
+  ]
 }
