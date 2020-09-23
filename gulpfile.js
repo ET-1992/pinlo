@@ -53,7 +53,7 @@ gulp.task('watch-web', function () {
   gulp.watch(['./src/web/js/*'], ['js-web']);
 });
  
-gulp.task('web', ['connect-web', 'html-web', 'sass-web', 'image-web', 'font-web', 'js-web', 'watch-web']);
+gulp.task('web', gulp.series('connect-web', 'html-web', 'sass-web', 'image-web', 'font-web', 'js-web', 'watch-web'));
 
 gulp.task('connect-h5', function() {
   connect.server({
@@ -91,4 +91,4 @@ gulp.task('watch-h5', function () {
   gulp.watch(['./src/h5/image/*'], ['image-h5']);
 });
  
-gulp.task('h5', ['connect-h5', 'html-h5', 'sass-h5', 'image-h5','watch-h5']);
+gulp.task('h5',  gulp.series('connect-h5', 'html-h5', 'sass-h5', 'image-h5','watch-h5'));
