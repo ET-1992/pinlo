@@ -1,0 +1,604 @@
+/*
+
+	Template Author : pixelhint.com
+	Author Email    : contact@pixelhint.com
+	Template Name   : Crafty
+	
+	
+	*****************************************
+	
+	
+	- Header
+	- Billboard
+	- Services/features
+	- Testimonials
+	- Info section
+	- Take To Action section
+    - footer
+	- Responsive code
+	
+*/
+
+
+
+/*  Fonts  */
+@font-face {
+    font-family: 'lato_regular';
+    src: url('../fonts/lato-regular.eot');
+    src: url('../fonts/lato-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular.woff') format('woff'),
+         url('../fonts/lato-regular.ttf') format('truetype'),
+         url('../fonts/lato-regular.svg#LatoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'lato_bold';
+    src: url('../fonts/lato-bold.eot');
+    src: url('../fonts/lato-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold.woff') format('woff'),
+         url('../fonts/lato-bold.ttf') format('truetype'),
+         url('../fonts/lato-bold.svg#LatoBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'avantgardelt-extralight';
+    src: url('../fonts/avantgardelt-extralight.eot');
+    src: url('../fonts/avantgardelt-extralight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avantgardelt-extralight.woff') format('woff'),
+         url('../fonts/avantgardelt-extralight.ttf') format('truetype'),
+         url('../fonts/avantgardelt-extralight.svg#avantgardelt-extralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*  General CSS*/
+.wrapper{
+	max-width: 1200px;
+	height: auto;
+	margin: 0 420px;
+  position: relative;
+}
+
+::selection {color:#ffffff;background:#353434;}
+::-moz-selection {color:#ffffff;background:#353434;}
+
+.feature a,
+.cta a.cta_btn,
+.testimonials #t_navigation a,
+header ul.social li a,
+header nav ul li a{
+	transition:all .2s linear;
+	-webkit-transition:all .2s linear;
+	-moz-transition:all .2s linear;
+	-o-transition:all .2s linear;
+}
+
+
+
+
+/*  header  */
+.nav_wrap{
+	margin: 0 420px;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: #353434;
+}
+
+header .logo{
+    float: left;
+		width: 65px;
+		height: 19px;
+		margin-top: 16px;
+		margin-right: 66px;
+}
+
+header .menu_icon{
+    display: block;
+    width: 19px;
+    height: 14px;
+    background: url('../img/more.png') no-repeat;
+		background-size: cover;
+    float: right;
+		margin-right: 19px;
+    margin-top: 20px;
+    display: none;
+}
+
+header nav{
+    overflow: hidden;
+    display: inline-block;	
+    z-index: 9999;
+		line-height: 50px;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
+    margin-left: 35px;
+    font-size: 16px;
+    font-family: 'lato_regular', arial;
+    letter-spacing: 1px;
+}
+
+header nav ul li:first-child{
+    margin-left: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+		font-size: 14px;
+}
+
+header nav ul li a:hover{
+    color: #65bf95;
+}
+
+header .social{
+		color: #FFFFFF;
+		font-size:14px;
+    float: right;
+    line-height: 50px;
+		display: block;
+}
+
+
+
+
+/*  Billboard  */
+.billboard{
+	width: 100%;
+	height: 750px;
+	margin-bottom: 15px;
+}
+
+.billboard1{
+    background: url("../img/home_camera.png") no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+		margin-bottom: 0px;
+}
+
+.billboard2{
+    background: url("../img/pc_home3.png") no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+}
+.billboard3{
+    background: url("../img/pc_home4.png") no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+}
+.billboard4{
+    background: url("../img/pc_home5.png") no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+}
+.billboard5{
+    background: url("../img/pc_home0.png") no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+		margin-bottom: 0px;
+}
+
+.billboard .caption{
+    margin-top: 229px;
+}
+
+.billboard .caption{
+    margin-top: 229px;
+}
+
+.billboard .caption .caption_title1{
+    color: #000;
+    font-family: "avantgardelt-extralight", arial;
+    font-weight: 550;
+    font-size: 29px;
+    padding: 14px 0;
+    text-transform: uppercase;
+    z-index: 8888;
+}
+
+.billboard .caption .caption_title2{
+    color: #000;
+    font-family: "avantgardelt-extralight", arial;
+    font-size: 14px;
+    text-transform: uppercase;
+    z-index: 8888;
+}
+
+.caption_title3{
+	font-family: "avantgardelt-extralight", arial;
+	font-size: 14px;
+	text-transform: uppercase;
+	z-index: 8888;
+	color: #D97422;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+.img_box{
+	display: flex;
+}
+
+
+/*  Footer  */
+footer{
+  
+    text-align: center;
+}
+
+footer .pc_box{
+	padding: 40px 420px 87px;
+  background: #F1F1F1;
+}
+
+footer ul li{
+		margin: 0;
+		width: calc(100% - 38px);
+		color: #626262;
+		border-bottom: 1px #D2D2D2 solid;
+		float: left;
+		margin-left: 19px;
+		font-size: 14px;
+		font-family: 'lato_regular', arial;
+		letter-spacing: 1px;
+		padding: 26px 0px 6px 0px;
+		text-align: left;
+}
+
+.h5_ul{
+	display: none;
+}
+.pc_ul{
+	display: flex;
+	padding: 25px 0;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	align-items: flex-end;
+	
+}
+.pc_ul img{
+	width: 57px;
+	height: 18px;
+}
+.pc_ul span{
+	margin-left:40px;
+	font-size:14px;
+	color:rgba(0,0,0,0.8);
+}
+.tip_box{
+	display: flex;
+	flex-direction:row-reverse;
+	justify-content:space-between;
+}
+footer ul li .arrow{
+	float: right;
+	width: 6px;
+	height: 12px;
+	display: none;
+}
+
+footer ul li a{
+		text-decoration: none;
+		color: #626262;
+}
+footer ul{
+		list-style: none;
+}
+
+footer .rights{
+    color: #BEBDBD;
+    font-family: HYQiHe,"lato_regular", arial;
+    font-size: 8px;
+		height: 24px;
+    line-height: 24px;
+		text-align: left;
+		font-weight:normal;
+}
+
+footer .rights a{
+    text-decoration: none;
+    font-family: 'lato_bold', arial;
+    font-weight: bold;
+    color: #3b3b3b;
+}
+
+a{
+    color: #3b3b3b;
+}
+
+.foot_codebox{
+	display: flex;
+	align-items: center;
+	width: 400px;
+	justify-content: flex-end;
+}
+
+.foot_codebox .codebox {
+	width: 102px;
+	margin: 15px 0 15px 10px;
+	margin-top: 10px;
+}
+.foot_codebox .codebox img {
+	width: 102px;
+	height: 102px;
+}
+.foot_codebox .codebox .code_title{
+	font-size:11px;
+	color: #626262;
+	margin-top: 8px;
+}
+
+/*  Responsive code  */
+
+@media (max-width:1600px){
+	.nav_wrap{
+		margin: 0 200px;
+	}
+	.wrapper{
+	  margin: 0 200px;
+	}
+	footer .pc_box{
+		padding: 40px 200px 87px;
+	}
+}
+
+@media (max-width:1200px){
+	.nav_wrap{
+		margin: 0 100px;
+	}
+    .wrapper{
+      margin: 0 100px;
+    }
+    .info_pic,
+    .info_details{
+        width: 100%;
+    }
+
+    .info_details{
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .info_details h3,
+    .info_details p,
+    .info_details a{
+        max-width: 80%;
+        display: block;
+        text-align: center;
+        margin: 40px auto;
+    }
+		footer .pc_box{
+			padding: 40px 100px 87px;
+		}
+}
+
+
+@media (max-width:1000px){
+	.nav_wrap{
+		margin: 0 20px;
+	}
+	.wrapper{
+	  margin: 0 20px;
+	}
+    .billboard .caption{
+        text-align: center;
+        margin-left: 0;
+    }
+    .cta{
+        width: 80%;
+        margin: 0 auto;
+    }
+		footer .pc_box{
+			padding: 40px 20px 87px;
+		}
+}
+
+
+@media (max-width:800px){
+		.nav_wrap{
+			margin: 0;
+		}
+		
+    header .logo{
+        float: none;
+				margin-top: 17px;
+				height: 17px;
+				width: 58px;
+				position: relative;
+				left: 50%;
+				margin-left: -29px;
+    }
+
+    header .menu_icon{
+        display: block;
+    }
+
+    header .social{
+        display: none;
+    }
+
+    header nav{
+        display: block;
+        background: #353434;
+        margin: 10px 0 0 0;
+        padding: 0;
+        border-left: 0;
+        border-top: 1px #2c2c2c solid;
+        overflow: hidden;
+        text-align: left;
+        position: relative;
+        z-index: 9999;
+        display: none;
+				line-height: 30px;
+    }
+    header nav{
+        border-bottom-left-radius: 2px; 
+        -webkit-border-bottom-left-radius: 2px; 
+        -moz-border-bottom-left-radius: 2px; 
+        -o-border-bottom-left-radius: 2px; 
+        border-bottom-right-radius: 2px; 
+        -webkit-border-bottom-right-radius: 2px; 
+        -moz-border-bottom-right-radius: 2px; 
+        -o-border-bottom-right-radius: 2px; 
+    }
+    header nav.show_menu{
+        display: block;
+    }
+    header nav ul li{
+        margin: 0;
+        width: 100%;
+        border-bottom: 1px #434343 solid;
+    }
+    header nav ul li:last-child{
+        border-bottom: 0;
+    }
+    header nav ul li a{
+        display: block;
+        width: 100%;
+        padding: 24px 0px 6px 19px;
+				font-size: 14px;
+    }
+    header nav ul li a:active{
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        background: #2c2c2c;
+    }
+
+    .features .feature{
+        width: 46.66666666666667%;
+        margin-right: 6.666666666666667%!important;
+    }
+    .features .feature:nth-child(2n+2)
+    {
+        margin-right: 0!important;
+    }
+		.h5_ul{
+			display: block;
+		}
+		footer .pc_ul{
+			display: none;
+		}
+		footer ul li .arrow{
+			float: right;
+			width: 6px;
+			height: 12px;
+			display: block;
+		}
+		footer .pc_box{
+			padding: 7px 0 39px 0;
+			background: #fff;
+		}
+		.foot_codebox{
+			width: 100%;
+		}
+		.foot_codebox .codebox {
+			width: 102px;
+			margin: 15px;
+			margin-top: 30px;
+		}
+		footer .rights{
+			text-align: center;
+			height: 14px;
+			line-height: 14px;
+		}
+		.tip_box{
+			display: block;
+		}
+		.foot_codebox{
+			justify-content: center;
+		}
+		.billboard{
+			width: 100% !important;
+			height: 556px !important;
+			margin-bottom: 15px;
+			margin-left: 0px !important;
+		}
+		.billboard .caption{
+		    margin-top: 66px;
+				text-align: center !important;
+		}
+		.billboard1{
+		    background: url("../img/h5_home_camera.png") no-repeat center center;
+		    background-size: cover;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    -o-background-size: cover;
+		    overflow: hidden;	
+		}
+		
+		.billboard2{
+		    background: url("../img/h5_home1.png") no-repeat center center;
+		    background-size: cover;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    -o-background-size: cover;
+		    overflow: hidden;
+		}
+		.billboard3{
+		    background: url("../img/h5_home2.png") no-repeat center center;
+		    background-size: cover;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    -o-background-size: cover;
+		    overflow: hidden;
+		}
+		.billboard4{
+		    background: url("../img/h5_home3.png") no-repeat center center;
+		    background-size: cover;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    -o-background-size: cover;
+		    overflow: hidden;
+		}
+		.billboard5{
+			display: none;
+		}
+		.img_box{
+			display: block;
+		}
+}
+
+@media (max-width:500px){
+
+    .features .feature{
+        width: 100%;
+        margin-right: 0!important;
+    }
+
+}
